@@ -1,53 +1,13 @@
-<div class="row">
-  <div class="col"></div>
+<div class="row" style="padding-top: 30px;">
+  <div class="col"> </div>
     <div class="col-md-7">
 
-      <h2>Dodaj zawodnika</h2>
+      <h3>Add new player</h3>
 
-      <%= form_for :player, url: players_path do |f| %>
-  
-      <p>
-        <%= f.label :imię %><br>
-        <%= f.text_field :name, class: 'form-control' %>
-      </p>
+        <%= render 'form' %>
 
-      <p>
-        <%= f.label :nazwisko %><br>
-        <%= f.text_field :surname, class: 'form-control' %>
-      </p>
+        <%= link_to "Back", players_path, class: 'btn btn-md btn-info' %>
 
-      <p>
-        <%= f.label :wiek %><br>
-        <%= f.text_field :age, class: 'form-control' %>
-      </p>
-
-      <p>
-       <%= f.label :narodowość %><br>
-       <%= f.text_field :nationality, class: 'form-control' %>
-      </p>
-
-      <p>
-        <%= f.label :pozycja %><br>
-        <%= f.text_field :position, class: 'form-control' %>
-      </p>
-
-      <p>
-        <%= f.label :klub %><br>
-        <%= f.text_field :club, class: 'form-control' %>
-      </p>
-
-      <p>
-        <%= f.submit class: 'btn btn-lg btn-success'%>
-      </p>
-
-      <% end %>
-
-      <p>
-        <%= link_to 'Back', players_path, class: 'btn btn-md btn-info' %>
-        <%= link_to 'Home', welcome_index_path, class: 'btn btn-md btn-primary' %>
-      </p>
-	
     </div>
-  <div class="col"></div>
+  <div class="col"> </div>
 </div>
-	
