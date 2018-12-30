@@ -44,7 +44,7 @@ class PlayersController < ApplicationController
 
 private
 
-  def find_movie
+  def find_player
     @player = Player.find(params[:id])
   end
 
