@@ -29,8 +29,8 @@ class PlayersController < ApplicationController
 
   def update
 
-    if @movie.update(movie_params)
-        redirect_to movie_path(@movie)
+    if @player.update(player_params)
+        redirect_to player_path(@player)
     else
         render 'edit'
     end
