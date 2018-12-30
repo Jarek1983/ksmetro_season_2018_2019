@@ -1,0 +1,36 @@
+<%= render 'common/errors', model: @player %>
+
+  <%= form_for @player, html: {multipart: true} do |f| %>
+
+    <div class="field" style="100%;">
+      <p>
+        <%= f.label :name %><br>
+        <%= f.text_field :name, class: 'form-control' %>
+      </p>
+      <p>
+        <%= f.label :surname %><br>
+        <%= f.text_field :surname, class: 'form-control' %>
+      </p>
+       <p>
+        <%= f.label :age %><br>
+        <%= f.text_field :age, class: 'form-control' %>
+      </p>
+      <p>
+       <%= f.label :nationality %><br>
+       <%= f.text_field :nationality, class: 'form-control' %>
+      </p>
+      <p>
+        <%= f.label :position %><br>
+        <%= f.text_field :position, class: 'form-control' %>
+      </p>
+      <p>
+        <%= f.label :club %><br>
+        <%= f.text_field :club, class: 'form-control' %>
+      </p>
+      
+      <p>
+        <%= f.submit class: 'btn btn-lg btn-success'%>
+      </p>
+
+    </div>
+  <% end %>
