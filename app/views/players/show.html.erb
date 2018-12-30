@@ -1,0 +1,42 @@
+<div class="row" style="padding-top: 30px;">
+  <div class="col"> </div>
+    <div class="col-md-10">
+
+        <p>
+          <strong>Name:</strong>
+            <%= @player.name %>
+        </p>
+        <p>
+          <strong>Surname:</strong>
+            <%= @player.surname %>
+        </p>
+        <p>
+          <strong>Age:</strong>
+            <%= @player.age %>
+        </p>
+        <p>
+          <strong>Nationality:</strong>
+            <%= @player.nationality %>
+        </p>
+        <p>
+          <strong>Position:</strong>
+            <%= @player.position %>
+        </p>
+         <p>
+          <strong>Club:</strong>
+            <%= @player.club %>
+        </p>
+        <p>
+          <strong>Created at:</strong>
+            <%= @player.created_at %>
+        </p>
+        <p>
+          <strong>Updated at:</strong>
+            <%= @player.updated_at %>
+        </p>      
+
+          <%= link_to 'Back', players_path, class: 'btn btn-md btn-info' %>
+        
+    </div>
+  <div class="col"> </div>
+</div>
