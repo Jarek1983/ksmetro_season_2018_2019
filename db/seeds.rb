@@ -6,6 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Team.new(name: "MKS Będzin",
+         city: "Będzin").save
+
+Team.new(name: "PGE Skra Bełchatów",
+         city: "Bełchatów").save
+
 Player.new(name: "Bartosz", 
 	       surname: "Mariański", 
 	       age: 26, 

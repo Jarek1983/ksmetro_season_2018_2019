@@ -49,7 +49,7 @@ private
   end
 
   def team_params
-	params.require(:team).permit(:name, :city, :photo)
+	params.require(:team).permit(:name, :city, :photo, :user_id, player_ids: [])
   end
 
 end
