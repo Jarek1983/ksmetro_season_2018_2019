@@ -21,7 +21,7 @@
       </p>
       <p>
         <%= f.label :position %><br>
-        <%= f.text_field :position, class: 'form-control' %>
+           <%= f.select :position, options_for_select(['Libero', 'Rozgrywający', 'Atakujący', 'Przyjmujący', 'Środkowy']) %>
       </p>
       <p>
         <%= f.label :club %><br>
