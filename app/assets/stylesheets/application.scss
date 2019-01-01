@@ -12,3 +12,15 @@
  *
  */
 @import "bootstrap";
+@import "players";
+@import "footer";
+
+body 
+{
+  min-height: 75rem;
+  padding-top: 2rem;
+}
+.bg-dark
+{
+	background-color: #050505 !important;
+}
