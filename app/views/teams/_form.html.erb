@@ -1,0 +1,19 @@
+<%= render 'common/errors', model: @team %>
+
+  <%= form_for @team, html: {multipart: true} do |f| %>
+
+    <div class="field" style="100%;">
+      <p>
+        <%= f.label :name %><br>
+        <%= f.text_field :name, class: 'form-control' %>
+      </p>
+      <p>
+        <%= f.label :city %><br>
+        <%= f.text_field :city, class: 'form-control' %>
+      </p>
+      <p>
+        <%= f.submit class: 'btn btn-lg btn-success'%>
+      </p>
+
+    </div>
+  <% end %>

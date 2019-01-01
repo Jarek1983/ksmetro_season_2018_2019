@@ -1,0 +1,32 @@
+<div class="row" style="padding-top: 100px;">
+  <div class="col"> </div>
+    <div class="col-md-12">
+
+      <h2>List of teams: </h2>
+
+    <p>
+        <%= link_to "Add new team", new_player_path, class: 'btn btn-lg btn-info' %>
+    </p>
+    
+   <div class="row">
+
+          <% @teams.each do |team| %>
+
+      <div class="col-md-4">
+        <div class="card"> 
+          <div class="card-topper">
+
+
+          </div>
+
+          <div class="card-block">
+
+             <%= link_to 'More', team_path(team), class: 'btn btn-sm btn-info'%>
+             <%= link_to 'Edit', edit_team_path(team), class: 'btn btn-sm btn-warning' %>
+            <%= link_to 'Delete', team_path(team), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
+
+          </div>
+      </div>
+      </div>
+    <% end %>
+</div>
