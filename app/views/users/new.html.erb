@@ -1,0 +1,47 @@
+
+<div class="row" style="padding-top: 100px;">
+  <div class="col-md-4">
+    <div class="field" style="100%;">
+
+        <%= form_for @user do |f| %>
+
+          <% if @user.errors.any? %>
+	
+	        <div id="Error_explanation">
+		
+		      <h2>
+			    <%= pluralize(@user.errors.count, "error") %>
+			    prohibited this article from being saved:
+		      </h2>
+			
+			  <p>
+			  <ul>
+				  <% @user.errors.full_messages.each do |msg| %>
+				    <li>
+					  <%= msg %>
+				    </li>
+	              <% end %>
+			  </ul>
+			  </p>
+	        </div>
+
+	      <% end %>
+
+            <h3>Create account! </h3>
+
+	          <%= f.text_field :login, placeholder: 'Input a User ID', class: 'form-control'%><br>
+	          <%= f.email_field :email, placeholder: 'Input your email', class: 'form-control'%><br>
+	          <%= f.password_field :password, placeholder: 'Create a password', class: 'form-control' %><br>
+	          <%= f.password_field :password_confirmation, placeholder: 'Confirm password', class: 'form-control' %><br>
+
+	          <p class="login"><%= f.submit 'Create Account', class: 'btn btn-md btn-success' %></p>
+
+	    <% end %>
+
+    </div>
+
+              <p class="login">
+			    <%= link_to 'Back', root_path, class: 'btn btn-md btn-info' %>
+		      </p>
+  </div>
+</div>
