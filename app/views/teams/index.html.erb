@@ -5,7 +5,7 @@
       <h2>List of teams: </h2>
 
     <p>
-        <%= link_to "Add new team", new_player_path, class: 'btn btn-lg btn-info' %>
+        <%= link_to "Add new team", new_team_path, class: 'btn btn-lg btn-info' %>
     </p>
     
    <div class="row">
@@ -16,6 +16,15 @@
         <div class="card"> 
           <div class="card-topper">
 
+            <% if team.photo.present? %>
+
+              <%= image_tag team.photo.url(:thumb), style: "width:50%" %>
+
+            <% else %>
+
+              No image
+
+            <% end %>
 
           </div>
 

@@ -11,7 +11,7 @@ class TeamsController < ApplicationController
 
   def create
 
-    @team = Team.new(player_params)
+    @team = Team.new(team_params)
 
 	  if @team.save
 	    redirect_to team_path(@team)
@@ -48,8 +48,8 @@ private
     @team = Team.find(params[:id])
   end
 
-  def player_params
-	params.require(:team).permit(:name, :city)
+  def team_params
+	params.require(:team).permit(:name, :city, :photo)
   end
 
 end

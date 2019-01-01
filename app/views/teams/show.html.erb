@@ -3,6 +3,13 @@
     <div class="col-md-10">
   
         <p>
+          <% if @team.photo.present? %>
+            <%= image_tag(@team.photo.url, style: "width:25%;") %>
+          <% else %>
+            <%= image_tag 'volley.jpg', style: "width:25%;" %>
+          <% end %> 
+        </p> 
+        <p>
           <strong>Name:</strong>
             <%= @team.name %>
         </p>
