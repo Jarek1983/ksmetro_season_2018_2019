@@ -49,7 +49,7 @@ private
   end
 
 	def player_params
-		params.require(:player).permit(:name, :surname, :age, :nationality, :position, :club)
+		params.require(:player).permit(:name, :surname, :age, :nationality, :position, :club, :photo)
 	end
 
 end
