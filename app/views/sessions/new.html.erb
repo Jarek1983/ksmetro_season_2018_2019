@@ -1,2 +1,24 @@
-<h1>Sessions#new</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
+<div class="row" style="padding-top: 100px;">
+	<div class="col"></div>
+	  <div class="col-md-4">
+
+	    <h4 class="login">Please Sign In</h4>
+	      <div class="pole">
+	      <%= form_tag sessions_path do %>
+	      <%= text_field_tag :login, nil, placeholder: 'Input User Id' %><br>
+	      <%= password_field_tag :password, nil, placeholder: 'Input Password' %>
+	      <%= submit_tag 'Sign In', class: 'btn btn-md btn-info'  %>
+
+	      <% end %>
+
+	  </div>
+
+		<p class="login">
+			<%= link_to 'Back', root_path, class: 'btn btn-md btn-info' %>
+			<%= link_to 'Home', root_path, class: 'btn btn-md btn-primary' %>
+		</p>
+	  </div>
+	<div class="col"></div>
+</div>
+
+
