@@ -7,5 +7,6 @@ class User < ApplicationRecord
 
   has_many :teams, foreign_key: :user_id
   has_many :players, foreign_key: :user_id
+  has_many :matches, foreign_key: :user_id
   
 end

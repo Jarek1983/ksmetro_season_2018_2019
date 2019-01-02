@@ -8,5 +8,9 @@ class Team < ApplicationRecord
   belongs_to :user
   has_many :players_teams
   has_many :players, through: :players_teams
+  has_many :tables_teams
+  has_many :tables, through: :tables_teams
+  has_many :matches_teams
+  has_many :matches, through: :matches_teams
 
 end
