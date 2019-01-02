@@ -10,14 +10,39 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_01_210156) do
+ActiveRecord::Schema.define(version: 2019_01_02_152745) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "matches", force: :cascade do |t|
+    t.integer "round"
+    t.integer "match_number"
+    t.date "date"
+    t.string "place"
+    t.string "city"
+    t.string "fans"
+    t.integer "score_team_A_match"
+    t.integer "score_team_B_match"
+    t.integer "score_team_A_set_1"
+    t.integer "score_team_B_set_1"
+    t.integer "score_team_A_set_2"
+    t.integer "score_team_B_set_2"
+    t.integer "score_team_A_set_3"
+    t.integer "score_team_B_set_3"
+    t.integer "score_team_A_set_4"
+    t.integer "score_team_B_set_4"
+    t.integer "score_team_A_set_5"
+    t.integer "score_team_B_set_5"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_matches_on_user_id"
+  end
+
   create_table "players", force: :cascade do |t|
-    t.string "name", null: false
-    t.string "surname", null: false
+    t.string "name"
+    t.string "surname"
     t.integer "age"
     t.string "nationality"
     t.string "position"
@@ -60,6 +85,7 @@ ActiveRecord::Schema.define(version: 2019_01_01_210156) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "matches", "users"
   add_foreign_key "players", "users"
   add_foreign_key "teams", "users"
 end
