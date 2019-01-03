@@ -9,7 +9,8 @@
 User.new(login: "Jarek",
 	     email: "jaro@wp.pl",
 	     password: "EnterYourPassword",
-         password_confirmation: "EnterYourPassword").save
+         password_confirmation: "EnterYourPassword",
+         admin: true).save
 
 Team.new(name: "MKS Będzin",
          city: "Będzin",

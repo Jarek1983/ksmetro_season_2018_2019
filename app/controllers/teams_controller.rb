@@ -1,5 +1,6 @@
 class TeamsController < ApplicationController
- before_action :find_team, only: [:show, :edit, :update, :destroy]
+  before_action :find_team, only: [:show, :edit, :update, :destroy]
+  before_action :admin_authorize, except: [:index, :show]
 
   def index
   	@teams = Team.all.order("created_at DESC")
