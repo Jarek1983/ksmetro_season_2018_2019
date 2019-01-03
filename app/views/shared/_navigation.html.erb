@@ -32,17 +32,29 @@
             <%= link_to 'Players', players_path, class: 'nav-link' %>
           </li>
 
-           <li class="nav-item">
-            <%= link_to 'Sign in', new_session_path, class: 'nav-link' %>
-          </li>
+          <% if current_user && current_user.admin? %>
 
-          <li class="nav-item">
-            <%= link_to 'Sign out', session_path('active'), method: :delete, class: 'nav-link' %>
-          </li>
+            <li class="nav-item">
+              <%= link_to 'Sign out', session_path('active'), method: :delete, class: 'nav-link' %>
+            </li>
 
-          <li class="nav-item">
-            <%= link_to 'Create Account', new_user_path, class: 'nav-link' %>
-          </li>
+          <% elsif current_user %>
+
+            <li class="nav-item">
+              <%= link_to 'Sign out', session_path('active'), method: :delete, class: 'nav-link' %>
+            </li>
+
+          <% else %>
+
+            <li class="nav-item">
+              <%= link_to 'Sign in', new_session_path, class: 'nav-link' %>
+            </li>
+
+            <li class="nav-item">
+              <%= link_to 'Create Account', new_user_path, class: 'nav-link' %>
+            </li>
+
+          <% end %>
           
         </ul>
 
@@ -50,6 +62,7 @@
 
           <%= text_field_tag :search, nil, placeholder: "Search", class: "form-control mr-sm-2" %>
           <%= submit_tag "Search", class: "btn btn-light my-2 my-sm-0" %>
+
         </div>
 
       </div>

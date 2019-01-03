@@ -4,9 +4,13 @@
 
       <h2>List of teams: </h2>
 
+        <% if current_user && current_user.admin? %>
+
     <p>
         <%= link_to "Add new team", new_team_path, class: 'btn btn-lg btn-info' %>
     </p>
+
+        <% end %>
     
    <div class="row">
 
@@ -30,9 +34,14 @@
 
           <div class="card-block">
 
-             <%= link_to 'More', team_path(team), class: 'btn btn-sm btn-info'%>
-             <%= link_to 'Edit', edit_team_path(team), class: 'btn btn-sm btn-warning' %>
-            <%= link_to 'Delete', team_path(team), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
+                <%= link_to 'More', team_path(team), class: 'btn btn-sm btn-info'%>
+
+              <% if current_user && current_user.admin? %>
+
+                <%= link_to 'Edit', edit_team_path(team), class: 'btn btn-sm btn-warning' %>
+                <%= link_to 'Delete', team_path(team), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
+
+              <% end %>
 
           </div>
       </div>
