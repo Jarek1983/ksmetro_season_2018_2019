@@ -20,6 +20,10 @@ Team.new(name: "PGE Skra Bełchatów",
          city: "Bełchatów",
          user_id: 1).save
 
+Team.new(name: "MKS Będzin",
+         city: "Będzin",
+         user_id: 1).save
+
 Player.new(name: "Bartosz", 
 	       surname: "Mariański", 
 	       age: 26, 

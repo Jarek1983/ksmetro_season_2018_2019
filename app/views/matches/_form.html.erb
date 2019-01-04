@@ -1,0 +1,90 @@
+<%= render 'common/errors', model: @match %>
+
+  <%= form_for @match, html: {multipart: true} do |f| %>
+
+    <div class="field" style="100%;">
+      <p>
+        <%= f.label :round %><br>
+        <%= f.number_field :round, class: 'form-control' %>
+      </p>
+      <p>
+        <%= f.label :match_number %><br>
+        <%= f.number_field :match_number, class: 'form-control' %>
+      </p>
+       <p>
+        <%= f.label :date %><br>
+        <%= f.date_field :date, class: 'form-control' %>
+      </p>
+      <p>
+       <%= f.label :place %><br>
+       <%= f.text_field :place, class: 'form-control' %>
+      </p>
+      <p>
+        <%= f.label :city %><br>
+        <%= f.text_field :city, class: 'form-control' %>
+      </p>
+      <p>
+        <%= f.label :home %><br>
+        <%= f.collection_select :team_ids, Team.all, :id, :name %>
+      </p>
+      <p>
+        <%= f.label :quest %><br>
+        <%= f.collection_select :team_ids, Team.all, :id, :name %>
+      </p>
+       <p>
+        <%= f.label :score_team_A_match %><br>
+        <%= f.number_field :score_team_A_match, class: 'form-control' %>
+      </p>
+       <p>
+        <%= f.label :score_team_B_match %><br>
+        <%= f.number_field :score_team_B_match, class: 'form-control' %>
+      </p>
+       <p>
+        <%= f.label :score_team_A_set_1 %><br>
+        <%= f.number_field :score_team_A_set_1, class: 'form-control' %>
+      </p>
+      <p>
+        <%= f.label :score_team_B_set_1 %><br>
+        <%= f.number_field :score_team_B_set_1, class: 'form-control' %>
+      </p>
+       <p>
+        <%= f.label :score_team_A_set_2 %><br>
+        <%= f.number_field :score_team_A_set_2, class: 'form-control' %>
+      </p>
+       <p>
+        <%= f.label :score_team_B_set_2 %><br>
+        <%= f.number_field :score_team_B_set_2, class: 'form-control' %>
+      </p>
+       <p>
+        <%= f.label :score_team_A_set_3 %><br>
+        <%= f.number_field :score_team_A_set_3, class: 'form-control' %>
+      </p>
+      <p>
+        <%= f.label :score_team_B_set_3 %><br>
+        <%= f.number_field :score_team_B_set_3, class: 'form-control' %>
+      </p>
+       <p>
+        <%= f.label :score_team_A_set_4 %><br>
+        <%= f.number_field :score_team_A_set_4, class: 'form-control' %>
+      </p>
+       <p>
+        <%= f.label :score_team_B_set_4 %><br>
+        <%= f.number_field :score_team_B_set_4, class: 'form-control' %>
+      </p>
+       <p>
+        <%= f.label :score_team_A_set_5 %><br>
+        <%= f.number_field :score_team_A_set_5, class: 'form-control' %>
+      </p>
+       <p>
+        <%= f.label :score_team_B_set_5 %><br>
+        <%= f.number_field :score_team_B_set_5, class: 'form-control' %>
+      </p>
+       </p>
+        <%= f.hidden_field :user_id, value: session[:user_id] %>
+      <p>
+      <p>
+        <%= f.submit class: 'btn btn-lg btn-success'%>
+      </p>
+
+    </div>
+  <% end %>

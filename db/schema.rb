@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_03_140528) do
+ActiveRecord::Schema.define(version: 2019_01_04_121433) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,7 +21,6 @@ ActiveRecord::Schema.define(version: 2019_01_03_140528) do
     t.date "date"
     t.string "place"
     t.string "city"
-    t.string "fans"
     t.integer "score_team_A_match"
     t.integer "score_team_B_match"
     t.integer "score_team_A_set_1"

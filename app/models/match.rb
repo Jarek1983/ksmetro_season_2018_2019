@@ -5,10 +5,9 @@ class Match < ApplicationRecord
     validates :date, presence: true
     validates :place, presence: true
     validates :city, presence: true
-    validates :fans, presence: true
 
   belongs_to :user
   has_many :matches_teams
-  belongs_to :teams, through: :matches_teams
+  has_many :teams, through: :matches_teams
 
 end
