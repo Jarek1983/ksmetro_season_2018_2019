@@ -22,7 +22,7 @@
           <div class="card-block">
 
             <h5 class="card-title">
-              <%= match.home&.name %> - <%= match.quest&.name %>
+              <%= match.home&.name %> - <%= match.quest&.name %> <%= match.score_team_A_match %> : <%= match.score_team_B_match %>
             </h5>
 
                 <%= link_to 'More', match_path(match), class: 'btn btn-sm btn-info'%>
