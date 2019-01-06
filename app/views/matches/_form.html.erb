@@ -25,11 +25,11 @@
       </p>
       <p>
         <%= f.label :home %><br>
-        <%= f.collection_select :team_ids, Team.all, :id, :name %>
+        <%= f.collection_select :home_id, Team.all, :id, :name, class: 'form-control' %>
       </p>
       <p>
         <%= f.label :quest %><br>
-        <%= f.collection_select :team_ids, Team.all, :id, :name %>
+        <%= f.collection_select :quest_id, Team.all, :id, :name, class: 'form-control' %>
       </p>
        <p>
         <%= f.label :score_team_A_match %><br>

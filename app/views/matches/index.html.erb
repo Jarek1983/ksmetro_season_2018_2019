@@ -21,6 +21,10 @@
 
           <div class="card-block">
 
+            <h5 class="card-title">
+              <%= match.home&.name %> - <%= match.quest&.name %>
+            </h5>
+
                 <%= link_to 'More', match_path(match), class: 'btn btn-sm btn-info'%>
 
               <% if current_user && current_user.admin? %>

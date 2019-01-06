@@ -19,8 +19,16 @@
             <%= @match.place %>
         </p>
         <p>
-          <strong>City :</strong>
+          <strong>City: </strong>
             <%= @match.city %>
+        </p>
+        <p>
+          <strong>Home: </strong>
+            <%= @match.home.name %>
+        </p>
+        <p>
+          <strong>Home: </strong>
+            <%= @match.quest.name %>
         </p>
         <p>
           <strong>Team A:</strong>
@@ -71,7 +79,7 @@
             <%= @match.score_team_B_set_5 %>
         </p>
 
-          <%= link_to 'Back', players_path, class: 'btn btn-md btn-info' %>
+          <%= link_to 'Back', matches_path, class: 'btn btn-md btn-info' %>
         
     </div>
   <div class="col"> </div>

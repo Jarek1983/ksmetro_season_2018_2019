@@ -50,7 +50,7 @@ private
   end
 
   def match_params
-	params.require(:match).permit(:round, :match_number, :date, :place, :city, :score_team_A_match, :score_team_B_match, :user_id, :score_team_A_set_1, :score_team_B_set_1, :score_team_A_set_2, :score_team_B_set_2, :score_team_A_set_3, :score_team_B_set_3, :score_team_A_set_4, :score_team_B_set_4, :score_team_A_set_5, :score_team_B_set_5, team_ids: [])
+	params.require(:match).permit(:round, :match_number, :date, :place, :city, :home_id, :quest_id, :score_team_A_match, :score_team_B_match, :user_id, :score_team_A_set_1, :score_team_B_set_1, :score_team_A_set_2, :score_team_B_set_2, :score_team_A_set_3, :score_team_B_set_3, :score_team_A_set_4, :score_team_B_set_4, :score_team_A_set_5, :score_team_B_set_5, team_ids: [])
   end
 
 end
