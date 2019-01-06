@@ -1,4 +1,7 @@
 <div class="row" style="padding-top: 100px;">
+
+  <%= will_paginate @teams %>
+
   <div class="col"> </div>
     <div class="col-md-12">
 
@@ -6,13 +9,13 @@
 
         <% if current_user && current_user.admin? %>
 
-    <p>
-        <%= link_to "Add new team", new_team_path, class: 'btn btn-lg btn-info' %>
-    </p>
+        <p>
+          <%= link_to "Add new team", new_team_path, class: 'btn btn-lg btn-info' %>
+        </p>
 
         <% end %>
     
-   <div class="row">
+      <div class="row">
 
           <% @teams.each do |team| %>
 

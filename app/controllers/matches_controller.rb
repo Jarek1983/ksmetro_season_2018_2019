@@ -3,7 +3,7 @@ class MatchesController < ApplicationController
   before_action :admin_authorize, except: [:index, :show]
 
   def index
-  	@matches = Match.all.order("created_at DESC")
+  	@matches = Match.all.order("created_at DESC").paginate(page: params[:page], :per_page => 7) 
   end
 
   def new
