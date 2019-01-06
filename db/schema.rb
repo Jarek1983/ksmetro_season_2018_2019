@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_06_144516) do
+ActiveRecord::Schema.define(version: 2019_01_06_153321) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,16 +23,6 @@ ActiveRecord::Schema.define(version: 2019_01_06_144516) do
     t.string "city"
     t.integer "score_team_A_match"
     t.integer "score_team_B_match"
-    t.integer "score_team_A_set_1"
-    t.integer "score_team_B_set_1"
-    t.integer "score_team_A_set_2"
-    t.integer "score_team_B_set_2"
-    t.integer "score_team_A_set_3"
-    t.integer "score_team_B_set_3"
-    t.integer "score_team_A_set_4"
-    t.integer "score_team_B_set_4"
-    t.integer "score_team_A_set_5"
-    t.integer "score_team_B_set_5"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

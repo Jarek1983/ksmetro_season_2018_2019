@@ -27,57 +27,17 @@
             <%= @match.home.name %>
         </p>
         <p>
-          <strong>Home: </strong>
+          <strong>Quest: </strong>
             <%= @match.quest.name %>
         </p>
         <p>
-          <strong>Team A:</strong>
+          <strong><%= @match.home.name %>: </strong>
             <%= @match.score_team_A_match %>
         </p>
         <p>
-          <strong>Team B:</strong>
+          <strong><%= @match.quest.name %>: </strong>
             <%= @match.score_team_B_match %>
         </p> 
-        <p>
-          <strong>Team A:</strong>
-            <%= @match.score_team_A_set_1 %>
-        </p>
-         <p>
-          <strong>Team B:</strong>
-            <%= @match.score_team_B_set_1 %>
-        </p>
-         <p>
-          <strong>Team A:</strong>
-            <%= @match.score_team_A_set_2 %>
-        </p>
-         <p>
-          <strong>Team B:</strong>
-            <%= @match.score_team_B_set_2 %>
-        </p>
-         <p>
-          <strong>Team A:</strong>
-            <%= @match.score_team_A_set_3 %>
-        </p>
-         <p>
-          <strong>Team B:</strong>
-            <%= @match.score_team_B_set_3 %>
-        </p>
-         <p>
-          <strong>Team A:</strong>
-            <%= @match.score_team_A_set_4 %>
-        </p>
-         <p>
-          <strong>Team B:</strong>
-            <%= @match.score_team_B_set_4 %>
-        </p>
-         <p>
-          <strong>Team A:</strong>
-            <%= @match.score_team_A_set_5 %>
-        </p>
-         <p>
-          <strong>Team B:</strong>
-            <%= @match.score_team_B_set_5 %>
-        </p>
 
           <%= link_to 'Back', matches_path, class: 'btn btn-md btn-info' %>
         
