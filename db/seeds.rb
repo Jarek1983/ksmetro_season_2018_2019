@@ -12,6 +12,92 @@ User.new(login: "Jarek",
          password_confirmation: "EnterYourPassword",
          admin: true).save
 
+Table.new(team_id: 1,
+	      points: 0,
+          set_plus: 0,
+          set_minus: 0,
+          user_id: 1).save
+
+Table.new(team_id: 2,
+	      points: 0,
+          set_plus: 0,
+          set_minus: 0,
+          user_id: 1).save
+
+Table.new(team_id: 3,
+	      points: 0,
+          set_plus: 0,
+          set_minus: 0,
+          user_id: 1).save
+
+Table.new(team_id: 4,
+	      points: 0,
+          set_plus: 0,
+          set_minus: 0,
+          user_id: 1).save
+
+Table.new(team_id: 5,
+	      points: 0,
+          set_plus: 0,
+          set_minus: 0,
+          user_id: 1).save
+
+Table.new(team_id: 6,
+	      points: 0,
+          set_plus: 0,
+          set_minus: 0,
+          user_id: 1).save
+
+Table.new(team_id: 7,
+	      points: 0,
+          set_plus: 0,
+          set_minus: 0,
+          user_id: 1).save
+
+Table.new(team_id: 8,
+	      points: 0,
+          set_plus: 0,
+          set_minus: 0,
+          user_id: 1).save
+
+Table.new(team_id: 9,
+	      points: 0,
+          set_plus: 0,
+          set_minus: 0,
+          user_id: 1).save
+
+Table.new(team_id: 10,
+	      points: 0,
+          set_plus: 0,
+          set_minus: 0,
+          user_id: 1).save
+
+Table.new(team_id: 11,
+	      points: 0,
+          set_plus: 0,
+          set_minus: 0,
+          user_id: 1).save
+
+Table.new(team_id: 12,
+	      points: 0,
+          set_plus: 0,
+          set_minus: 0,
+          user_id: 1).save
+
+Table.new(team_id: 13,
+	      points: 0,
+          set_plus: 0,
+          set_minus: 0,
+          user_id: 1).save
+
+Table.new(team_id: 14,
+	      points: 0,
+          set_plus: 0,
+          set_minus: 0,
+          user_id: 1).save
+
+
+
 Match.new(round: 1, 
 	      match_number: 1, 
 	      date: "2018-10-15", 

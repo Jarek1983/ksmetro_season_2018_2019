@@ -3,45 +3,34 @@
     <div class="col-md-12">
 
       <table class="table table-hover table-striped table-responsive-xs table-danger">
-			<tr>
-			  <th>Position</th>
+      	<thead>
+          <tr class="table-primary">
+			
 			  <th>Team</th>
 			  <th>Points</th>
 			  <th>Set_plus</th>
 			  <th>Set_minut</th>
-		    </tr>
- 
-			  <!--  @teams.each do |team| 
+		    
+		  </tr>
+        </thead>
+        <tbody>
 
-			    <td>
-			      team.name 
-			    </td> -->
+			<% @tables.each do |table| %> 
+              
+              <tr class="table-success">
 
-			    <!--   <td> 
-				  team.point 
-			     </td>  -->
+                <td><%= table.team_id %></td>
+                <td><%= table.points %></td>
+                <td><%= table.set_plus %></td>
+                <td><%= table.set_minus %></td>
 
-			    <!-- <td>
-				  team.set_plus
-			    </td> -->
-
-			   <!--  <td>
-				  team.set_minus 
-			    </td>  -->
-
-	          
-
-		</table>
-
-
-
-   
-             
-             <%= link_to 'Back', root_path, class: 'btn btn-sm btn-warning' %>
-        
-
+            <% end %>
           
-      </div>
+              </tr>
+        
+        </tbody>
+      </table>
+
     </div>
-           
+  <div class="col"> </div>
 </div>
