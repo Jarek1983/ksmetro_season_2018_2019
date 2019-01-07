@@ -29,7 +29,8 @@ class MatchesController < ApplicationController
   end
 
   def update
-
+    
+      Table.find_by_team_id(params[:team_id])
     if @match.update(match_params)
         redirect_to match_path(@match)
     else

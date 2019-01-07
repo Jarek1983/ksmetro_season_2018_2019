@@ -1,0 +1,182 @@
+<div class="row" style="padding-top: 100px;">
+  <div class="col"></div>
+	  <div class="col-md-6">
+	  	
+		<h4>List of all searched position</h4>
+	
+		  <table class="table table-hover table-striped table-danger">
+
+            <% if current_user && current_user&.admin? %>
+
+				<% @players.each do |player| %>
+				
+			      <tr>
+			      <td>
+
+				    <%= player.surname %>
+			  
+			      </td>
+
+			      <td>
+
+				    <%= link_to 'Show', player_path(player), class: 'btn btn-sm btn-info' %>
+
+			      </td>
+
+			      <td>
+
+				    <%= link_to 'Edit', edit_player_path(player), class: 'btn btn-sm btn-warning' %>
+
+			      </td>
+			
+			      <td>
+              
+                    <%= link_to 'Delete', player_path(player), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?
+                	"} %>
+                
+                  </td>
+
+                <% end %>
+
+			<% else %>
+
+				<% @players.each do |player| %>
+				
+			     <tr>
+			      <td>
+
+				  <%= player.surname %>
+			  
+			      </td>
+
+			      <td>
+				    
+				    <%= link_to 'Show', player_path(player), class: 'btn btn-sm btn-info' %>
+			      
+			      </td>
+
+			    <% end %>
+			
+			     </tr>
+
+			<% end %>
+
+			<% if current_user && current_user&.admin? %>
+
+				<% @teams.each do |team| %>
+				
+			      <tr>
+			      <td>
+
+				    <%= team.name %>
+			  
+			      </td>
+
+			      <td>
+
+				    <%= link_to 'Show', team_path(team), class: 'btn btn-sm btn-info' %>
+
+			      </td>
+
+			      <td>
+
+				    <%= link_to 'Edit', edit_team_path(team), class: 'btn btn-sm btn-warning' %>
+
+			      </td>
+			
+			      <td>
+              
+                    <%= link_to 'Delete', team_path(team), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?
+                	"} %>
+                
+                  </td>
+
+                <% end %>
+
+			<% else %>
+
+				<% @teams.each do |team| %>
+				
+			     <tr>
+			      <td>
+
+				  <%= team.surname %>
+			  
+			      </td>
+
+			      <td>
+				    
+				    <%= link_to 'Show', team_path(team), class: 'btn btn-sm btn-info' %>
+			      
+			      </td>
+
+			    <% end %>
+			
+			     </tr>
+
+			<% end %>
+
+
+				<% if current_user && current_user&.admin? %>
+
+				<% @matches.each do |match| %>
+				
+			      <tr>
+			      <td>
+
+				    <%= match.city %>
+			  
+			      </td>
+
+			      <td>
+
+				    <%= link_to 'Show', match_path(match), class: 'btn btn-sm btn-info' %>
+
+			      </td>
+
+			      <td>
+
+				    <%= link_to 'Edit', edit_match_path(match), class: 'btn btn-sm btn-warning' %>
+
+			      </td>
+			
+			      <td>
+              
+                    <%= link_to 'Delete', match_path(match), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?
+                	"} %>
+                
+                  </td>
+
+                <% end %>
+
+			<% else %>
+
+				<% @matches.each do |match| %>
+				
+			     <tr>
+			      <td>
+
+				  <%= match.city %>
+			  
+			      </td>
+
+			      <td>
+				    
+				    <%= link_to 'Show', match_path(match), class: 'btn btn-sm btn-info' %>
+			      
+			      </td>
+
+			    <% end %>
+			
+			     </tr>
+
+			<% end %>
+
+		</table>
+			<p>
+				<%= link_to 'Back', matches_path, class: 'btn btn-sm btn-primary'  %>
+			</p>
+	  </div>
+	<div class="col"></div>
+</div>
+

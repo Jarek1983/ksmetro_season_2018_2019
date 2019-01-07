@@ -13,4 +13,10 @@ class Team < ApplicationRecord
   has_many :matches_teams
   has_many :matches, through: :matches_teams
 
+   def self.search(params)
+    teams = Team.where("name LIKE ?", "%#{params[:search]}%") if params[:search].present?
+    teams 
+  end
+  
+
 end

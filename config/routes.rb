@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'search/index'
   resources :matches
   resources :tables
   resources :teams

@@ -13,4 +13,10 @@ class Match < ApplicationRecord
   has_one :home, class_name: "Team", foreign_key: "id", primary_key: 'home_id'
   has_one :quest, class_name: "Team", foreign_key: "id", primary_key: 'quest_id'
 
+  def self.search(params)
+    matches = Match.where("city LIKE ?", "%#{params[:search]}%") if params[:search].present?
+    matches  
+  end
+  
+
 end
