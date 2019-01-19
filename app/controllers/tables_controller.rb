@@ -1,7 +1,7 @@
 class TablesController < ApplicationController
 
   def index
-  	@tables = Table.all.order("points DESC")
+  	@tables = Table.all.order("points DESC, id")
   end
   
   def new

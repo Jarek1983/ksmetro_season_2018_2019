@@ -6,6 +6,7 @@
       	<thead>
           <tr class="table-primary">
 			
+        <th>Position</th>
 			  <th>Team</th>
 			  <th>Points</th>
 			  <th>Set_plus</th>
@@ -18,8 +19,8 @@
 			<% @tables.each do |table| %> 
               
               <tr class="table-success">
-
-                <td><%= table.team_id %></td>
+                <td></td>
+                <td><%= Team.find_by(id: table.team_id).name %></td>
                 <td><%= table.points %></td>
                 <td><%= table.set_plus %></td>
                 <td><%= table.set_minus %></td>

@@ -29,23 +29,58 @@ class MatchesController < ApplicationController
 
   def update
     
-    @home = Table.find_by_team_id(params[:home_id])
-    @quest = Table.find_by_team_id(params[:quest_id])
+    @home = Table.find_by(team_id: match_params[:home_id].to_i)
+    @quest = Table.find_by(team_id: match_params[:quest_id].to_i)
     @home_points = 0
     @quest_points = 0
+    @home_set_plus = 0
+    @quest_set_plus = 0
+    @home_set_minus = 0
+    @quest_set_minus = 0
 
-      if home_id.score_team_A_match = 3 && (quest_id.score_team_B_match = 0 || quest_id.score_team_B_match = 0) 
+      if (match_params[:score_team_A_match].to_i == 3 && match_params[:score_team_B_match].to_i  == 0) || (match_params[:score_team_A_match].to_i  == 3 && match_params[:score_team_B_match].to_i  == 1) 
          @home_points += 3
-      elsif home_id.score_team_A_match = 3 && quest_id.score_team_B_match = 2
-         @home_points += 2 && @quest_points += 1
-      elsif home_id.score_team_A_match = 2 && quest_id.score_team_B_match = 3
-         @home_points += 1 && @quest_points += 2
-      else (home_id.score_team_A_match = 0 || home_id.score_team_B_match = 1) && quest_id.score_team_B_match = 3 
+      elsif match_params[:score_team_A_match].to_i  == 3 && match_params[:score_team_B_match].to_i  == 2
+         @home_points += 2
+         @quest_points += 1
+      elsif match_params[:score_team_A_match].to_i  == 2 && match_params[:score_team_B_match].to_i  == 3
+         @home_points += 1
+         @quest_points += 2
+      else (match_params[:score_team_A_match].to_i  == 0 && match_params[:score_team_B_match].to_i  == 3) || (match_params[:score_team_A_match].to_i  == 1 && match_params[:score_team_B_match].to_i  == 3)
          @quest_points += 3
       end
 
-    @home[:points] = @home[:points] + @home_points
-    @quest[:points] = @quest[:points] + @quest_points
+    @home.points += @home_points
+    @quest.points += @quest_points
+
+     if match_params[:score_team_A_match].to_i == 3 && match_params[:score_team_B_match].to_i  == 0
+         @home_set_plus += 3
+
+      elsif match_params[:score_team_A_match].to_i  == 3 && match_params[:score_team_B_match].to_i  == 1 
+         @home_set_plus += 3
+         @quest_set_minus += 1
+
+      elsif match_params[:score_team_A_match].to_i  == 3 && match_params[:score_team_B_match].to_i  == 2
+         @home_set_plus += 3
+         @quest_set_minus += 2
+
+      elsif match_params[:score_team_A_match].to_i  == 2 && match_params[:score_team_B_match].to_i  == 3
+         @home_set_minus += 2
+         @quest_set_plus += 3
+
+      elsif match_params[:score_team_A_match].to_i  == 1 && match_params[:score_team_B_match].to_i  == 3
+         @home_set_minus += 1
+         @quest_set_plus += 3
+
+      else (match_params[:score_team_A_match].to_i  == 0 && match_params[:score_team_B_match].to_i  == 3) || (match_params[:score_team_A_match].to_i  == 1 && match_params[:score_team_B_match].to_i  == 3)
+         @quest_set_plus += 3
+
+      end
+
+    @home.set_plus += @home_set_plus
+    @quest.set_plus += @quest_set_plus
+    @home.set_minus += @home_set_minus
+    @quest.set_minus += @quest_set_minus
 
     @home.update(table_params)
     @quest.update(table_params)
@@ -73,7 +108,7 @@ private
 	  params.require(:match).permit(:round, :match_number, :date, :place, :city, :home_id, :quest_id, :score_team_A_match, :score_team_B_match, :user_id, :score_team_A_set_1, :score_team_B_set_1, :score_team_A_set_2, :score_team_B_set_2, :score_team_A_set_3, :score_team_B_set_3, :score_team_A_set_4, :score_team_B_set_4, :score_team_A_set_5, :score_team_B_set_5, team_ids: [])
   end
 
-  def table_parameters
-    params.require(:table).permit(:team_id, :points, :set_plus, :set_minus, :user_id)
+  def table_params
+    params.require(:match).permit(:team_id, :points, :set_plus, :set_minus, :user_id)
   end
 end
