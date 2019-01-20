@@ -8,22 +8,28 @@
 			
         <th>Position</th>
 			  <th>Team</th>
+        <th>Mecze</th>
 			  <th>Points</th>
-			  <th>Set_plus</th>
-			  <th>Set_minut</th>
+			  <th>Sety+</th>
+			  <th>Sety-</th>
 		    
 		  </tr>
         </thead>
         <tbody>
 
+      <% i = 1 %>
+
 			<% @tables.each do |table| %> 
               
               <tr class="table-success">
-                <td></td>
+                <td><%= i %></td>
                 <td><%= Team.find_by(id: table.team_id).name %></td>
+                <td><%= table.game %></td>
                 <td><%= table.points %></td>
                 <td><%= table.set_plus %></td>
                 <td><%= table.set_minus %></td>
+
+            <% i+= 1 %>
 
             <% end %>
           

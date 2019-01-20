@@ -31,6 +31,8 @@ class MatchesController < ApplicationController
     
     @home = Table.find_by(team_id: match_params[:home_id].to_i)
     @quest = Table.find_by(team_id: match_params[:quest_id].to_i)
+    @home_game = 0
+    @quest_game = 0
     @home_points = 0
     @quest_points = 0
     @home_set_plus = 0
@@ -55,32 +57,63 @@ class MatchesController < ApplicationController
 
      if match_params[:score_team_A_match].to_i == 3 && match_params[:score_team_B_match].to_i  == 0
          @home_set_plus += 3
+         @home_set_minus += 0
+         @quest_set_plus += 0
+         @quest_set_minus += 3
 
       elsif match_params[:score_team_A_match].to_i  == 3 && match_params[:score_team_B_match].to_i  == 1 
          @home_set_plus += 3
-         @quest_set_minus += 1
+         @home_set_minus += 1
+         @quest_set_plus += 1
+         @quest_set_minus += 3
 
       elsif match_params[:score_team_A_match].to_i  == 3 && match_params[:score_team_B_match].to_i  == 2
          @home_set_plus += 3
-         @quest_set_minus += 2
+         @home_set_minus += 2
+         @quest_set_plus += 2
+         @quest_set_minus += 3
 
       elsif match_params[:score_team_A_match].to_i  == 2 && match_params[:score_team_B_match].to_i  == 3
-         @home_set_minus += 2
+         @home_set_plus += 2
+         @home_set_minus += 3
          @quest_set_plus += 3
+         @quest_set_minus += 2
 
       elsif match_params[:score_team_A_match].to_i  == 1 && match_params[:score_team_B_match].to_i  == 3
-         @home_set_minus += 1
+         @home_set_plus += 1
+         @home_set_minus += 3
          @quest_set_plus += 3
+         @quest_set_minus += 1
 
       else (match_params[:score_team_A_match].to_i  == 0 && match_params[:score_team_B_match].to_i  == 3) || (match_params[:score_team_A_match].to_i  == 1 && match_params[:score_team_B_match].to_i  == 3)
+         @home_set_plus += 0
+         @home_set_minus += 3
          @quest_set_plus += 3
-
+         @quest_set_minus += 0
       end
 
     @home.set_plus += @home_set_plus
     @quest.set_plus += @quest_set_plus
     @home.set_minus += @home_set_minus
     @quest.set_minus += @quest_set_minus
+
+      if (match_params[:score_team_A_match].to_i == 3 && match_params[:score_team_B_match].to_i  == 0) || (match_params[:score_team_A_match].to_i  == 3 && match_params[:score_team_B_match].to_i  == 1) 
+         @home_game += 1
+         @quest_game += 1
+      elsif match_params[:score_team_A_match].to_i  == 3 && match_params[:score_team_B_match].to_i  == 2
+         @home_game += 1
+         @quest_game += 1
+      elsif match_params[:score_team_A_match].to_i  == 2 && match_params[:score_team_B_match].to_i  == 3
+         @home_game += 1
+         @quest_game += 1
+      else (match_params[:score_team_A_match].to_i  == 0 && match_params[:score_team_B_match].to_i  == 3) || (match_params[:score_team_A_match].to_i  == 1 && match_params[:score_team_B_match].to_i  == 3)
+         @home_game += 1
+         @quest_game += 1
+      end
+
+    @home.game += @home_game
+    @quest.game += @quest_game
+
 
     @home.update(table_params)
     @quest.update(table_params)
@@ -105,7 +138,8 @@ private
   end
 
   def match_params
-	  params.require(:match).permit(:round, :match_number, :date, :place, :city, :home_id, :quest_id, :score_team_A_match, :score_team_B_match, :user_id, :score_team_A_set_1, :score_team_B_set_1, :score_team_A_set_2, :score_team_B_set_2, :score_team_A_set_3, :score_team_B_set_3, :score_team_A_set_4, :score_team_B_set_4, :score_team_A_set_5, :score_team_B_set_5, team_ids: [])
+	  params.require(:match).permit(:round, :match_number, :date, :place, :city, :home_id, :quest_id, 
+      :score_team_A_match, :score_team_B_match, :user_id, team_ids: [])
   end
 
   def table_params

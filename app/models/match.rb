@@ -5,6 +5,8 @@ class Match < ApplicationRecord
   validates :date, presence: true
   validates :place, presence: true
   validates :city, presence: true
+  validates :score_team_A_match, inclusion: 0..3
+  validates :score_team_B_match, inclusion: 0..3
 
   belongs_to :user
   has_many :matches_teams
