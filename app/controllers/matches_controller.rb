@@ -19,6 +19,8 @@ class MatchesController < ApplicationController
 	    render 'new'
 	  end
 
+    current_score
+   
   end
 
   def show
@@ -28,7 +30,22 @@ class MatchesController < ApplicationController
   end
 
   def update
-    
+
+    if @match.update(match_params)
+        redirect_to match_path(@match)
+    else
+        render 'edit'
+    end
+    current_score
+
+  end
+
+  def destroy
+      @match.destroy
+      redirect_to matches_path
+  end
+
+  def current_score
     @home = Table.find_by(team_id: match_params[:home_id].to_i)
     @quest = Table.find_by(team_id: match_params[:quest_id].to_i)
     @home_game = 0
@@ -117,18 +134,6 @@ class MatchesController < ApplicationController
 
     @home.update(table_params)
     @quest.update(table_params)
-
-    if @match.update(match_params)
-        redirect_to match_path(@match)
-    else
-        render 'edit'
-    end
-
-  end
-
-  def destroy
-      @match.destroy
-      redirect_to matches_path
   end
 
 private
@@ -145,4 +150,5 @@ private
   def table_params
     params.require(:match).permit(:team_id, :points, :set_plus, :set_minus, :user_id)
   end
+
 end

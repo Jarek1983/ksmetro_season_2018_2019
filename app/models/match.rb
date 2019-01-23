@@ -1,5 +1,4 @@
 class Match < ApplicationRecord
-
   validates :round, presence: true
   validates :match_number, presence: true
   validates :date, presence: true
@@ -20,5 +19,4 @@ class Match < ApplicationRecord
     matches  
   end
   
-
 end
