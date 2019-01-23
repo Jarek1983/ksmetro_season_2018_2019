@@ -137,7 +137,7 @@ Match.new(round: 1,
 	      date: "2018-11-29", 
 	      place: "Netto Arena", 
 	      city: "Szczecin", 
-	      score_team_A_match: 0, 
+	      score_team_A_match: 3, 
 	      score_team_B_match: 0,
 	      home_id: 10,
 	      quest_id: 8,  
@@ -148,8 +148,8 @@ Match.new(round: 1,
 	      date: "2018-11-29", 
 	      place: "Netto Arena", 
 	      city: "Szczecin", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
+	      score_team_A_match: 3, 
+	      score_team_B_match: 1,
 	      home_id: 5,
 	      quest_id: 12,  
 	      user_id: 1).save
@@ -160,7 +160,7 @@ Match.new(round: 1,
 	      place: "HSW Łuczniczka", 
 	      city: "Bydgoszcz", 
 	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
+	      score_team_B_match: 3,
 	      home_id: 13,
 	      quest_id: 4,  
 	      user_id: 1).save
@@ -170,8 +170,8 @@ Match.new(round: 1,
 	      date: "2018-10-15", 
 	      place: "HSW Łuczniczka", 
 	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
+	      score_team_A_match: 3, 
+	      score_team_B_match: 2,
 	      home_id: 7,
 	      quest_id: 6,  
 	      user_id: 1).save
@@ -182,1318 +182,9 @@ Match.new(round: 1,
 	      place: "HSW Łuczniczka", 
 	      city: "Bydgoszcz", 
 	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
+	      score_team_B_match: 3,
 	      home_id: 14,
 	      quest_id: 9,  
-	      user_id: 1).save
-
-Match.new(round: 2, 
-	      match_number: 8, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 9,
-	      quest_id: 11,  
-	      user_id: 1).save
-
-Match.new(round: 2, 
-	      match_number: 9, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 6,
-	      quest_id: 14,  
-	      user_id: 1).save
-
-Match.new(round: 2, 
-	      match_number: 10, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 7,
-	      quest_id: 4,  
-	      user_id: 1).save
-
-Match.new(round: 2, 
-	      match_number: 11, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 12,
-	      quest_id: 13,  
-	      user_id: 1).save
-
-Match.new(round: 2, 
-	      match_number: 12, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 8,
-	      quest_id: 5,  
-	      user_id: 1).save
-
-Match.new(round: 2, 
-	      match_number: 13, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 10,
-	      quest_id: 3,  
-	      user_id: 1).save
-
-Match.new(round: 2, 
-	      match_number: 14, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 2,
-	      quest_id: 1,  
-	      user_id: 1).save
-
-Match.new(round: 3, 
-	      match_number: 15, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 3, 
-	      match_number: 16, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 3, 
-	      match_number: 17, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 3, 
-	      match_number: 18, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 3, 
-	      match_number: 19, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 3, 
-	      match_number: 20, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 3, 
-	      match_number: 21, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 4, 
-	      match_number: 22, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 4, 
-	      match_number: 23, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 4, 
-	      match_number: 24, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 4, 
-	      match_number: 25, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 4, 
-	      match_number: 26, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 4, 
-	      match_number: 27, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 4, 
-	      match_number: 28, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 5, 
-	      match_number: 29, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 5, 
-	      match_number: 30, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 5, 
-	      match_number: 31, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 5, 
-	      match_number: 32, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 5, 
-	      match_number: 33, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 5, 
-	      match_number: 34, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 5, 
-	      match_number: 35, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 6, 
-	      match_number: 36, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 6, 
-	      match_number: 37, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 6, 
-	      match_number: 38, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 6, 
-	      match_number: 39, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 6, 
-	      match_number: 40, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 6, 
-	      match_number: 41, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 6, 
-	      match_number: 42, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 7, 
-	      match_number: 43, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 7, 
-	      match_number: 44, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 7, 
-	      match_number: 45, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 7, 
-	      match_number: 46, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 7, 
-	      match_number: 47, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 7, 
-	      match_number: 48, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 7, 
-	      match_number: 49, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 8, 
-	      match_number: 50, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 11,
-	      quest_id: 2, 
-	      user_id: 1).save
-
-Match.new(round: 8, 
-	      match_number: 51, 
-	      date: "2018-10-13", 
-	      place: "HWS Sosnowiec", 
-	      city: "Sosnowiec", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0, 
-	      home_id: 1,
-	      quest_id: 3, 
-	      user_id: 1).save
-
-Match.new(round: 8, 
-	      match_number: 52, 
-	      date: "2018-11-29", 
-	      place: "Netto Arena", 
-	      city: "Szczecin", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 10,
-	      quest_id: 8,  
-	      user_id: 1).save
-
-Match.new(round: 8, 
-	      match_number: 53, 
-	      date: "2018-11-29", 
-	      place: "Netto Arena", 
-	      city: "Szczecin", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 10,
-	      quest_id: 8,  
-	      user_id: 1).save
-
-Match.new(round: 8, 
-	      match_number: 54, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 8, 
-	      match_number: 55, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 8, 
-	      match_number: 56, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 9, 
-	      match_number: 57, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 9, 
-	      match_number: 58, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 9, 
-	      match_number: 59, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 9, 
-	      match_number: 60, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 9, 
-	      match_number: 61, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 9, 
-	      match_number: 62, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 9, 
-	      match_number: 63, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 10, 
-	      match_number: 64, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 10, 
-	      match_number: 65, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 10, 
-	      match_number: 66, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 10, 
-	      match_number: 67, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 10, 
-	      match_number: 68, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 10, 
-	      match_number: 69, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 10, 
-	      match_number: 70, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 11, 
-	      match_number: 71, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 11, 
-	      match_number: 72, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 11, 
-	      match_number: 73, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 11, 
-	      match_number: 74, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 11, 
-	      match_number: 75, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 11, 
-	      match_number: 76, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 11, 
-	      match_number: 77, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 12, 
-	      match_number: 78, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 12, 
-	      match_number: 79, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 12, 
-	      match_number: 80, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 12, 
-	      match_number: 81, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 12, 
-	      match_number: 82, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 12, 
-	      match_number: 83, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 12, 
-	      match_number: 84, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 13, 
-	      match_number: 85, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 13, 
-	      match_number: 86, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 13, 
-	      match_number: 87, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 13, 
-	      match_number: 88, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 13, 
-	      match_number: 89, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 13, 
-	      match_number: 90, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 13, 
-	      match_number: 91, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 14, 
-	      match_number: 92, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 14, 
-	      match_number: 93, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 14, 
-	      match_number: 94, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 14, 
-	      match_number: 95, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 14, 
-	      match_number: 96, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 14, 
-	      match_number: 97, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 14, 
-	      match_number: 98, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 15, 
-	      match_number: 99, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 15, 
-	      match_number: 100, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 15, 
-	      match_number: 101, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 15, 
-	      match_number: 102, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 15, 
-	      match_number: 103, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 15, 
-	      match_number: 104, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 15, 
-	      match_number: 105, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 16, 
-	      match_number: 106, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 16, 
-	      match_number: 107, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 16, 
-	      match_number: 108, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 16, 
-	      match_number: 109, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 16, 
-	      match_number: 110, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 16, 
-	      match_number: 111, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 16, 
-	      match_number: 112, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 17, 
-	      match_number: 113, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 17, 
-	      match_number: 114, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 17, 
-	      match_number: 115, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 17, 
-	      match_number: 116, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 17, 
-	      match_number: 117, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 17, 
-	      match_number: 118, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 17, 
-	      match_number: 119, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 18, 
-	      match_number: 120, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 18, 
-	      match_number: 121, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 18, 
-	      match_number: 122, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 18, 
-	      match_number: 123, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 18, 
-	      match_number: 124, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 18, 
-	      match_number: 125, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
-	      user_id: 1).save
-
-Match.new(round: 18, 
-	      match_number: 126, 
-	      date: "2018-10-15", 
-	      place: "HSW Łuczniczka", 
-	      city: "Bydgoszcz", 
-	      score_team_A_match: 0, 
-	      score_team_B_match: 0,
-	      home_id: 1,
-	      quest_id: 2,  
 	      user_id: 1).save
 
 Team.new(name: "MKS Będzin",
@@ -1709,3 +400,103 @@ Player.new(name: "Rafał",
 	       club: "ZAKSA Kędzierzyn-Koźle",
 	       photo: File.new(Rails.root.join("app/assets/images/marian.png")),
 	       user_id: 1).save
+
+@matches = Match.all
+@matches.each_with_index do |match,x|
+
+	@home = Table.find_by_team_id(match.home_id)
+	@guest = Table.find_by_team_id(match.quest_id)
+	@a = match.score_team_A_match
+	@b = match.score_team_B_match
+
+	if @a == 3 &&  @b == 2
+	@home.update(game: x,
+
+		      points: 2 + @home.points,
+	          set_plus: 3 + @home.set_plus,
+	          set_minus: 2 +@home.set_minus,
+	          user_id: 1)
+	@guest.update(game: x,
+
+		      points: 1 + @guest.points, 
+	          set_plus: 2 + @guest.set_plus,
+	          set_minus: 3 + @guest.set_minus,
+	          user_id: 1)
+
+    elsif @a == 2 &&  @b == 3
+
+	@home.update(game: x,
+
+		      points: 1 + @home.points, 
+	          set_plus: 2 + @home.set_plus,
+	          set_minus: 3 +@home.set_minus,
+	          user_id: 1)
+	@guest.update(game: x,
+
+		      points: 2 + @guest.points, 
+	          set_plus: 3 + @guest.set_plus,
+	          set_minus: 2 + @guest.set_minus,
+	          user_id: 1)
+
+elsif @a == 3 &&  @b == 1
+
+	@home.update(game: x,
+
+		      points: 3 + @home.points, 
+	          set_plus: 3 + @home.set_plus,
+	          set_minus: 1 +@home.set_minus,
+	          user_id: 1)
+	@guest.update(game: x,
+
+		      points: 0 + @guest.points, 
+	          set_plus: 1 + @guest.set_plus,
+	          set_minus: 3 + @guest.set_minus,
+	          user_id: 1)
+
+elsif @a == 1 &&  @b == 3
+
+	@home.update(game: x,
+
+		      points: 0 + @home.points, 
+	          set_plus: 1 + @home.set_plus,
+	          set_minus: 3 +@home.set_minus,
+	          user_id: 1)
+	@guest.update(game: x,
+
+		      points: 3 + @guest.points, 
+	          set_plus: 3 + @guest.set_plus,
+	          set_minus: 1 + @guest.set_minus,
+	          user_id: 1)
+
+elsif @a == 3 &&  @b == 0
+
+	@home.update(game: x,
+
+		      points: 3 + @home.points, 
+	          set_plus: 3 + @home.set_plus,
+	          set_minus: 0 +@home.set_minus,
+	          user_id: 1)
+	@guest.update(game: x,
+
+		      points: 0 + @guest.points, 
+	          set_plus: 0 + @guest.set_plus,
+	          set_minus: 3 + @guest.set_minus,
+	          user_id: 1)
+
+else @a == 0 &&  @b == 3
+
+	@home.update(game: x,
+
+		      points: 0 + @home.points, 
+	          set_plus: 0 + @home.set_plus,
+	          set_minus: 3 +@home.set_minus,
+	          user_id: 1)
+	@guest.update(game: x,
+
+		      points: 3 + @guest.points, 
+	          set_plus: 3 + @guest.set_plus,
+	          set_minus: 0 + @guest.set_minus,
+	          user_id: 1)
+
+    end
+end 

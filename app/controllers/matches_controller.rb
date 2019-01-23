@@ -114,22 +114,22 @@ class MatchesController < ApplicationController
     @home.set_minus += @home_set_minus
     @quest.set_minus += @quest_set_minus
 
-      if (match_params[:score_team_A_match].to_i == 3 && match_params[:score_team_B_match].to_i  == 0) || (match_params[:score_team_A_match].to_i  == 3 && match_params[:score_team_B_match].to_i  == 1) 
-         @home_game += 1
-         @quest_game += 1
-      elsif match_params[:score_team_A_match].to_i  == 3 && match_params[:score_team_B_match].to_i  == 2
-         @home_game += 1
-         @quest_game += 1
-      elsif match_params[:score_team_A_match].to_i  == 2 && match_params[:score_team_B_match].to_i  == 3
-         @home_game += 1
-         @quest_game += 1
-      else (match_params[:score_team_A_match].to_i  == 0 && match_params[:score_team_B_match].to_i  == 3) || (match_params[:score_team_A_match].to_i  == 1 && match_params[:score_team_B_match].to_i  == 3)
-         @home_game += 1
-         @quest_game += 1
-      end
+    #   if (match_params[:score_team_A_match].to_i == 3 && match_params[:score_team_B_match].to_i  == 0) || (match_params[:score_team_A_match].to_i  == 3 && match_params[:score_team_B_match].to_i  == 1) 
+    #      @home_game += 1
+    #      @quest_game += 1
+    #   elsif match_params[:score_team_A_match].to_i  == 3 && match_params[:score_team_B_match].to_i  == 2
+    #      @home_game += 1
+    #      @quest_game += 1
+    #   elsif match_params[:score_team_A_match].to_i  == 2 && match_params[:score_team_B_match].to_i  == 3
+    #      @home_game += 1
+    #      @quest_game += 1
+    #   else (match_params[:score_team_A_match].to_i  == 0 && match_params[:score_team_B_match].to_i  == 3) || (match_params[:score_team_A_match].to_i  == 1 && match_params[:score_team_B_match].to_i  == 3)
+    #      @home_game += 1
+    #      @quest_game += 1
+    #   end
 
-    @home.game += @home_game
-    @quest.game += @quest_game
+    # @home.game += @home_game
+    # @quest.game += @quest_game
 
 
     @home.update(table_params)
