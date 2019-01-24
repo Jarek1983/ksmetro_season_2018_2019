@@ -187,6 +187,7 @@ Match.new(round: 1,
 	      quest_id: 9,  
 	      user_id: 1).save
 
+
 Team.new(name: "MKS Będzin",
          city: "Będzin",
          photo: File.new(Rails.root.join("app/assets/images/bedzin.png")),
@@ -410,13 +411,13 @@ Player.new(name: "Rafał",
 	@b = match.score_team_B_match
 
 	if @a == 3 &&  @b == 2
-	@home.update(game: x,
 
+	@home.update(game: @home.game + 1,
 		      points: 2 + @home.points,
 	          set_plus: 3 + @home.set_plus,
 	          set_minus: 2 +@home.set_minus,
 	          user_id: 1)
-	@guest.update(game: x,
+	@guest.update(game: @guest.game+1,
 
 		      points: 1 + @guest.points, 
 	          set_plus: 2 + @guest.set_plus,
@@ -425,14 +426,13 @@ Player.new(name: "Rafał",
 
     elsif @a == 2 &&  @b == 3
 
-	@home.update(game: x,
-
+	@home.update(game: @home.game + 1,
 		      points: 1 + @home.points, 
 	          set_plus: 2 + @home.set_plus,
 	          set_minus: 3 +@home.set_minus,
 	          user_id: 1)
-	@guest.update(game: x,
 
+	@guest.update(game: @guest.game + 1,
 		      points: 2 + @guest.points, 
 	          set_plus: 3 + @guest.set_plus,
 	          set_minus: 2 + @guest.set_minus,
@@ -440,14 +440,13 @@ Player.new(name: "Rafał",
 
 elsif @a == 3 &&  @b == 1
 
-	@home.update(game: x,
-
+	@home.update(game: @home.game + 1,
 		      points: 3 + @home.points, 
 	          set_plus: 3 + @home.set_plus,
 	          set_minus: 1 +@home.set_minus,
 	          user_id: 1)
-	@guest.update(game: x,
 
+	@guest.update(game: @guest.game+1,
 		      points: 0 + @guest.points, 
 	          set_plus: 1 + @guest.set_plus,
 	          set_minus: 3 + @guest.set_minus,
@@ -455,14 +454,12 @@ elsif @a == 3 &&  @b == 1
 
 elsif @a == 1 &&  @b == 3
 
-	@home.update(game: x,
-
+	@home.update(game: @home.game+1,
 		      points: 0 + @home.points, 
 	          set_plus: 1 + @home.set_plus,
 	          set_minus: 3 +@home.set_minus,
 	          user_id: 1)
-	@guest.update(game: x,
-
+	@guest.update(game: @guest.game+1,
 		      points: 3 + @guest.points, 
 	          set_plus: 3 + @guest.set_plus,
 	          set_minus: 1 + @guest.set_minus,
@@ -470,14 +467,12 @@ elsif @a == 1 &&  @b == 3
 
 elsif @a == 3 &&  @b == 0
 
-	@home.update(game: x,
-
+	@home.update(game: @home.game+1,
 		      points: 3 + @home.points, 
 	          set_plus: 3 + @home.set_plus,
 	          set_minus: 0 +@home.set_minus,
 	          user_id: 1)
-	@guest.update(game: x,
-
+	@guest.update(game: @guest.game+1,
 		      points: 0 + @guest.points, 
 	          set_plus: 0 + @guest.set_plus,
 	          set_minus: 3 + @guest.set_minus,
@@ -485,18 +480,15 @@ elsif @a == 3 &&  @b == 0
 
 else @a == 0 &&  @b == 3
 
-	@home.update(game: x,
-
+	@home.update(game: @home.game+1,
 		      points: 0 + @home.points, 
 	          set_plus: 0 + @home.set_plus,
 	          set_minus: 3 +@home.set_minus,
 	          user_id: 1)
-	@guest.update(game: x,
-
+	@guest.update(game: @guest.game+1,
 		      points: 3 + @guest.points, 
 	          set_plus: 3 + @guest.set_plus,
 	          set_minus: 0 + @guest.set_minus,
 	          user_id: 1)
-
     end
 end 

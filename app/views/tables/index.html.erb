@@ -24,13 +24,12 @@
               <tr class="table-success">
                 <td><%= i %></td>
                 <td><%= Team.find_by(id: table.team_id).name %></td>
-                <td>1</td>
-             <!--    <td><%= table.game %></td> -->
+                <td><%= table.game %></td>
                 <td><%= table.points %></td>
                 <td><%= table.set_plus %></td>
                 <td><%= table.set_minus %></td>
 
-            <% i+= 1 %>
+            <% i += 1 %>
 
             <% end %>
           
