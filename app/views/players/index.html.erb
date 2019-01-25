@@ -1,56 +1,60 @@
-<div class="row" style="padding-top: 100px;">
-
-  <%= will_paginate @players %>
-
+<div class="row" style="padding-top: 140px;>
   <div class="col"> </div>
     <div class="col-md-12">
 
-      <h2>List of players: </h2>
+      <%= will_paginate @players %>
 
-        <% if current_user && current_user&.admin? %>
+        <div class="col-md-12">
 
-    <p>
-        <%= link_to "Add new player", new_player_path, class: 'btn btn-lg btn-info' %>
-    </p>
+          <h2>List of players: </h2>
 
-        <% end %>
-    
-   <div class="row">
+            <% if current_user && current_user&.admin? %>
 
-          <% @players.each do |player| %>
-
-      <div class="col-md-4">
-        <div class="card"> 
-          <div class="card-topper">
-
-            <% if player.photo.present? %>
-
-              <%= image_tag player.photo.url(:thumb), style: "width:50%" %>
-
-            <% else %>
-
-              No image
+          <p>
+            <%= link_to "Add new player", new_player_path, class: 'btn btn-lg btn-info' %>
+          </p>
 
             <% end %>
+        
+           <div class="row" style="margin-left: auto; margin-right: auto">
 
-          </div>
+            <% @players.each do |player| %>
 
-          <div class="card-block">
+              <div class="col-md-4" style="padding: 10px;">
+                <div class="card"> 
+                  <div class="card-topper">
 
-            <h5 class="card-title">
-              <%= player.name + " " + player.surname  %>
-            </h5>
+                    <% if player.photo.present? %>
 
-              <%= link_to 'More', player_path(player), class: 'btn btn-sm btn-info'%>
+                      <%= image_tag player.photo.url(:thumb), class: 'players' %>
 
-              <% if current_user && current_user.admin? %>
+                    <% else %>
 
-              <%= link_to 'Edit', edit_player_path(player), class: 'btn btn-sm btn-warning' %>
-              <%= link_to 'Delete', player_path(player), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
+                      No image
 
-               <% end %>
-          </div>
-      </div>
-      </div>
-    <% end %>
+                    <% end %>
+
+                  </div>
+
+                  <div class="card-block">
+
+                    <h5 class="card-title">
+                      <%= player.name + " " + player.surname  %>
+                    </h5>
+
+                      <%= link_to 'More', player_path(player), class: 'btn btn-sm btn-info'%>
+
+                      <% if current_user && current_user.admin? %>
+
+                      <%= link_to 'Edit', edit_player_path(player), class: 'btn btn-sm btn-warning' %>
+                      <%= link_to 'Delete', player_path(player), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
+
+                       <% end %>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+        </div>
+    </div>
+  <div class="col"> </div>
 </div>

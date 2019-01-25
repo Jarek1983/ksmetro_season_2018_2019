@@ -1,10 +1,14 @@
-<div class="row" style="padding-top: 100px;">
+<div class="row" style="padding-top: 140px;">
   <div class="col"> </div>
     <div class="col-md-12">
 
+      <h3>Sezon 2018/2019</h3>
+      <p>Runda zasadnicza</p>
+      <p>Legenda:</p>
+
       <table class="table table-hover table-striped table-responsive-xs table-danger">
       	<thead>
-          <tr class="table-primary">
+          <tr class="table-secondary">
 			
         <th>Position</th>
 			  <th>Team</th>
@@ -16,28 +20,27 @@
 		  </tr>
         </thead>
         <tbody>
+      
+            <% i = 1 %>
 
-      <% i = 1 %>
+      			<% @tables.each do |table| %> 
+                    
+                    <tr class="table-primary">
+                      <td><%= i %></td>
+                      <td><%= Team.find_by(id: table.team_id).name %></td>
+                      <td><%= table.game %></td>
+                      <td><%= table.points %></td>
+                      <td><%= table.set_plus %></td>
+                      <td><%= table.set_minus %></td>
 
-			<% @tables.each do |table| %> 
-              
-              <tr class="table-success">
-                <td><%= i %></td>
-                <td><%= Team.find_by(id: table.team_id).name %></td>
-                <td><%= table.game %></td>
-                <td><%= table.points %></td>
-                <td><%= table.set_plus %></td>
-                <td><%= table.set_minus %></td>
+                  <% i += 1 %>
 
-            <% i += 1 %>
-
-            <% end %>
-          
-              </tr>
-        
+                  <% end %>
+                
+                    </tr>
         </tbody>
+        
       </table>
-
     </div>
   <div class="col"> </div>
 </div>
