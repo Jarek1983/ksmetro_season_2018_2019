@@ -3,7 +3,7 @@ class PlayersController < ApplicationController
   before_action :admin_authorize, except: [:index, :show]
 
   def index
-  	@players = Player.all.order("created_at DESC").paginate(page: params[:page], :per_page => 6) 
+  	@players = Player.all.order("created_at DESC").paginate(page: params[:page], :per_page => 9) 
   end
 
   def new

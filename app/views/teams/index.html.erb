@@ -1,9 +1,9 @@
 <div class="row" style="padding-top: 140px;">
   <div class="col"> </div>
 
-    <div class="col-md-12" style="padding-top: 10px;">
+    <div class="col-md-12" style="margin-left: 10px;">
 
-      <%= will_paginate @teams %>
+      <%= will_paginate @teams, previous_label: "<", next_label: ">" %>
 
         <div class="col-md-12">
 

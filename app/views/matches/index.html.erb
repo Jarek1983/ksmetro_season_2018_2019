@@ -1,8 +1,8 @@
-<div class="row" style="padding-top: 150px; padding-bottom: 250px;">
+<div class="row" style="padding-top: 160px; padding-bottom: 280px;">
   <div class="col"> </div>
-    <div class="col-md-12">
+    <div class="col-md-12" style="margin-left: 10px;">
 
-      <%= will_paginate @players %>
+      <%= will_paginate @matches, previous_label: "<", next_label: ">" %>
 
         <div class="col-md-12">
 
@@ -20,7 +20,7 @@
 
                 <% @matches.each do |match| %>
 
-                  <div class="col-md-4" style="padding: 10px;"">
+                  <div class="col-md-4" style="padding: 10px;">
                     <div class="card"> 
                       <div class="card-block">
 
