@@ -1,12 +1,12 @@
-<div class="row" style="padding-top: 100px;">
+<div class="row" style="padding-top: 200px; padding-bottom: 600px;">
 	<div class="col"></div>
 	  <div class="col-md-4">
 
 	    <h4 class="login">Please Sign In</h4>
-	      <div class="pole">
+	      <div>
 	      <%= form_tag sessions_path do %>
-	      <%= text_field_tag :login, nil, placeholder: 'Input User Id' %><br>
-	      <%= password_field_tag :password, nil, placeholder: 'Input Password' %>
+	      <%= text_field_tag :login, nil, placeholder: 'Input User Id', class: 'pole' %><br>
+	      <%= password_field_tag :password, nil, placeholder: 'Input Password', class: 'pole' %>
 	      <%= submit_tag 'Sign In', class: 'btn btn-md btn-info'  %>
 
 	      <% end %>

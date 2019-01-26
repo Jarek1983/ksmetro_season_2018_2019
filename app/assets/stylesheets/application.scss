@@ -16,12 +16,16 @@
 @import "footer";
 @import "teams";
 @import "matches";
+@import "sessions";
+@import "users";
 
 body 
 {
   min-height: 75rem;
   padding-top: 2rem;
+  background-image: url("images.jpeg");
 }
+
 .bg-dark
 {
 	background-color: #050505 !important;

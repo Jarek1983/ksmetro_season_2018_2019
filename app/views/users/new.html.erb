@@ -1,5 +1,5 @@
 
-<div class="row" style="padding-top: 100px;">
+<div class="row" style="padding-top: 200px; padding-bottom: 600px;">
   <div class="col-md-4">
     <div class="field" style="100%;">
 
@@ -27,20 +27,20 @@
 
 	      <% end %>
 
-            <h3>Create account! </h3>
+            <h3 class="user">Create account! </h3>
 
 	          <%= f.text_field :login, placeholder: 'Input a User ID', class: 'form-control'%><br>
 	          <%= f.email_field :email, placeholder: 'Input your email', class: 'form-control'%><br>
 	          <%= f.password_field :password, placeholder: 'Create a password', class: 'form-control' %><br>
 	          <%= f.password_field :password_confirmation, placeholder: 'Confirm password', class: 'form-control' %><br>
 
-	          <p class="login"><%= f.submit 'Create Account', class: 'btn btn-md btn-success' %></p>
+	          <p class="login_user"><%= f.submit 'Create Account', class: 'btn btn-md btn-success' %></p>
 
 	    <% end %>
 
     </div>
 
-              <p class="login">
+              <p class="login_user">
 			    <%= link_to 'Back', root_path, class: 'btn btn-md btn-info' %>
 		      </p>
   </div>
