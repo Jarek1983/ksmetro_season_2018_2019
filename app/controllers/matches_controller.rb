@@ -36,9 +36,8 @@ class MatchesController < ApplicationController
     else
         render 'edit'
     end
-    current_score
-    # current_score_2
-
+    # current_score
+    current_score_2
   end
 
   def destroy
@@ -128,376 +127,394 @@ class MatchesController < ApplicationController
     @quest.update(table_params)
   end
 
-    # def current_score_2
+    def current_score_2
+    @home = Table.find_by(team_id: match_params[:home_id].to_i)
+    @quest = Table.find_by(team_id: match_params[:quest_id].to_i)
 
-    #   if session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 0 && match_params[:score_team_B_match].to_i == 0
-    #         @home_points += 0
-    #         @quest_points += 0
-    #         @home_set_plus += 0
-    #         @quest_set_plus += 0
-    #         @home_set_minus += 0
-    #         @quest_set_minus += 0
+    @home_game = 0
+    @quest_game = 0
+    @home_points = 0
+    @quest_points = 0
+    @home_set_plus = 0
+    @quest_set_plus = 0
+    @home_set_minus = 0
+    @quest_set_minus = 0
 
-    #   elsif 
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 0 && match_params[:score_team_B_match].to_i == 1
+      if session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 0 && match_params[:score_team_B_match].to_i == 0
+            @home_points += 0
+            @quest_points += 0
+            @home_set_plus += 0
+            @quest_set_plus += 0
+            @home_set_minus += 0
+            @quest_set_minus += 0
+
+      elsif 
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 0 && match_params[:score_team_B_match].to_i == 1
         
-    #         @home_set_minus += 1
-    #         @quest_set_plus += 1
+            @home_set_minus += 1
+            @quest_set_plus += 1
 
-    #   elsif 
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 0 && match_params[:score_team_B_match].to_i == 2
+      elsif 
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 0 && match_params[:score_team_B_match].to_i == 2
         
-    #         @home_points -= 1
-    #         @quest_points += 1
-    #         @home_set_minus += 2
-    #         @quest_set_plus += 2
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 2 && 
-    #      session[:score_team_B_match].to_i == 0 && match_params[:score_team_B_match].to_i == 3
-
-    #          @home_points -= 2
-    #          @quest_points += 2
-    #          @home_set_plus -= 1
-    #          @home_set_minus += 3
-    #          @quest_set_plus += 3
-    #          @quest_set_minus -= 1
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 1 && 
-    #      session[:score_team_B_match].to_i == 0 && match_params[:score_team_B_match].to_i == 3
-
-    #          @home_points -= 3
-    #          @quest_points += 3
-    #          @home_set_plus -= 2
-    #          @home_set_minus += 3
-    #          @quest_set_plus += 3
-    #          @quest_set_minus -= 2
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 0 && 
-    #      session[:score_team_B_match].to_i == 0 && match_params[:score_team_B_match].to_i == 3
-
-    #      @home_points -= 3
-    #      @quest_points += 3
-    #      @home_set_plus -= 3
-    #      @home_set_minus += 3
-    #      @quest_set_plus += 3
-    #      @quest_set_minus -= 3
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 0 && match_params[:score_team_B_match].to_i == 1
-
-    #      @home_set_minus -= 1
-    #      @quest_set_plus -= 1
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 1 && match_params[:score_team_B_match].to_i == 1
-
-    #         @home_points += 0
-    #         @quest_points += 0
-    #         @home_set_plus += 0
-    #         @quest_set_plus += 0
-    #         @home_set_minus += 0
-    #         @quest_set_minus += 0
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 1 && match_params[:score_team_B_match].to_i == 2
-
-    #        @home_points -= 1
-    #        @quest_points += 2
-    #        @home_set_minus += 1
-    #        @quest_set_plus += 1
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 2 && 
-    #      session[:score_team_B_match].to_i == 1 && match_params[:score_team_B_match].to_i == 3
-
-    #        @home_points -= 2
-    #        @quest_points += 2
-    #        @home_set_plus -= 1
-    #        @home_set_minus += 2
-    #        @quest_set_plus += 2
-    #        @quest_set_minus -= 1
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 1 && 
-    #      session[:score_team_B_match].to_i == 1 && match_params[:score_team_B_match].to_i == 3
-
-    #        @home_points -= 3
-    #      @quest_points += 3
-    #      @home_set_plus -= 2
-    #      @home_set_minus += 2
-    #      @quest_set_plus += 2
-    #      @quest_set_minus -= 2
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 0 && 
-    #      session[:score_team_B_match].to_i == 1 && match_params[:score_team_B_match].to_i == 3
-
-    #        @home_points -= 3
-    #      @quest_points += 3
-    #      @home_set_plus -= 3
-    #      @home_set_minus += 3
-    #      @quest_set_plus += 3
-    #      @quest_set_minus -= 3
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 2 && match_params[:score_team_B_match].to_i == 0
-
-    #        @home_points += 1
-    #      @quest_points -= 1
-    #      @home_set_minus -= 2
-    #      @quest_set_plus -= 2
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 2 && match_params[:score_team_B_match].to_i == 0
-
-    #        @home_points += 1
-    #      @quest_points -= 1
-    #      @home_set_minus -= 1
-    #      @quest_set_plus -= 1
-
-    #   elsif 
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 2 && match_params[:score_team_B_match].to_i == 2
-
-    #         @home_points += 0
-    #         @quest_points += 0
-    #         @home_set_plus += 0
-    #         @quest_set_plus += 0
-    #         @home_set_minus += 0
-    #         @quest_set_minus += 0
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 2 && 
-    #      session[:score_team_B_match].to_i == 2 && match_params[:score_team_B_match].to_i == 3
-
-    #        @home_points -= 1
-    #      @quest_points += 1
-    #      @home_set_plus -= 1
-    #      @home_set_minus += 1
-    #      @quest_set_plus += 1
-    #      @quest_set_minus -= 1
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 1 && 
-    #      session[:score_team_B_match].to_i == 2 && match_params[:score_team_B_match].to_i == 3
-
-    #        @home_points -= 2
-    #      @quest_points += 2
-    #      @home_set_plus -= 2
-    #      @home_set_minus += 1
-    #      @quest_set_plus += 1
-    #      @quest_set_minus -= 2
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 0 && 
-    #      session[:score_team_B_match].to_i == 2 && match_params[:score_team_B_match].to_i == 3
-
-    #        @home_points -= 2
-    #      @quest_points += 2
-    #      @home_set_plus -= 3
-    #      @home_set_minus += 1
-    #      @quest_set_plus += 1
-    #      @quest_set_minus -= 3
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 2 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 0
-
-    #        @home_points += 2
-    #      @quest_points -= 2
-    #      @home_set_plus += 1
-    #      @home_set_minus -= 3
-    #      @quest_set_plus -= 3
-    #      @quest_set_minus += 1
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 2 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 1
-
-    #        @home_points += 2
-    #      @quest_points -= 2
-    #      @home_set_plus += 1
-    #      @home_set_minus -= 2
-    #      @quest_set_plus -= 2
-    #      @quest_set_minus += 1
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 2 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 2
-
-    #      @home_points += 1
-    #      @quest_points -= 1
-    #      @home_set_plus += 1
-    #      @home_set_minus -= 1
-    #      @quest_set_plus -= 1
-    #      @quest_set_minus += 1
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 2 && match_params[:score_team_A_match].to_i == 2 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
-
-    #         @home_points += 0
-    #         @quest_points += 0
-    #         @home_set_plus += 0
-    #         @quest_set_plus += 0
-    #         @home_set_minus += 0
-    #         @quest_set_minus += 0
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 2 && match_params[:score_team_A_match].to_i == 1 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
-
-    #        @home_points -= 1
-    #      @quest_points += 1
-    #      @home_set_plus -= 1
-    #      @quest_set_minus -= 1
-
-    #   elsif
-    #      session[:score_team_A_match].to_i == 2 && match_params[:score_team_A_match].to_i == 0 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
-
-    #        @home_points -= 1
-    #      @quest_points += 1
-    #      @home_set_plus -= 2
-    #      @quest_set_minus -= 2
-
-    # elsif
-    #      session[:score_team_A_match].to_i == 1 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 0
-
-    #      @home_points += 3
-    #      @quest_points -= 3
-    #      @home_set_plus += 2
-    #      @home_set_minus -= 3
-    #      @quest_set_plus -= 2
-    #      @quest_set_minus += 3
-
-    # elsif
-    #      session[:score_team_A_match].to_i == 1 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 1
-
-    #      @home_points += 3
-    #      @quest_points -= 3
-    #      @home_set_plus += 2
-    #      @home_set_minus -= 2
-    #      @quest_set_plus -= 2
-    #      @quest_set_minus += 2
-
-    # elsif
-    #      session[:score_team_A_match].to_i == 1 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 2
-
-    #      @home_points += 2
-    #      @quest_points -= 2
-    #      @home_set_plus += 2
-    #      @home_set_minus -= 1
-    #      @quest_set_plus -= 1
-    #      @quest_set_minus += 2
-
-    # elsif
-    #      session[:score_team_A_match].to_i == 1 && match_params[:score_team_A_match].to_i == 2 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
-
-    #      @home_points += 1
-    #      @quest_points -= 1
-    #      @home_set_plus += 1
-    #      @quest_set_minus += 1
-
-    # elsif
-    #      session[:score_team_A_match].to_i == 1 && match_params[:score_team_A_match].to_i == 1 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
-
-    #         @home_points += 0
-    #         @quest_points += 0
-    #         @home_set_plus += 0
-    #         @quest_set_plus += 0
-    #         @home_set_minus += 0
-    #         @quest_set_minus += 0
-
-    # elsif
-    #      session[:score_team_A_match].to_i == 1 && match_params[:score_team_A_match].to_i == 0 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
-
-    #      @home_set_plus -= 1
-    #      @quest_set_minus -= 1
-
-    # elsif
-    #      session[:score_team_A_match].to_i == 0 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 0
-
-    #      @home_points += 3
-    #      @quest_points -= 3
-    #      @home_set_plus += 3
-    #      @home_set_minus -= 3
-    #      @quest_set_plus -= 3
-    #      @quest_set_minus += 3
-
-    # elsif
-    #      session[:score_team_A_match].to_i == 0 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 1
-
-    #      @home_points += 3
-    #      @quest_points -= 3
-    #      @home_set_plus += 3
-    #      @home_set_minus -= 2
-    #      @quest_set_plus -= 2
-    #      @quest_set_minus += 3
-
-    # elsif
-    #      session[:score_team_A_match].to_i == 0 && match_params[:score_team_A_match].to_i == 3 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 2
-
-    #      @home_points += 2
-    #      @quest_points -= 2
-    #      @home_set_plus += 3
-    #      @home_set_minus -= 2
-    #      @quest_set_plus -= 1
-    #      @quest_set_minus += 3
-
-    # elsif
-    #      session[:score_team_A_match].to_i == 0 && match_params[:score_team_A_match].to_i == 2 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
-
-    #      @home_points += 1
-    #      @quest_points -= 1
-    #      @home_set_plus += 2
-    #      @quest_set_minus += 2
-
-    # elsif
-    #      session[:score_team_A_match].to_i == 0 && match_params[:score_team_A_match].to_i == 1 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
-
-    #      @home_set_plus -= 1
-    #      @quest_set_minus -= 1
-
-    # else
-    #      session[:score_team_A_match].to_i == 0 && match_params[:score_team_A_match].to_i == 0 && 
-    #      session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
-
-    #     @home_points += 0
-    #     @quest_points += 0
-    #         @home_set_plus += 0
-    #         @quest_set_plus += 0
-    #         @home_set_minus += 0
-    #         @quest_set_minus += 1
-
-    # end
-
-    #     @home.update(table_params)
-    #     @quest.update(table_params)
-
-    # end
+            @home_points -= 1
+            @quest_points += 1
+            @home_set_minus += 2
+            @quest_set_plus += 2
+
+      elsif
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 2 && 
+         session[:score_team_B_match].to_i == 0 && match_params[:score_team_B_match].to_i == 3
+
+             @home_points -= 2
+             @quest_points += 2
+             @home_set_plus -= 1
+             @home_set_minus += 3
+             @quest_set_plus += 3
+             @quest_set_minus -= 1
+
+      elsif
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 1 && 
+         session[:score_team_B_match].to_i == 0 && match_params[:score_team_B_match].to_i == 3
+
+             @home_points -= 3
+             @quest_points += 3
+             @home_set_plus -= 2
+             @home_set_minus += 3
+             @quest_set_plus += 3
+             @quest_set_minus -= 2
+
+      elsif
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 0 && 
+         session[:score_team_B_match].to_i == 0 && match_params[:score_team_B_match].to_i == 3
+
+         @home_points -= 3
+         @quest_points += 3
+         @home_set_plus -= 3
+         @home_set_minus += 3
+         @quest_set_plus += 3
+         @quest_set_minus -= 3
+
+      elsif
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 0 && match_params[:score_team_B_match].to_i == 1
+
+         @home_set_minus -= 1
+         @quest_set_plus -= 1
+
+      elsif
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 1 && match_params[:score_team_B_match].to_i == 1
+
+            @home_points += 0
+            @quest_points += 0
+            @home_set_plus += 0
+            @quest_set_plus += 0
+            @home_set_minus += 0
+            @quest_set_minus += 0
+
+      elsif
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 1 && match_params[:score_team_B_match].to_i == 2
+
+           @home_points -= 1
+           @quest_points += 2
+           @home_set_minus += 1
+           @quest_set_plus += 1
+
+      elsif
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 2 && 
+         session[:score_team_B_match].to_i == 1 && match_params[:score_team_B_match].to_i == 3
+
+           @home_points -= 2
+           @quest_points += 2
+           @home_set_plus -= 1
+           @home_set_minus += 2
+           @quest_set_plus += 2
+           @quest_set_minus -= 1
+
+      elsif
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 1 && 
+         session[:score_team_B_match].to_i == 1 && match_params[:score_team_B_match].to_i == 3
+
+           @home_points -= 3
+         @quest_points += 3
+         @home_set_plus -= 2
+         @home_set_minus += 2
+         @quest_set_plus += 2
+         @quest_set_minus -= 2
+
+      elsif
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 0 && 
+         session[:score_team_B_match].to_i == 1 && match_params[:score_team_B_match].to_i == 3
+
+         @home_points -= 3
+         @quest_points += 3
+         @home_set_plus -= 3
+         @home_set_minus += 3
+         @quest_set_plus += 3
+         @quest_set_minus -= 3
+
+      elsif
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 2 && match_params[:score_team_B_match].to_i == 0
+
+         @home_points += 1
+         @quest_points -= 1
+         @home_set_minus -= 2
+         @quest_set_plus -= 2
+
+      elsif
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 2 && match_params[:score_team_B_match].to_i == 0
+
+         @home_points += 1
+         @quest_points -= 1
+         @home_set_minus -= 1
+         @quest_set_plus -= 1
+
+      elsif 
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 2 && match_params[:score_team_B_match].to_i == 2
+
+            @home_points += 0
+            @quest_points += 0
+            @home_set_plus += 0
+            @quest_set_plus += 0
+            @home_set_minus += 0
+            @quest_set_minus += 0
+
+      elsif
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 2 && 
+         session[:score_team_B_match].to_i == 2 && match_params[:score_team_B_match].to_i == 3
+
+           @home_points -= 1
+         @quest_points += 1
+         @home_set_plus -= 1
+         @home_set_minus += 1
+         @quest_set_plus += 1
+         @quest_set_minus -= 1
+
+      elsif
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 1 && 
+         session[:score_team_B_match].to_i == 2 && match_params[:score_team_B_match].to_i == 3
+
+           @home_points -= 2
+         @quest_points += 2
+         @home_set_plus -= 2
+         @home_set_minus += 1
+         @quest_set_plus += 1
+         @quest_set_minus -= 2
+
+      elsif
+         session[:score_team_A_match].to_i == 3 && match_params[:score_team_A_match].to_i == 0 && 
+         session[:score_team_B_match].to_i == 2 && match_params[:score_team_B_match].to_i == 3
+
+           @home_points -= 2
+         @quest_points += 2
+         @home_set_plus -= 3
+         @home_set_minus += 1
+         @quest_set_plus += 1
+         @quest_set_minus -= 3
+
+      elsif
+         (session[:score_team_A_match].to_i == 2 && match_params[:score_team_A_match].to_i == 3) && 
+         (session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 0)
+
+            @home_points += 2
+         @quest_points -= 2
+         @home_set_plus += 1
+         @home_set_minus -= 3
+         @quest_set_plus -= 3
+         @quest_set_minus += 1
+
+      elsif
+         session[:score_team_A_match].to_i == 2 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 1
+
+           @home_points += 2
+         @quest_points -= 2
+         @home_set_plus += 1
+         @home_set_minus -= 2
+         @quest_set_plus -= 2
+         @quest_set_minus += 1
+
+      elsif
+         session[:score_team_A_match].to_i == 2 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 2
+
+         @home_points += 1
+         @quest_points -= 1
+         @home_set_plus += 1
+         @home_set_minus -= 1
+         @quest_set_plus -= 1
+         @quest_set_minus += 1
+
+      elsif
+         session[:score_team_A_match].to_i == 2 && match_params[:score_team_A_match].to_i == 2 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
+
+            @home_points += 0
+            @quest_points += 0
+            @home_set_plus += 0
+            @quest_set_plus += 0
+            @home_set_minus += 0
+            @quest_set_minus += 0
+
+      elsif
+         session[:score_team_A_match].to_i == 2 && match_params[:score_team_A_match].to_i == 1 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
+
+           @home_points -= 1
+         @quest_points += 1
+         @home_set_plus -= 1
+         @quest_set_minus -= 1
+
+      elsif
+         session[:score_team_A_match].to_i == 2 && match_params[:score_team_A_match].to_i == 0 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
+
+           @home_points -= 1
+         @quest_points += 1
+         @home_set_plus -= 2
+         @quest_set_minus -= 2
+
+    elsif
+         session[:score_team_A_match].to_i == 1 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 0
+
+         @home_points += 3
+         @quest_points -= 3
+         @home_set_plus += 2
+         @home_set_minus -= 3
+         @quest_set_plus -= 2
+         @quest_set_minus += 3
+
+    elsif
+         session[:score_team_A_match].to_i == 1 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 1
+
+         @home_points += 3
+         @quest_points -= 3
+         @home_set_plus += 2
+         @home_set_minus -= 2
+         @quest_set_plus -= 2
+         @quest_set_minus += 2
+
+    elsif
+         session[:score_team_A_match].to_i == 1 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 2
+
+         @home_points += 2
+         @quest_points -= 2
+         @home_set_plus += 2
+         @home_set_minus -= 1
+         @quest_set_plus -= 1
+         @quest_set_minus += 2
+
+    elsif
+         session[:score_team_A_match].to_i == 1 && match_params[:score_team_A_match].to_i == 2 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
+
+         @home_points += 1
+         @quest_points -= 1
+         @home_set_plus += 1
+         @quest_set_minus += 1
+
+    elsif
+         session[:score_team_A_match].to_i == 1 && match_params[:score_team_A_match].to_i == 1 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
+
+            @home_points += 0
+            @quest_points += 0
+            @home_set_plus += 0
+            @quest_set_plus += 0
+            @home_set_minus += 0
+            @quest_set_minus += 0
+
+    elsif
+         session[:score_team_A_match].to_i == 1 && match_params[:score_team_A_match].to_i == 0 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
+
+         @home_set_plus -= 1
+         @quest_set_minus -= 1
+
+    elsif
+         session[:score_team_A_match].to_i == 0 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 0
+
+         @home_points += 3
+         @quest_points -= 3
+         @home_set_plus += 3
+         @home_set_minus -= 3
+         @quest_set_plus -= 3
+         @quest_set_minus += 3
+
+    elsif
+         session[:score_team_A_match].to_i == 0 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 1
+
+         @home_points += 3
+         @quest_points -= 3
+         @home_set_plus += 3
+         @home_set_minus -= 2
+         @quest_set_plus -= 2
+         @quest_set_minus += 3
+
+    elsif
+         session[:score_team_A_match].to_i == 0 && match_params[:score_team_A_match].to_i == 3 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 2
+
+         @home_points += 2
+         @quest_points -= 2
+         @home_set_plus += 3
+         @home_set_minus -= 2
+         @quest_set_plus -= 1
+         @quest_set_minus += 3
+
+    elsif
+         session[:score_team_A_match].to_i == 0 && match_params[:score_team_A_match].to_i == 2 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
+
+         @home_points += 1
+         @quest_points -= 1
+         @home_set_plus += 2
+         @quest_set_minus += 2
+
+    elsif
+         session[:score_team_A_match].to_i == 0 && match_params[:score_team_A_match].to_i == 1 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
+
+         @home_set_plus -= 1
+         @quest_set_minus -= 1
+
+    else
+         session[:score_team_A_match].to_i == 0 && match_params[:score_team_A_match].to_i == 0 && 
+         session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 3
+
+        @home_points += 0
+        @quest_points += 0
+            @home_set_plus += 0
+            @quest_set_plus += 0
+            @home_set_minus += 0
+            @quest_set_minus += 0
+
+
+    end
+        @home.points += @home_points
+        @quest.points += @quest_points
+        @home.set_plus += @home_set_plus
+        @quest.set_plus += @quest_set_plus
+        @home.set_minus += @home_set_minus
+        @quest.set_minus += @quest_set_minus
+
+        @home.update(table_params)
+        @quest.update(table_params)
+
+    end
 
   private
 

@@ -5,39 +5,39 @@
     <div class="field" style="100%;">
       <p>
         <%= f.label :round %><br>
-        <%= f.number_field :round, class: 'form-control' %>
+        <%= f.number_field :round, class: 'form-control2' %>
       </p>
       <p>
         <%= f.label :match_number %><br>
-        <%= f.number_field :match_number, class: 'form-control' %>
+        <%= f.number_field :match_number, class: 'form-control2' %>
       </p>
        <p>
         <%= f.label :date %><br>
-        <%= f.date_field :date, class: 'form-control' %>
+        <%= f.date_field :date, class: 'form-control2' %>
       </p>
       <p>
        <%= f.label :place %><br>
-       <%= f.text_field :place, class: 'form-control' %>
+       <%= f.text_field :place, class: 'form-control2' %>
       </p>
       <p>
         <%= f.label :city %><br>
-        <%= f.text_field :city, class: 'form-control' %>
+        <%= f.text_field :city, class: 'form-control2' %>
       </p>
       <p>
         <%= f.label :home %><br>
-        <%= f.collection_select :home_id, Team.all, :id, :name, class: 'form-control' %>
+        <%= f.collection_select :home_id, Team.all, :id, :name, class: 'form-control2' %>
       </p>
       <p>
         <%= f.label :quest %><br>
-        <%= f.collection_select :quest_id, Team.all, :id, :name, class: 'form-control' %>
+        <%= f.collection_select :quest_id, Team.all, :id, :name, class: 'form-control2' %>
       </p>
        <p>
         <%= f.label :score_team_A_match %><br>
-        <%= f.number_field :score_team_A_match, class: 'form-control' %>
+        <%= f.number_field :score_team_A_match, class: 'form-control2' %>
       </p>
        <p>
         <%= f.label :score_team_B_match %><br>
-        <%= f.number_field :score_team_B_match, class: 'form-control' %>
+        <%= f.number_field :score_team_B_match, class: 'form-control2' %>
       </p>
        <p>
         <%= f.hidden_field :user_id, value: session[:user_id] %>
