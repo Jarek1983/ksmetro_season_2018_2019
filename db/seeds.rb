@@ -111,6 +111,17 @@ Table.new(team_id: 14,
           user_id: 1).save
 
 Match.new(round: 1, 
+	      match_number: 1, 
+	      date: "2018-10-15", 
+	      place: "HSW Łuczniczka", 
+	      city: "Bydgoszcz", 
+	      score_team_A_match: 3, 
+	      score_team_B_match: 2, 
+	      home_id: 11,
+	      quest_id: 2, 
+	      user_id: 1).save
+
+Match.new(round: 1, 
 	      match_number: 2, 
 	      date: "2018-10-13", 
 	      place: "HWS Sosnowiec", 

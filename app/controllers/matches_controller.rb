@@ -38,16 +38,21 @@ class MatchesController < ApplicationController
     else
         render 'edit'
     end
-    # current_score
-    current_score_2
+
+    current_score_session
   end
 
   def destroy
-      @match.destroy
+
+      # delete_score
+
+      @match.destroy 
       redirect_to matches_path
+
   end
 
   def current_score
+
     @home = Table.find_by(team_id: match_params[:home_id].to_i)
     @quest = Table.find_by(team_id: match_params[:quest_id].to_i)
     @home_game = 0
@@ -129,9 +134,10 @@ class MatchesController < ApplicationController
     @quest.update(table_params)
   end
 
-    def current_score_2
-    @home = Table.find_by(team_id: match_params[:home_id].to_i)
-    @quest = Table.find_by(team_id: match_params[:quest_id].to_i)
+    def current_score_session
+
+      @home = Table.find_by(team_id: match_params[:home_id].to_i)
+      @quest = Table.find_by(team_id: match_params[:quest_id].to_i)
 
       if (session[:score_team_A_match].to_i == 0 && match_params[:score_team_A_match].to_i == 3) && 
          (session[:score_team_B_match].to_i == 3 && match_params[:score_team_B_match].to_i == 0)
@@ -625,6 +631,69 @@ class MatchesController < ApplicationController
         @home.update(table_params)
         @quest.update(table_params)
     end
+
+    # def delete_score
+
+    #   @home = Table.find_by(team_id: @match.home_id)
+    #   @quest = Table.find_by(team_id: @match.quest_id)
+
+    #   if @home == 3 && @quest == 0
+    #          @home.points -= 3
+    #          @home.set_plus -= 3
+    #          @home.game -= 1
+    #          @quest.game -= 1
+    #          @quest.set_minus -= 3
+
+    #   elsif @home == 3 && @quest == 1
+    #          @home.points -= 3
+    #          @home.set_plus -= 3
+    #          @home.set_minus -= 1
+    #          @quest.set_plus -= 1
+    #          @quest.set_minus -= 3
+    #          @home.game -= 1
+    #          @quest.game -= 1
+
+    #   elsif @home == 3 && @quest == 2
+    #          @home.points -= 2
+    #          @quest.points -= 1
+    #          @home.set_plus -= 3
+    #          @home.set_minus -= 2
+    #          @quest.set_plus -= 2
+    #          @quest.set_minus -= 3
+    #          @home.game -= 1
+    #          @quest.game -= 1
+
+    #   elsif @home == 2 && @quest == 3
+    #          @home.points -= 1
+    #          @quest.points -= 2
+    #          @home.set_plus -= 2
+    #          @home.set_minus -= 3
+    #          @quest.set_plus -= 3
+    #          @quest.set_minus -= 2
+    #          @home.game -= 1
+    #          @quest.game -= 1
+
+    #   elsif @home == 1 && @quest == 3
+    #          @quest.points -= 3
+    #          @home.set_plus -= 1
+    #          @home.set_minus -= 3
+    #          @quest.set_plus -= 3
+    #          @quest.set_minus -= 1
+    #          @home.game -= 1
+    #          @quest.game -= 1
+
+    #   else  @home == 0 && @quest == 3
+    #          @quest.points -= 3
+    #          @quest.set_plus -= 3
+    #          @home.set_minus -= 3
+    #          @home.game -= 1
+    #          @quest.game -= 1
+    #   end
+
+    #       @home.update(table_params)
+    #       @quest.update(table_params)
+     
+    # end
 
   private
 
