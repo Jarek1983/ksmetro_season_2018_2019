@@ -1,10 +1,10 @@
 class TablesController < ApplicationController
 
   def index
-  	@tables = Table.all.order("points DESC", %q(CASE set_minus 
+  	@tables = Table.all.order("points DESC", "set_plus DESC", %q(CASE set_minus 
                                                 WHEN 0 THEN set_plus/1
                                                 ELSE set_plus/set_minus
-                                                END  DESC) )
+                                                END DESC) )
   end
   
   def new
