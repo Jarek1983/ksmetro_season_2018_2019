@@ -3,8 +3,8 @@
     <div class="col-md-10">
 
         <p>
-          <% if @player.photo.present? %>
-            <%= image_tag(@player.photo.url, style: "width:25%;") %>
+          <% if @player.image.present? %>
+            <%= image_tag(@player.image.url, style: "width:25%;") %>
           <% else %>
             <%= image_tag 'volley.jpg', style: "width:25%;" %>
           <% end %> 

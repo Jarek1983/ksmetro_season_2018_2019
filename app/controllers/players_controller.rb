@@ -50,7 +50,7 @@ private
   end
 
 	def player_params
-		params.require(:player).permit(:name, :surname, :age, :nationality, :position, :club, :photo, :user_id)
+		params.require(:player).permit(:name, :surname, :age, :nationality, :position, :club, :image, :user_id)
 	end
 
 end

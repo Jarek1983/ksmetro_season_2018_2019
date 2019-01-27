@@ -25,9 +25,9 @@
               <div class="card2"> 
                 <div class="card-topper2">
 
-                  <% if team.photo.present? %>
+                  <% if team.image.present? %>
 
-                    <%= image_tag team.photo.url(:medium), class: 'teams' %>
+                    <%= image_tag team.image.url, class: 'teams' %>
 
                   <% else %>
 
