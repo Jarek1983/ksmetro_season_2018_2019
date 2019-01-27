@@ -43,7 +43,6 @@ gem 'aws-sdk-s3', '~> 1.9'
 
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'will_paginate-bootstrap4'
-gem 'dotenv-rails', :groups => [:development, :test], :require => 'dotenv/rails-now'
 gem 'cloudinary'
 
 group :development, :test do
