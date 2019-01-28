@@ -266,73 +266,73 @@ Match.new(round: 2,
 
 Team.new(name: "MKS Będzin",
          city: "Będzin",
-         image: File.new(Rails.root.join("app/assets/images/bedzin.png")),
+         # image: File.new(Rails.root.join("app/assets/images/bedzin.png")),
          user_id: 1).save
 
 Team.new(name: "PGE Skra Bełchatów",
          city: "Bełchatów",
-         image: File.new(Rails.root.join("app/assets/images/belchatow.png")),
+         # image: File.new(Rails.root.join("app/assets/images/belchatow.png")),
          user_id: 1).save
 
-Team.new(name: "ZAKSA Kędzierzyn-Koźle",
-         city: "Kędzierzyn-Koźle",
-         image: File.new(Rails.root.join("app/assets/images/zaksa.png")),
-         user_id: 1).save
+# Team.new(name: "ZAKSA Kędzierzyn-Koźle",
+#          city: "Kędzierzyn-Koźle",
+#          image: File.new(Rails.root.join("app/assets/images/zaksa.png")),
+#          user_id: 1).save
 
-Team.new(name: "Jastrzębski Węgiel",
-         city: "Jastrzębie",
-         image: File.new(Rails.root.join("app/assets/images/jastrzebie.png")),
-         user_id: 1).save
+# Team.new(name: "Jastrzębski Węgiel",
+#          city: "Jastrzębie",
+#          image: File.new(Rails.root.join("app/assets/images/jastrzebie.png")),
+#          user_id: 1).save
 
-Team.new(name: "GKS Katowice",
-         city: "Katowice",
-         image: File.new(Rails.root.join("app/assets/images/katowice.png")),
-         user_id: 1).save
+# Team.new(name: "GKS Katowice",
+#          city: "Katowice",
+#          image: File.new(Rails.root.join("app/assets/images/katowice.png")),
+#          user_id: 1).save
 
-Team.new(name: "Asseco Resovia Rzeszów",
-         city: "Rzeszów",
-         image: File.new(Rails.root.join("app/assets/images/rzeszow.png")),
-         user_id: 1).save
+# Team.new(name: "Asseco Resovia Rzeszów",
+#          city: "Rzeszów",
+#          image: File.new(Rails.root.join("app/assets/images/rzeszow.png")),
+#          user_id: 1).save
 
-Team.new(name: "Aluron Warta Virtu Zawiercie",
-         city: "Zawiercie",
-         image: File.new(Rails.root.join("app/assets/images/zawiercie.png")),
-         user_id: 1).save
+# Team.new(name: "Aluron Warta Virtu Zawiercie",
+#          city: "Zawiercie",
+#          image: File.new(Rails.root.join("app/assets/images/zawiercie.png")),
+#          user_id: 1).save
 
-Team.new(name: "Trefl Gdańsk",
-         city: "Gdańsk",
-         image: File.new(Rails.root.join("app/assets/images/gdansk.png")),
-         user_id: 1).save
+# Team.new(name: "Trefl Gdańsk",
+#          city: "Gdańsk",
+#          image: File.new(Rails.root.join("app/assets/images/gdansk.png")),
+#          user_id: 1).save
 
-Team.new(name: "Cuprum Lubin",
-         city: "Lubin",
-         image: File.new(Rails.root.join("app/assets/images/lubin.png")),
-         user_id: 1).save
+# Team.new(name: "Cuprum Lubin",
+#          city: "Lubin",
+#          image: File.new(Rails.root.join("app/assets/images/lubin.png")),
+#          user_id: 1).save
 
-Team.new(name: "Stocznia Szczecin",
-         city: "Szczecin",
-         image: File.new(Rails.root.join("app/assets/images/szczecin.png")),
-         user_id: 1).save
+# Team.new(name: "Stocznia Szczecin",
+#          city: "Szczecin",
+#          image: File.new(Rails.root.join("app/assets/images/szczecin.png")),
+#          user_id: 1).save
 
-Team.new(name: "Chemik Bydgoszcz",
-         city: "Bydgoszcz",
-         image: File.new(Rails.root.join("app/assets/images/bydgoszcz.png")),
-         user_id: 1).save
+# Team.new(name: "Chemik Bydgoszcz",
+#          city: "Bydgoszcz",
+#          image: File.new(Rails.root.join("app/assets/images/bydgoszcz.png")),
+#          user_id: 1).save
 
-Team.new(name: "Indykpol AZS Olsztyn",
-         city: "Olsztyn",
-         image: File.new(Rails.root.join("app/assets/images/olsztyn.png")),
-         user_id: 1).save
+# Team.new(name: "Indykpol AZS Olsztyn",
+#          city: "Olsztyn",
+#          image: File.new(Rails.root.join("app/assets/images/olsztyn.png")),
+#          user_id: 1).save
 
-Team.new(name: "Cerrad Czarni Radom",
-         city: "Radom",
-         image: File.new(Rails.root.join("app/assets/images/radom.png")),
-         user_id: 1).save
+# Team.new(name: "Cerrad Czarni Radom",
+#          city: "Radom",
+#          image: File.new(Rails.root.join("app/assets/images/radom.png")),
+#          user_id: 1).save
 
-Team.new(name: "ONICO Warszawa",
-         city: "Warszawa",
-         image: File.new(Rails.root.join("app/assets/images/warszawa.png")),
-         user_id: 1).save
+# Team.new(name: "ONICO Warszawa",
+#          city: "Warszawa",
+#          image: File.new(Rails.root.join("app/assets/images/warszawa.png")),
+#          user_id: 1).save
 
 Player.new(name: "Bartosz", 
 	       surname: "Mariański", 
@@ -442,617 +442,617 @@ Player.new(name: "Damian",
 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
 	       user_id: 1).save
 
-Player.new(name: "Antoine", 
-	       surname: "Brizard", 
-	       age: 24, 
-	       nationality: "Francja", 
-	       position: "Rozgrywający", 
-	       club: "ONICO Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Adrian", 
-	       surname: "Buchowski", 
-	       age: 27, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "Indykpol AZS Olsztyn",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Jakub", 
-	       surname: "Bucki", 
-	       age: 30, 
-	       nationality: "Polska", 
-	       position: "Atakujący", 
-	       club: "Jastrzębski Węgiel",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Rafał", 
-	       surname: "Buszek", 
-	       age: 31, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "ZAKSA Kędzierzyn-Koźle",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Bartosz", 
-	       surname: "Mariański", 
-	       age: 26, 
-	       nationality: "Polska", 
-	       position: "Libero", 
-	       club: "GKS Katowice",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Karol", 
-	       surname: "Butryn", 
-	       age: 25, 
-	       nationality: "Polska", 
-	       position: "Atakujący", 
-	       club: "GKS Katowice",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Alek", 
-	       surname: "Achrem", 
-	       age: 35, 
-	       nationality: "Białoruś", 
-	       position: "Przyjmujący", 
-	       club: "Aluron Virtu Warta Zawiercie",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Patryk", 
-	       surname: "Akala", 
-	       age: 30, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "Chemik Bydgoszcz",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Robbert", 
-	       surname: "Andriga", 
-	       age: 28, 
-	       nationality: "Holandia", 
-	       position: "Przyjmujący", 
-	       club: "Indykpol AZS Olsztyn",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Krzysztof", 
-	       surname: "Andrzejewski", 
-	       age: 35, 
-	       nationality: "Polska", 
-	       position: "Libero", 
-	       club: "Aluron Virtu Warta Zawiercie",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Rafael Araujo", 
-	       surname: "Araujo", 
-	       age: 27, 
-	       nationality: "Brazylia", 
-	       position: "Atakujący", 
-	       club: "ONICO Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Filip", 
-	       surname: "Biegun", 
-	       age: 22, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "Cuprum Lubin",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Mateusz ", 
-	       surname: "Bieniek", 
-	       age: 24, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "ZAKSA Kędzierzyn-Koźle",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Kacper", 
-	       surname: "Borkowski", 
-	       age: 21, 
-	       nationality: "Polska", 
-	       position: "Libero", 
-	       club: "chemik Bydgoszcz",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Grzegorz", 
-	       surname: "Bociek", 
-	       age: 27, 
-	       nationality: "Polska", 
-	       position: "Atakujący", 
-	       club: "Aluron Virtu Warta Zawiercie",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Damian", 
-	       surname: "Boruch", 
-	       age: 29, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "Cuprum Lubin",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Antoine", 
-	       surname: "Brizard", 
-	       age: 24, 
-	       nationality: "Francja", 
-	       position: "Rozgrywający", 
-	       club: "ONICO Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Adrian", 
-	       surname: "Buchowski", 
-	       age: 27, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "Indykpol AZS Olsztyn",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Jakub", 
-	       surname: "Bucki", 
-	       age: 30, 
-	       nationality: "Polska", 
-	       position: "Atakujący", 
-	       club: "Jastrzębski Węgiel",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Rafał", 
-	       surname: "Buszek", 
-	       age: 31, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "ZAKSA Kędzierzyn-Koźle",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Bartosz", 
-	       surname: "Mariański", 
-	       age: 26, 
-	       nationality: "Polska", 
-	       position: "Libero", 
-	       club: "GKS Katowice",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Karol", 
-	       surname: "Butryn", 
-	       age: 25, 
-	       nationality: "Polska", 
-	       position: "Atakujący", 
-	       club: "GKS Katowice",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Alek", 
-	       surname: "Achrem", 
-	       age: 35, 
-	       nationality: "Białoruś", 
-	       position: "Przyjmujący", 
-	       club: "Aluron Virtu Warta Zawiercie",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Patryk", 
-	       surname: "Akala", 
-	       age: 30, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "Chemik Bydgoszcz",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Robbert", 
-	       surname: "Andriga", 
-	       age: 28, 
-	       nationality: "Holandia", 
-	       position: "Przyjmujący", 
-	       club: "Indykpol AZS Olsztyn",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Krzysztof", 
-	       surname: "Andrzejewski", 
-	       age: 35, 
-	       nationality: "Polska", 
-	       position: "Libero", 
-	       club: "Aluron Virtu Warta Zawiercie",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Rafael Araujo", 
-	       surname: "Araujo", 
-	       age: 27, 
-	       nationality: "Brazylia", 
-	       position: "Atakujący", 
-	       club: "ONICO Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Filip", 
-	       surname: "Biegun", 
-	       age: 22, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "Cuprum Lubin",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Mateusz ", 
-	       surname: "Bieniek", 
-	       age: 24, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "ZAKSA Kędzierzyn-Koźle",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Kacper", 
-	       surname: "Borkowski", 
-	       age: 21, 
-	       nationality: "Polska", 
-	       position: "Libero", 
-	       club: "chemik Bydgoszcz",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Grzegorz", 
-	       surname: "Bociek", 
-	       age: 27, 
-	       nationality: "Polska", 
-	       position: "Atakujący", 
-	       club: "Aluron Virtu Warta Zawiercie",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Damian", 
-	       surname: "Boruch", 
-	       age: 29, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "Cuprum Lubin",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Antoine", 
-	       surname: "Brizard", 
-	       age: 24, 
-	       nationality: "Francja", 
-	       position: "Rozgrywający", 
-	       club: "ONICO Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Adrian", 
-	       surname: "Buchowski", 
-	       age: 27, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "Indykpol AZS Olsztyn",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Jakub", 
-	       surname: "Bucki", 
-	       age: 30, 
-	       nationality: "Polska", 
-	       position: "Atakujący", 
-	       club: "Jastrzębski Węgiel",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Rafał", 
-	       surname: "Buszek", 
-	       age: 31, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "ZAKSA Kędzierzyn-Koźle",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Bartosz", 
-	       surname: "Mariański", 
-	       age: 26, 
-	       nationality: "Polska", 
-	       position: "Libero", 
-	       club: "GKS Katowice",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Karol", 
-	       surname: "Butryn", 
-	       age: 25, 
-	       nationality: "Polska", 
-	       position: "Atakujący", 
-	       club: "GKS Katowice",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Alek", 
-	       surname: "Achrem", 
-	       age: 35, 
-	       nationality: "Białoruś", 
-	       position: "Przyjmujący", 
-	       club: "Aluron Virtu Warta Zawiercie",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Patryk", 
-	       surname: "Akala", 
-	       age: 30, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "Chemik Bydgoszcz",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Robbert", 
-	       surname: "Andriga", 
-	       age: 28, 
-	       nationality: "Holandia", 
-	       position: "Przyjmujący", 
-	       club: "Indykpol AZS Olsztyn",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Krzysztof", 
-	       surname: "Andrzejewski", 
-	       age: 35, 
-	       nationality: "Polska", 
-	       position: "Libero", 
-	       club: "Aluron Virtu Warta Zawiercie",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Rafael Araujo", 
-	       surname: "Araujo", 
-	       age: 27, 
-	       nationality: "Brazylia", 
-	       position: "Atakujący", 
-	       club: "ONICO Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Filip", 
-	       surname: "Biegun", 
-	       age: 22, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "Cuprum Lubin",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Mateusz ", 
-	       surname: "Bieniek", 
-	       age: 24, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "ZAKSA Kędzierzyn-Koźle",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Kacper", 
-	       surname: "Borkowski", 
-	       age: 21, 
-	       nationality: "Polska", 
-	       position: "Libero", 
-	       club: "chemik Bydgoszcz",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Grzegorz", 
-	       surname: "Bociek", 
-	       age: 27, 
-	       nationality: "Polska", 
-	       position: "Atakujący", 
-	       club: "Aluron Virtu Warta Zawiercie",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Damian", 
-	       surname: "Boruch", 
-	       age: 29, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "Cuprum Lubin",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Antoine", 
-	       surname: "Brizard", 
-	       age: 24, 
-	       nationality: "Francja", 
-	       position: "Rozgrywający", 
-	       club: "ONICO Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Adrian", 
-	       surname: "Buchowski", 
-	       age: 27, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "Indykpol AZS Olsztyn",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Jakub", 
-	       surname: "Bucki", 
-	       age: 30, 
-	       nationality: "Polska", 
-	       position: "Atakujący", 
-	       club: "Jastrzębski Węgiel",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Rafał", 
-	       surname: "Buszek", 
-	       age: 31, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "ZAKSA Kędzierzyn-Koźle",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Bartosz", 
-	       surname: "Mariański", 
-	       age: 26, 
-	       nationality: "Polska", 
-	       position: "Libero", 
-	       club: "GKS Katowice",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Karol", 
-	       surname: "Butryn", 
-	       age: 25, 
-	       nationality: "Polska", 
-	       position: "Atakujący", 
-	       club: "GKS Katowice",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Alek", 
-	       surname: "Achrem", 
-	       age: 35, 
-	       nationality: "Białoruś", 
-	       position: "Przyjmujący", 
-	       club: "Aluron Virtu Warta Zawiercie",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Patryk", 
-	       surname: "Akala", 
-	       age: 30, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "Chemik Bydgoszcz",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Robbert", 
-	       surname: "Andriga", 
-	       age: 28, 
-	       nationality: "Holandia", 
-	       position: "Przyjmujący", 
-	       club: "Indykpol AZS Olsztyn",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Krzysztof", 
-	       surname: "Andrzejewski", 
-	       age: 35, 
-	       nationality: "Polska", 
-	       position: "Libero", 
-	       club: "Aluron Virtu Warta Zawiercie",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Rafael Araujo", 
-	       surname: "Araujo", 
-	       age: 27, 
-	       nationality: "Brazylia", 
-	       position: "Atakujący", 
-	       club: "ONICO Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Filip", 
-	       surname: "Biegun", 
-	       age: 22, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "Cuprum Lubin",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Mateusz ", 
-	       surname: "Bieniek", 
-	       age: 24, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "ZAKSA Kędzierzyn-Koźle",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Kacper", 
-	       surname: "Borkowski", 
-	       age: 21, 
-	       nationality: "Polska", 
-	       position: "Libero", 
-	       club: "chemik Bydgoszcz",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Grzegorz", 
-	       surname: "Bociek", 
-	       age: 27, 
-	       nationality: "Polska", 
-	       position: "Atakujący", 
-	       club: "Aluron Virtu Warta Zawiercie",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Damian", 
-	       surname: "Boruch", 
-	       age: 29, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "Cuprum Lubin",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Antoine", 
-	       surname: "Brizard", 
-	       age: 24, 
-	       nationality: "Francja", 
-	       position: "Rozgrywający", 
-	       club: "ONICO Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Adrian", 
-	       surname: "Buchowski", 
-	       age: 27, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "Indykpol AZS Olsztyn",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Jakub", 
-	       surname: "Bucki", 
-	       age: 30, 
-	       nationality: "Polska", 
-	       position: "Atakujący", 
-	       club: "Jastrzębski Węgiel",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
-
-Player.new(name: "Rafał", 
-	       surname: "Buszek", 
-	       age: 31, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "ZAKSA Kędzierzyn-Koźle",
-	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
-	       user_id: 1).save
+# Player.new(name: "Antoine", 
+# 	       surname: "Brizard", 
+# 	       age: 24, 
+# 	       nationality: "Francja", 
+# 	       position: "Rozgrywający", 
+# 	       club: "ONICO Warszawa",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Adrian", 
+# 	       surname: "Buchowski", 
+# 	       age: 27, 
+# 	       nationality: "Polska", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Indykpol AZS Olsztyn",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Jakub", 
+# 	       surname: "Bucki", 
+# 	       age: 30, 
+# 	       nationality: "Polska", 
+# 	       position: "Atakujący", 
+# 	       club: "Jastrzębski Węgiel",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Rafał", 
+# 	       surname: "Buszek", 
+# 	       age: 31, 
+# 	       nationality: "Polska", 
+# 	       position: "Przyjmujący", 
+# 	       club: "ZAKSA Kędzierzyn-Koźle",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Bartosz", 
+# 	       surname: "Mariański", 
+# 	       age: 26, 
+# 	       nationality: "Polska", 
+# 	       position: "Libero", 
+# 	       club: "GKS Katowice",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Karol", 
+# 	       surname: "Butryn", 
+# 	       age: 25, 
+# 	       nationality: "Polska", 
+# 	       position: "Atakujący", 
+# 	       club: "GKS Katowice",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Alek", 
+# 	       surname: "Achrem", 
+# 	       age: 35, 
+# 	       nationality: "Białoruś", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Aluron Virtu Warta Zawiercie",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Patryk", 
+# 	       surname: "Akala", 
+# 	       age: 30, 
+# 	       nationality: "Polska", 
+# 	       position: "Środkowy", 
+# 	       club: "Chemik Bydgoszcz",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Robbert", 
+# 	       surname: "Andriga", 
+# 	       age: 28, 
+# 	       nationality: "Holandia", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Indykpol AZS Olsztyn",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Krzysztof", 
+# 	       surname: "Andrzejewski", 
+# 	       age: 35, 
+# 	       nationality: "Polska", 
+# 	       position: "Libero", 
+# 	       club: "Aluron Virtu Warta Zawiercie",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Rafael Araujo", 
+# 	       surname: "Araujo", 
+# 	       age: 27, 
+# 	       nationality: "Brazylia", 
+# 	       position: "Atakujący", 
+# 	       club: "ONICO Warszawa",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Filip", 
+# 	       surname: "Biegun", 
+# 	       age: 22, 
+# 	       nationality: "Polska", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Cuprum Lubin",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Mateusz ", 
+# 	       surname: "Bieniek", 
+# 	       age: 24, 
+# 	       nationality: "Polska", 
+# 	       position: "Środkowy", 
+# 	       club: "ZAKSA Kędzierzyn-Koźle",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Kacper", 
+# 	       surname: "Borkowski", 
+# 	       age: 21, 
+# 	       nationality: "Polska", 
+# 	       position: "Libero", 
+# 	       club: "chemik Bydgoszcz",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Grzegorz", 
+# 	       surname: "Bociek", 
+# 	       age: 27, 
+# 	       nationality: "Polska", 
+# 	       position: "Atakujący", 
+# 	       club: "Aluron Virtu Warta Zawiercie",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Damian", 
+# 	       surname: "Boruch", 
+# 	       age: 29, 
+# 	       nationality: "Polska", 
+# 	       position: "Środkowy", 
+# 	       club: "Cuprum Lubin",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Antoine", 
+# 	       surname: "Brizard", 
+# 	       age: 24, 
+# 	       nationality: "Francja", 
+# 	       position: "Rozgrywający", 
+# 	       club: "ONICO Warszawa",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Adrian", 
+# 	       surname: "Buchowski", 
+# 	       age: 27, 
+# 	       nationality: "Polska", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Indykpol AZS Olsztyn",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Jakub", 
+# 	       surname: "Bucki", 
+# 	       age: 30, 
+# 	       nationality: "Polska", 
+# 	       position: "Atakujący", 
+# 	       club: "Jastrzębski Węgiel",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Rafał", 
+# 	       surname: "Buszek", 
+# 	       age: 31, 
+# 	       nationality: "Polska", 
+# 	       position: "Przyjmujący", 
+# 	       club: "ZAKSA Kędzierzyn-Koźle",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Bartosz", 
+# 	       surname: "Mariański", 
+# 	       age: 26, 
+# 	       nationality: "Polska", 
+# 	       position: "Libero", 
+# 	       club: "GKS Katowice",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Karol", 
+# 	       surname: "Butryn", 
+# 	       age: 25, 
+# 	       nationality: "Polska", 
+# 	       position: "Atakujący", 
+# 	       club: "GKS Katowice",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Alek", 
+# 	       surname: "Achrem", 
+# 	       age: 35, 
+# 	       nationality: "Białoruś", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Aluron Virtu Warta Zawiercie",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Patryk", 
+# 	       surname: "Akala", 
+# 	       age: 30, 
+# 	       nationality: "Polska", 
+# 	       position: "Środkowy", 
+# 	       club: "Chemik Bydgoszcz",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Robbert", 
+# 	       surname: "Andriga", 
+# 	       age: 28, 
+# 	       nationality: "Holandia", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Indykpol AZS Olsztyn",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Krzysztof", 
+# 	       surname: "Andrzejewski", 
+# 	       age: 35, 
+# 	       nationality: "Polska", 
+# 	       position: "Libero", 
+# 	       club: "Aluron Virtu Warta Zawiercie",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Rafael Araujo", 
+# 	       surname: "Araujo", 
+# 	       age: 27, 
+# 	       nationality: "Brazylia", 
+# 	       position: "Atakujący", 
+# 	       club: "ONICO Warszawa",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Filip", 
+# 	       surname: "Biegun", 
+# 	       age: 22, 
+# 	       nationality: "Polska", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Cuprum Lubin",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Mateusz ", 
+# 	       surname: "Bieniek", 
+# 	       age: 24, 
+# 	       nationality: "Polska", 
+# 	       position: "Środkowy", 
+# 	       club: "ZAKSA Kędzierzyn-Koźle",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Kacper", 
+# 	       surname: "Borkowski", 
+# 	       age: 21, 
+# 	       nationality: "Polska", 
+# 	       position: "Libero", 
+# 	       club: "chemik Bydgoszcz",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Grzegorz", 
+# 	       surname: "Bociek", 
+# 	       age: 27, 
+# 	       nationality: "Polska", 
+# 	       position: "Atakujący", 
+# 	       club: "Aluron Virtu Warta Zawiercie",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Damian", 
+# 	       surname: "Boruch", 
+# 	       age: 29, 
+# 	       nationality: "Polska", 
+# 	       position: "Środkowy", 
+# 	       club: "Cuprum Lubin",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Antoine", 
+# 	       surname: "Brizard", 
+# 	       age: 24, 
+# 	       nationality: "Francja", 
+# 	       position: "Rozgrywający", 
+# 	       club: "ONICO Warszawa",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Adrian", 
+# 	       surname: "Buchowski", 
+# 	       age: 27, 
+# 	       nationality: "Polska", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Indykpol AZS Olsztyn",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Jakub", 
+# 	       surname: "Bucki", 
+# 	       age: 30, 
+# 	       nationality: "Polska", 
+# 	       position: "Atakujący", 
+# 	       club: "Jastrzębski Węgiel",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Rafał", 
+# 	       surname: "Buszek", 
+# 	       age: 31, 
+# 	       nationality: "Polska", 
+# 	       position: "Przyjmujący", 
+# 	       club: "ZAKSA Kędzierzyn-Koźle",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Bartosz", 
+# 	       surname: "Mariański", 
+# 	       age: 26, 
+# 	       nationality: "Polska", 
+# 	       position: "Libero", 
+# 	       club: "GKS Katowice",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Karol", 
+# 	       surname: "Butryn", 
+# 	       age: 25, 
+# 	       nationality: "Polska", 
+# 	       position: "Atakujący", 
+# 	       club: "GKS Katowice",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Alek", 
+# 	       surname: "Achrem", 
+# 	       age: 35, 
+# 	       nationality: "Białoruś", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Aluron Virtu Warta Zawiercie",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Patryk", 
+# 	       surname: "Akala", 
+# 	       age: 30, 
+# 	       nationality: "Polska", 
+# 	       position: "Środkowy", 
+# 	       club: "Chemik Bydgoszcz",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Robbert", 
+# 	       surname: "Andriga", 
+# 	       age: 28, 
+# 	       nationality: "Holandia", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Indykpol AZS Olsztyn",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Krzysztof", 
+# 	       surname: "Andrzejewski", 
+# 	       age: 35, 
+# 	       nationality: "Polska", 
+# 	       position: "Libero", 
+# 	       club: "Aluron Virtu Warta Zawiercie",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Rafael Araujo", 
+# 	       surname: "Araujo", 
+# 	       age: 27, 
+# 	       nationality: "Brazylia", 
+# 	       position: "Atakujący", 
+# 	       club: "ONICO Warszawa",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Filip", 
+# 	       surname: "Biegun", 
+# 	       age: 22, 
+# 	       nationality: "Polska", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Cuprum Lubin",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Mateusz ", 
+# 	       surname: "Bieniek", 
+# 	       age: 24, 
+# 	       nationality: "Polska", 
+# 	       position: "Środkowy", 
+# 	       club: "ZAKSA Kędzierzyn-Koźle",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Kacper", 
+# 	       surname: "Borkowski", 
+# 	       age: 21, 
+# 	       nationality: "Polska", 
+# 	       position: "Libero", 
+# 	       club: "chemik Bydgoszcz",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Grzegorz", 
+# 	       surname: "Bociek", 
+# 	       age: 27, 
+# 	       nationality: "Polska", 
+# 	       position: "Atakujący", 
+# 	       club: "Aluron Virtu Warta Zawiercie",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Damian", 
+# 	       surname: "Boruch", 
+# 	       age: 29, 
+# 	       nationality: "Polska", 
+# 	       position: "Środkowy", 
+# 	       club: "Cuprum Lubin",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Antoine", 
+# 	       surname: "Brizard", 
+# 	       age: 24, 
+# 	       nationality: "Francja", 
+# 	       position: "Rozgrywający", 
+# 	       club: "ONICO Warszawa",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Adrian", 
+# 	       surname: "Buchowski", 
+# 	       age: 27, 
+# 	       nationality: "Polska", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Indykpol AZS Olsztyn",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Jakub", 
+# 	       surname: "Bucki", 
+# 	       age: 30, 
+# 	       nationality: "Polska", 
+# 	       position: "Atakujący", 
+# 	       club: "Jastrzębski Węgiel",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Rafał", 
+# 	       surname: "Buszek", 
+# 	       age: 31, 
+# 	       nationality: "Polska", 
+# 	       position: "Przyjmujący", 
+# 	       club: "ZAKSA Kędzierzyn-Koźle",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Bartosz", 
+# 	       surname: "Mariański", 
+# 	       age: 26, 
+# 	       nationality: "Polska", 
+# 	       position: "Libero", 
+# 	       club: "GKS Katowice",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Karol", 
+# 	       surname: "Butryn", 
+# 	       age: 25, 
+# 	       nationality: "Polska", 
+# 	       position: "Atakujący", 
+# 	       club: "GKS Katowice",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Alek", 
+# 	       surname: "Achrem", 
+# 	       age: 35, 
+# 	       nationality: "Białoruś", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Aluron Virtu Warta Zawiercie",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Patryk", 
+# 	       surname: "Akala", 
+# 	       age: 30, 
+# 	       nationality: "Polska", 
+# 	       position: "Środkowy", 
+# 	       club: "Chemik Bydgoszcz",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Robbert", 
+# 	       surname: "Andriga", 
+# 	       age: 28, 
+# 	       nationality: "Holandia", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Indykpol AZS Olsztyn",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Krzysztof", 
+# 	       surname: "Andrzejewski", 
+# 	       age: 35, 
+# 	       nationality: "Polska", 
+# 	       position: "Libero", 
+# 	       club: "Aluron Virtu Warta Zawiercie",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Rafael Araujo", 
+# 	       surname: "Araujo", 
+# 	       age: 27, 
+# 	       nationality: "Brazylia", 
+# 	       position: "Atakujący", 
+# 	       club: "ONICO Warszawa",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Filip", 
+# 	       surname: "Biegun", 
+# 	       age: 22, 
+# 	       nationality: "Polska", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Cuprum Lubin",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Mateusz ", 
+# 	       surname: "Bieniek", 
+# 	       age: 24, 
+# 	       nationality: "Polska", 
+# 	       position: "Środkowy", 
+# 	       club: "ZAKSA Kędzierzyn-Koźle",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Kacper", 
+# 	       surname: "Borkowski", 
+# 	       age: 21, 
+# 	       nationality: "Polska", 
+# 	       position: "Libero", 
+# 	       club: "chemik Bydgoszcz",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Grzegorz", 
+# 	       surname: "Bociek", 
+# 	       age: 27, 
+# 	       nationality: "Polska", 
+# 	       position: "Atakujący", 
+# 	       club: "Aluron Virtu Warta Zawiercie",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Damian", 
+# 	       surname: "Boruch", 
+# 	       age: 29, 
+# 	       nationality: "Polska", 
+# 	       position: "Środkowy", 
+# 	       club: "Cuprum Lubin",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Antoine", 
+# 	       surname: "Brizard", 
+# 	       age: 24, 
+# 	       nationality: "Francja", 
+# 	       position: "Rozgrywający", 
+# 	       club: "ONICO Warszawa",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Adrian", 
+# 	       surname: "Buchowski", 
+# 	       age: 27, 
+# 	       nationality: "Polska", 
+# 	       position: "Przyjmujący", 
+# 	       club: "Indykpol AZS Olsztyn",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Jakub", 
+# 	       surname: "Bucki", 
+# 	       age: 30, 
+# 	       nationality: "Polska", 
+# 	       position: "Atakujący", 
+# 	       club: "Jastrzębski Węgiel",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
+
+# Player.new(name: "Rafał", 
+# 	       surname: "Buszek", 
+# 	       age: 31, 
+# 	       nationality: "Polska", 
+# 	       position: "Przyjmujący", 
+# 	       club: "ZAKSA Kędzierzyn-Koźle",
+# 	       image: File.new(Rails.root.join("app/assets/images/marian.png")),
+# 	       user_id: 1).save
 
 @matches = Match.all
 @matches.each_with_index do |match,x|
