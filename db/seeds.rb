@@ -734,12 +734,12 @@ Player.new(name: "Rafał",
 
 Team.new(name: "MKS Będzin",
          city: "Będzin",
-         # image: File.new(Rails.root.join("app/assets/images/bedzin.png")),
+         image: File.new(Rails.root.join("app/assets/images/bedzin.png")),
          user_id: 1).save
 
 Team.new(name: "PGE Skra Bełchatów",
          city: "Bełchatów",
-         # image: File.new(Rails.root.join("app/assets/images/belchatow.png")),
+         image: File.new(Rails.root.join("app/assets/images/belchatow.png")),
          user_id: 1).save
 
 Team.new(name: "ZAKSA Kędzierzyn-Koźle",
