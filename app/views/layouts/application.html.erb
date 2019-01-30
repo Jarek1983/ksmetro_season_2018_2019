@@ -9,28 +9,33 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
-  <%= render 'shared/navigation' %>
+  <body id="flex">
 
-    <div class="container">
-     
-        <% if notice %>
-         <div class="show_notice" style="padding-top: 150px;">
-        <%= notice %>
-        </div>
-        <% end %>
-      </div>
-       
-        <% if alert %>
-         <div class="show_alert" style="padding-top: 150px;">
-        <%= alert %>
-        </div>
-        <% end %>
-      </div>
+    <div >
 
-      <%= yield %>
-    </div>
+      <%= render 'shared/navigation' %>
+
+        <div class="container">
+         
+            <% if notice %>
+             <div class="show_notice" style="padding-top: 150px;">
+            <%= notice %>
+            </div>
+            <% end %>
+          </div>
+           
+            <% if alert %>
+             <div class="show_alert" style="padding-top: 150px;">
+            <%= alert %>
+            </div>
+            <% end %>
+          </div>
+
+          <%= yield %>
+        </div>
     
       <%= render 'shared/footer' %>
+
+    </div>
   </body>
 </html>
