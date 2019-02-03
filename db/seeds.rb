@@ -957,6 +957,83 @@ Match.new(round: 2,
 	      quest_id: 1,  
 	      user_id: 1).save
 
+Match.new(round: 3, 
+	      match_number: 15, 
+	      date: "2018-10-19", 
+	      place: "Hala Azoty", 
+	      city: "Kędzierzyn-Koźle", 
+	      score_team_A_match: 3, 
+	      score_team_B_match: 0,
+	      home_id: 3,
+	      quest_id: 11, 
+	      user_id: 1).save
+
+Match.new(round: 3, 
+	      match_number: 16, 
+	      date: "2018-10-20", 
+	      place: "Hala 'Energia'", 
+	      city: "Bełchatów", 
+	      score_team_A_match: 3, 
+	      score_team_B_match: 2, 
+	      home_id: 2,
+	      quest_id: 8, 
+	      user_id: 1).save
+
+Match.new(round: 3, 
+	      match_number: 17, 
+	      date: "2018-10-20", 
+	      place: "Hala Sportowo-Widowiskowa 'Urania'", 
+	      city: "Olsztyn", 
+	      score_team_A_match: 3, 
+	      score_team_B_match: 0,
+	      home_id: 12,
+	      quest_id: 1,  
+	      user_id: 1).save
+
+Match.new(round: 3, 
+	      match_number: 18, 
+	      date: "2018-10-21", 
+	      place: "HWS w Jastrzębiu-Zdroju", 
+	      city: "Jastrzębie Zdrój", 
+	      score_team_A_match: 0, 
+	      score_team_B_match: 0,
+	      home_id: 4,
+	      quest_id: 10,  
+	      user_id: 1).save
+
+Match.new(round: 3, 
+	      match_number: 19, 
+	      date: "2018-10-22", 
+	      place: "RCSW Podpromie", 
+	      city: "Rzeszów", 
+	      score_team_A_match: 0, 
+	      score_team_B_match: 3,
+	      home_id: 6,
+	      quest_id: 5,  
+	      user_id: 1).save
+
+Match.new(round: 3, 
+	      match_number: 20, 
+	      date: "2018-10-21", 
+	      place: "HWS RCS w Lubinie", 
+	      city: "Lubin", 
+	      score_team_A_match: 0, 
+	      score_team_B_match: 3,
+	      home_id: 9,
+	      quest_id: 13,  
+	      user_id: 1).save
+
+Match.new(round: 3, 
+	      match_number: 21, 
+	      date: "2018-10-21", 
+	      place: "Hala Widowiskowo-Sportowa 'Torwar'", 
+	      city: "Warszawa", 
+	      score_team_A_match: 3, 
+	      score_team_B_match: 1,
+	      home_id: 14,
+	      quest_id: 7,  
+	      user_id: 1).save
+
 Table.new(team_id: 1,
 	      game: 0,
 	      points: 0,

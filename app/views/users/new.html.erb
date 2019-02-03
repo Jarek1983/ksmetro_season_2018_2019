@@ -28,18 +28,20 @@
 
             <h3 class="user">Create account! </h3>
 
-	          <%= f.text_field :login, placeholder: 'Input a User ID', class: 'form-control'%><br>
-	          <%= f.email_field :email, placeholder: 'Input your email', class: 'form-control'%><br>
-	          <%= f.password_field :password, placeholder: 'Create a password', class: 'form-control' %><br>
-	          <%= f.password_field :password_confirmation, placeholder: 'Confirm password', class: 'form-control' %><br>
+	          <div class="login_user">
 
-	          <p class="login_user"><%= f.submit 'Create Account', class: 'btn btn-md btn-success' %></p>
+		          <%= f.text_field :login, placeholder: 'Input a User ID', class: 'form-control'%><br>
+		          <%= f.email_field :email, placeholder: 'Input your email', class: 'form-control'%><br>
+		          <%= f.password_field :password, placeholder: 'Create a password', class: 'form-control' %><br>
+		          <%= f.password_field :password_confirmation, placeholder: 'Confirm password', class: 'form-control' %><br>
 
+		          <p><%= f.submit 'Create Account', class: 'btn btn-md btn-success' %></p>
+		      </div>
 	    <% end %>
 
     </div>
 
-              <p class="login_user">
+              <p style="margin-left: 10px;">
 			    <%= link_to 'Back', root_path, class: 'btn btn-md btn-info' %>
 		      </p>
   </div>
