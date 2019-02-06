@@ -36,13 +36,16 @@
 		          <%= f.password_field :password_confirmation, placeholder: 'Confirm password', class: 'form-control' %><br>
 
 		          <p><%= f.submit 'Create Account', class: 'btn btn-md btn-success' %></p>
+
+		          <p style="margin-left: 10px;">
+			        <%= link_to 'Back', root_path, class: 'btn btn-md btn-info' %>
+		          </p>
+		          
 		      </div>
 	    <% end %>
 
     </div>
 
-              <p style="margin-left: 10px;">
-			    <%= link_to 'Back', root_path, class: 'btn btn-md btn-info' %>
-		      </p>
+
   </div>
 </div>
