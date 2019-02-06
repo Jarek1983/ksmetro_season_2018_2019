@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-12 col-sm-6 col-md-4"
+  <div class="col-12 col-sm-6 col-md-4">
     <div class="field" style="100%;">
 
         <%= form_for @user do |f| %>
@@ -35,12 +35,14 @@
 		          <%= f.password_field :password, placeholder: 'Create a password', class: 'form-control' %><br>
 		          <%= f.password_field :password_confirmation, placeholder: 'Confirm password', class: 'form-control' %><br>
 
-		          <p><%= f.submit 'Create Account', class: 'btn btn-md btn-success' %></p>
+		          <p style="margin-left: 10px;">
+		          	<%= f.submit 'Create Account', class: 'btn btn-md btn-success' %>
+		          </p>
 
 		          <p style="margin-left: 10px;">
 			        <%= link_to 'Back', root_path, class: 'btn btn-md btn-info' %>
 		          </p>
-		          
+
 		      </div>
 	    <% end %>
 
