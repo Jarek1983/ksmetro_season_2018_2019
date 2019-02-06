@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .card {
-	background-color: #93E3D9;
+	background-color: #D3D9D3;
 }
 
 .card-block {
@@ -17,4 +17,8 @@
 	width: 35%;
 	border-radius: 8px;
 	border: 4px solid #ccc;
+}
+
+h2 {
+	min-height: 50px;
 }
