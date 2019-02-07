@@ -4,7 +4,7 @@
 	  	
 		<h4>List of all searched position</h4>
 	
-		  <table class="table table-hover table-striped table-danger">
+		  <table class="table table-hover table-striped table-info">
 
             <% if current_user && current_user&.admin? %>
 
@@ -94,6 +94,8 @@
 			  
 			      </td>
 
+			      <td colspan="2"></td>
+
 			      <td>
 
 				    <%= link_to 'Show', team_path(team), class: 'btn btn-sm btn-info' %>
@@ -125,6 +127,8 @@
 				  <%= team.name %>
 			  
 			      </td>
+
+                  <td colspan="2"></td>
 
 			      <td>
 				    

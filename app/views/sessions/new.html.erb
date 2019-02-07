@@ -3,7 +3,7 @@
 	  <div class="col-12 col-sm-6 col-md-4">
 
 	    <h4 class="login">Please Sign In</h4>
-	      <div>
+	     <div>
 	      <%= form_tag sessions_path do %>
 	      <%= text_field_tag :login, nil, placeholder: 'Input User Id', class: 'pole' %><br>
 	      <%= password_field_tag :password, nil, placeholder: 'Input Password', class: 'pole' %>
@@ -11,7 +11,7 @@
 
 	      <% end %>
 
-	  </div>
+	    </div>
 
 		<p class="login">
 			<%= link_to 'Back', root_path, class: 'btn btn-md btn-info' %>
