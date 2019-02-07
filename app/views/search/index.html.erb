@@ -11,11 +11,23 @@
 				<% @players.each do |player| %>
 				
 			      <tr>
+
+			      <td>
+
+				    <%= player.name %>
+			  
+			      </td>
 			      <td>
 
 				    <%= player.surname %>
 			  
 			      </td>
+			      <td>
+
+				    <%= player.club %>
+			  
+			      </td>
+
 
 			      <td>
 
@@ -45,7 +57,17 @@
 			     <tr>
 			      <td>
 
-				  <%= player.surname %>
+				    <%= player.name %>
+			  
+			      </td>
+			      <td>
+
+				    <%= player.surname %>
+			  
+			      </td>
+			      <td>
+
+				    <%= player.club %>
 			  
 			      </td>
 
@@ -107,62 +129,6 @@
 			      <td>
 				    
 				    <%= link_to 'Show', team_path(team), class: 'btn btn-sm btn-info' %>
-			      
-			      </td>
-
-			    <% end %>
-			
-			     </tr>
-
-			<% end %>
-
-
-				<% if current_user && current_user&.admin? %>
-
-				<% @matches.each do |match| %>
-				
-			      <tr>
-			      <td>
-
-				    <%= match.city %>
-			  
-			      </td>
-
-			      <td>
-
-				    <%= link_to 'Show', match_path(match), class: 'btn btn-sm btn-info' %>
-
-			      </td>
-
-			      <td>
-
-				    <%= link_to 'Edit', edit_match_path(match), class: 'btn btn-sm btn-warning' %>
-
-			      </td>
-			
-			      <td>
-              
-                    <%= link_to 'Delete', match_path(match), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?
-                	"} %>
-                
-                  </td>
-
-                <% end %>
-
-			<% else %>
-
-				<% @matches.each do |match| %>
-				
-			     <tr>
-			      <td>
-
-				  <%= match.city %>
-			  
-			      </td>
-
-			      <td>
-				    
-				    <%= link_to 'Show', match_path(match), class: 'btn btn-sm btn-info' %>
 			      
 			      </td>
 

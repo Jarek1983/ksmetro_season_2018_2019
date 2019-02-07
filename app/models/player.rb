@@ -19,7 +19,7 @@ class Player < ApplicationRecord
   has_one :team, through: :players_teams
 
   def self.search(params)
-    players = Player.where("surname LIKE ?", "%#{params[:search]}%") if params[:search].present?
+    players = Player.where("surname LIKE ? or name LIKE ? or club LIKE?", "%#{params[:search]}%", "%#{params[:search]}%", "%#{params[:search]}%") if params[:search].present?
     players  
   end
   
