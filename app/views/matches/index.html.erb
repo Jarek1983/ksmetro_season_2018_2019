@@ -24,10 +24,10 @@
                     <div class="card"> 
                       <div class="card-block">
 
-                        <p class="card-title text-sm-left">
-                          <%= match.home&.name %> - <%= match.quest&.name %> 
-                          <%= match.score_team_A_match %> : <%= match.score_team_B_match %>
-                        </p>
+                        <div class="card-title text-sm-left">
+                          <p> <%= match.home&.name %> - <%= match.quest&.name %></p>
+                          <!-- <%= match.score_team_A_match %> : <%= match.score_team_B_match %>  -->
+                        </div>
 
                             <%= link_to 'More', match_path(match), class: 'btn btn-sm btn-info'%>
 

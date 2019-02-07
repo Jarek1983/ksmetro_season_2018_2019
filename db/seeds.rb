@@ -737,7 +737,7 @@ Team.new(name: "MKS Będzin",
          image: File.new(Rails.root.join("app/assets/images/bedzin.png")),
          user_id: 1).save
 
-Team.new(name: "PGE Skra Bełchatów",
+Team.new(name: "Skra Bełchatów",
          city: "Bełchatów",
          image: File.new(Rails.root.join("app/assets/images/belchatow.png")),
          user_id: 1).save
@@ -757,12 +757,12 @@ Team.new(name: "GKS Katowice",
          image: File.new(Rails.root.join("app/assets/images/katowice.png")),
          user_id: 1).save
 
-Team.new(name: "Asseco Resovia Rzeszów",
+Team.new(name: "Resovia Rzeszów",
          city: "Rzeszów",
          image: File.new(Rails.root.join("app/assets/images/rzeszow.png")),
          user_id: 1).save
 
-Team.new(name: "Aluron Warta Virtu Zawiercie",
+Team.new(name: "Warta Zawiercie",
          city: "Zawiercie",
          image: File.new(Rails.root.join("app/assets/images/zawiercie.png")),
          user_id: 1).save
@@ -787,12 +787,12 @@ Team.new(name: "Chemik Bydgoszcz",
          image: File.new(Rails.root.join("app/assets/images/bydgoszcz.png")),
          user_id: 1).save
 
-Team.new(name: "Indykpol AZS Olsztyn",
+Team.new(name: "AZS Olsztyn",
          city: "Olsztyn",
          image: File.new(Rails.root.join("app/assets/images/olsztyn.png")),
          user_id: 1).save
 
-Team.new(name: "Cerrad Czarni Radom",
+Team.new(name: "Czarni Radom",
          city: "Radom",
          image: File.new(Rails.root.join("app/assets/images/radom.png")),
          user_id: 1).save
@@ -801,7 +801,6 @@ Team.new(name: "ONICO Warszawa",
          city: "Warszawa",
          image: File.new(Rails.root.join("app/assets/images/warszawa.png")),
          user_id: 1).save
-
 
 Match.new(round: 1, 
 	      match_number: 1, 
