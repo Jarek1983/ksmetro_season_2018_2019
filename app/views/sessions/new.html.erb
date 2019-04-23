@@ -1,24 +1,27 @@
-<div class="row" style="margin-left: 1rem; margin-right: 1rem;">
-	<div class="col"></div>
-	  <div class="col-12 col-sm-6 col-md-4">
+<section class="container pt-5 text-center">
+	<div class="row pt-5">
+		<div class="col"></div>
+		  <div class="col-12 col-sm-6 col-md-4 pt-5">
 
-	    <h4 class="login">Please Sign In</h4>
-	     <div>
-	      <%= form_tag sessions_path do %>
-	      <%= text_field_tag :login, nil, placeholder: 'Input User Id', class: 'pole' %><br>
-	      <%= password_field_tag :password, nil, placeholder: 'Input Password', class: 'pole' %>
-	      <%= submit_tag 'Sign In', class: 'btn btn-md btn-info'  %>
+		    <h4 class="pt-5">Please Sign In</h4>
+		     <div class="pb-3">
+		      <%= form_tag sessions_path do %>
+		      <%= text_field_tag :login, nil, placeholder: 'Input User Id', class: 'pole' %><br>
+		      <%= password_field_tag :password, nil, placeholder: 'Input Password', class: 'pole' %>
+		      <p class="pt-3">
+		      	<%= submit_tag 'Sign In', class: 'btn btn-lg btn-info'  %>
+		      </p>
 
-	      <% end %>
+		      <% end %>
 
-	    </div>
+		    </div>
 
-		<p class="login">
-			<%= link_to 'Back', root_path, class: 'btn btn-md btn-info' %>
-			<%= link_to 'Home', root_path, class: 'btn btn-md btn-primary' %>
-		</p>
-	  </div>
-	<div class="col"></div>
-</div>
-
+			<p>
+				<%= link_to 'Back', root_path, class: 'btn btn-md btn-info' %>
+				<%= link_to 'Home', root_path, class: 'btn btn-md btn-primary' %>
+			</p>
+		  </div>
+		<div class="col"></div>
+	</div>
+</section>
 

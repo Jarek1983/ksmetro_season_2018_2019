@@ -1,53 +1,53 @@
-<div class="row" style="margin-left: 1rem; margin-right: 1rem;">
-  <div class="col-12 col-sm-6 col-md-4">
-    <div class="field" style="100%;">
+<section class="container pt-5 text-center">
+	<div class="row">
+	  <div class="col-12 col-sm-6 col-md-4 pt-5">
+	    <div class="field pt-5" style="100%;">
 
-        <%= form_for @user do |f| %>
+	        <%= form_for @user do |f| %>
 
-          <% if @user.errors.any? %>
-	
-	        <div id="Error_explanation">
+	          <% if @user.errors.any? %>
 		
-		      <h2>
-			    <%= pluralize(@user.errors.count, "error") %>
-			    prohibited this article from being saved:
-		      </h2>
+		        <div id="Error_explanation">
 			
-			  <p>
-			  <ul>
-				  <% @user.errors.full_messages.each do |msg| %>
-				    <li>
-					  <%= msg %>
-				    </li>
-	              <% end %>
-			  </ul>
-			  </p>
-	        </div>
+			      <h2>
+				    <%= pluralize(@user.errors.count, "error") %>
+				    prohibited this article from being saved:
+			      </h2>
+				
+				  <p>
+				  <ul>
+					  <% @user.errors.full_messages.each do |msg| %>
+					    <li>
+						  <%= msg %>
+					    </li>
+		              <% end %>
+				  </ul>
+				  </p>
+		        </div>
 
-	      <% end %>
+		      <% end %>
 
-            <h3 class="user">Create account! </h3>
+	            <h3 class="pt-5">Create account! </h3>
 
-	          <div class="login_user">
+		          <div class="pt-3">
 
-		          <%= f.text_field :login, placeholder: 'Input a User ID', class: 'form-control'%><br>
-		          <%= f.email_field :email, placeholder: 'Input your email', class: 'form-control'%><br>
-		          <%= f.password_field :password, placeholder: 'Create a password', class: 'form-control' %><br>
-		          <%= f.password_field :password_confirmation, placeholder: 'Confirm password', class: 'form-control' %><br>
+			          <%= f.text_field :login, placeholder: 'Input a User ID', class: 'form-control'%><br>
+			          <%= f.email_field :email, placeholder: 'Input your email', class: 'form-control'%><br>
+			          <%= f.password_field :password, placeholder: 'Create a password', class: 'form-control' %><br>
+			          <%= f.password_field :password_confirmation, placeholder: 'Confirm password', class: 'form-control' %><br>
 
-		          <p style="margin-left: 10px;">
-		          	<%= f.submit 'Create Account', class: 'btn btn-md btn-success' %>
-		          </p>
+			          <p style="margin-left: 10px;">
+			          	<%= f.submit 'Create Account', class: 'btn btn-md btn-success' %>
+			          </p>
 
-		          <p style="margin-left: 10px;">
-			        <%= link_to 'Back', root_path, class: 'btn btn-md btn-info' %>
-		          </p>
+			          <p style="margin-left: 10px;">
+				        <%= link_to 'Back', root_path, class: 'btn btn-md btn-info' %>
+			          </p>
 
-		      </div>
-	    <% end %>
+			      </div>
+		    <% end %>
 
-    </div>
-
-
-  </div>
-</div>
+	    </div>
+	  </div>
+	</div>
+</section>

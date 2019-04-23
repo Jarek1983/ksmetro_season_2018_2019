@@ -1,154 +1,156 @@
-<div class="row" style="margin-left: 1rem; margin-right: 1rem;">
-  <div class="col"></div>
-	  <div class="col-xl-6">
-	  	
-		<h4>List of all searched position</h4>
-	
-		  <table class="table table-hover table-striped table-info">
+<section class="container pt-5">
+	<div class="row pt-5">
+	  <div class="col pt-5"></div>
+		  <div class="col-xl-6 pt-5">
+		  	
+			<h4 class="pt-5">List of all searched position</h4>
+		
+			  <table class="table table-hover table-striped table-info">
 
-            <% if current_user && current_user&.admin? %>
+	            <% if current_user && current_user&.admin? %>
 
-				<% @players.each do |player| %>
+					<% @players.each do |player| %>
+					
+				      <tr>
+
+				      <td>
+
+					    <%= player.name %>
+				  
+				      </td>
+				      <td>
+
+					    <%= player.surname %>
+				  
+				      </td>
+				      <td>
+
+					    <%= player.club %>
+				  
+				      </td>
+
+
+				      <td>
+
+					    <%= link_to 'Show', player_path(player), class: 'btn btn-sm btn-info' %>
+
+				      </td>
+
+				      <td>
+
+					    <%= link_to 'Edit', edit_player_path(player), class: 'btn btn-sm btn-warning' %>
+
+				      </td>
 				
-			      <tr>
+				      <td>
+	              
+	                    <%= link_to 'Delete', player_path(player), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?
+	                	"} %>
+	                
+	                  </td>
 
-			      <td>
+	                <% end %>
 
-				    <%= player.name %>
-			  
-			      </td>
-			      <td>
+				<% else %>
 
-				    <%= player.surname %>
-			  
-			      </td>
-			      <td>
+					<% @players.each do |player| %>
+					
+				     <tr>
+				      <td>
 
-				    <%= player.club %>
-			  
-			      </td>
+					    <%= player.name %>
+				  
+				      </td>
+				      <td>
 
+					    <%= player.surname %>
+				  
+				      </td>
+				      <td>
 
-			      <td>
+					    <%= player.club %>
+				  
+				      </td>
 
-				    <%= link_to 'Show', player_path(player), class: 'btn btn-sm btn-info' %>
+				      <td>
+					    
+					    <%= link_to 'Show', player_path(player), class: 'btn btn-sm btn-info' %>
+				      
+				      </td>
 
-			      </td>
-
-			      <td>
-
-				    <%= link_to 'Edit', edit_player_path(player), class: 'btn btn-sm btn-warning' %>
-
-			      </td>
-			
-			      <td>
-              
-                    <%= link_to 'Delete', player_path(player), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?
-                	"} %>
-                
-                  </td>
-
-                <% end %>
-
-			<% else %>
-
-				<% @players.each do |player| %>
+				    <% end %>
 				
-			     <tr>
-			      <td>
+				     </tr>
 
-				    <%= player.name %>
-			  
-			      </td>
-			      <td>
+				<% end %>
 
-				    <%= player.surname %>
-			  
-			      </td>
-			      <td>
+				<% if current_user && current_user&.admin? %>
 
-				    <%= player.club %>
-			  
-			      </td>
+					<% @teams.each do |team| %>
+					
+				      <tr>
+				      <td>
 
-			      <td>
-				    
-				    <%= link_to 'Show', player_path(player), class: 'btn btn-sm btn-info' %>
-			      
-			      </td>
+					    <%= team.name %>
+				  
+				      </td>
 
-			    <% end %>
-			
-			     </tr>
+				      <td colspan="2"></td>
 
-			<% end %>
+				      <td>
 
-			<% if current_user && current_user&.admin? %>
+					    <%= link_to 'Show', team_path(team), class: 'btn btn-sm btn-info' %>
 
-				<% @teams.each do |team| %>
+				      </td>
+
+				      <td>
+
+					    <%= link_to 'Edit', edit_team_path(team), class: 'btn btn-sm btn-warning' %>
+
+				      </td>
 				
-			      <tr>
-			      <td>
+				      <td>
+	              
+	                    <%= link_to 'Delete', team_path(team), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?
+	                	"} %>
+	                
+	                  </td>
 
-				    <%= team.name %>
-			  
-			      </td>
+	                <% end %>
 
-			      <td colspan="2"></td>
+				<% else %>
 
-			      <td>
+					<% @teams.each do |team| %>
+					
+				     <tr>
+				      <td>
 
-				    <%= link_to 'Show', team_path(team), class: 'btn btn-sm btn-info' %>
+					  <%= team.name %>
+				  
+				      </td>
 
-			      </td>
+	                  <td colspan="2"></td>
 
-			      <td>
+				      <td>
+					    
+					    <%= link_to 'Show', team_path(team), class: 'btn btn-sm btn-info' %>
+				      
+				      </td>
 
-				    <%= link_to 'Edit', edit_team_path(team), class: 'btn btn-sm btn-warning' %>
-
-			      </td>
-			
-			      <td>
-              
-                    <%= link_to 'Delete', team_path(team), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?
-                	"} %>
-                
-                  </td>
-
-                <% end %>
-
-			<% else %>
-
-				<% @teams.each do |team| %>
+				    <% end %>
 				
-			     <tr>
-			      <td>
+				     </tr>
 
-				  <%= team.name %>
-			  
-			      </td>
+				<% end %>
 
-                  <td colspan="2"></td>
+			</table>
 
-			      <td>
-				    
-				    <%= link_to 'Show', team_path(team), class: 'btn btn-sm btn-info' %>
-			      
-			      </td>
+				<p class="pb-5">
+					<%= link_to 'Back', matches_path, class: 'btn btn-md btn-primary'  %>
+				</p>
 
-			    <% end %>
-			
-			     </tr>
-
-			<% end %>
-
-		</table>
-
-			<p>
-				<%= link_to 'Back', matches_path, class: 'btn btn-sm btn-primary'  %>
-			</p>
-
-	  </div>
-	<div class="col"></div>
-</div>
+		  </div>
+		<div class="col"></div>
+	</div>
+</section>
 

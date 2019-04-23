@@ -1,60 +1,62 @@
-<div class="row" style="margin-left: 1rem; margin-right: 1rem;">
-  <div class="col"> </div>
-    <div class="col-sm-12">
+<section class="container pt-5 pb-5">
+  <div class="row pt-5>
+    <div class="col"> </div>
+      <div class="col-12 pt-5">
 
-      <%= will_paginate @players, previous_label: "<", next_label: ">"  %>
+        <%= will_paginate @players, previous_label: "<", next_label: ">"  %>
 
-        <div class="col-sm-12">
+          <div class="col-12 pt-5">
 
-          <h2>List of players: </h2>
+            <h2>List of players: </h2>
 
-            <% if current_user && current_user&.admin? %>
+              <% if current_user && current_user&.admin? %>
 
-          <p>
-            <%= link_to "Add new player", new_player_path, class: 'btn btn-lg btn-info' %>
-          </p>
+            <p>
+              <%= link_to "Add new player", new_player_path, class: 'btn btn-lg btn-info' %>
+            </p>
 
-            <% end %>
-        
-           <div class="row">
+              <% end %>
+          
+             <div class="row pb-5">
 
-            <% @players.each do |player| %>
+              <% @players.each do |player| %>
 
-              <div class="col-12 col-sm-6 col-md-4" style="padding: 0.5rem;">
-                <div class="card"> 
-                  <div class="card-topper">
+                <div class="col-12 col-sm-6 col-md-4" style="padding: 0.5rem;">
+                  <div class="card"> 
+                    <div class="card-topper">
 
-                    <% if player.image.present? %>
+                      <% if player.image.present? %>
 
-                      <%= link_to image_tag(player.image.url, :alt => "Player", class: "players"), player_path(player)%>
+                        <%= link_to image_tag(player.image.url, :alt => "Player", class: "players"), player_path(player)%>
 
-                    <% else %>
+                      <% else %>
 
-                      No image
+                        No image
 
-                    <% end %>
+                      <% end %>
 
-                  </div>
+                    </div>
 
-                  <div class="card-block">
+                    <div class="card-block">
 
-                    <h5 class="card-title">
-                      <%= player.name + " " + player.surname  %>
-                    </h5>
+                      <h5 class="card-title">
+                        <%= player.name + " " + player.surname  %>
+                      </h5>
 
-                      <%= link_to 'More', player_path(player), class: 'btn btn-sm btn-info'%>
+                        <%= link_to 'More', player_path(player), class: 'btn btn-sm btn-info'%>
 
-                      <% if current_user && current_user.admin? %>
+                        <% if current_user && current_user.admin? %>
 
-                      <%= link_to 'Edit', edit_player_path(player), class: 'btn btn-sm btn-warning' %>
-                      <%= link_to 'Delete', player_path(player), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
+                        <%= link_to 'Edit', edit_player_path(player), class: 'btn btn-sm btn-warning' %>
+                        <%= link_to 'Delete', player_path(player), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
 
-                       <% end %>
+                         <% end %>
+                    </div>
                   </div>
                 </div>
-              </div>
-            <% end %>
-        </div>
-    </div>
-  <div class="col"> </div>
-</div>
+              <% end %>
+          </div>
+      </div>
+    <div class="col"> </div>
+  </div>
+</section>
