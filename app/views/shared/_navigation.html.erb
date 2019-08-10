@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
 
       <div class="navbar-brand mx-auto" href="#" style="width:20vh;" >
         <%=link_to (image_tag 'image.png', style:"width:100%;"), root_path %>
@@ -26,6 +26,14 @@
 
           <li class="nav-item">
             <%= link_to 'Tabela', tables_path, class: 'nav-link' %>
+          </li>
+
+          <li class="nav-item">
+            <%= link_to 'Facebook', "https://www.facebook.com/ksmetro", target: :_blank, class: 'nav-link' %> 
+          </li>
+
+          <li class="nav-item">
+            <%= link_to 'KS Metro', "http://ksmetrowarszawa.pl/",  target: :_blank, class: 'nav-link' %>
           </li>
 
           <% if current_user && current_user.admin? %>
