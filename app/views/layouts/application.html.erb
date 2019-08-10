@@ -6,33 +6,28 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user=scalable=no" name="viewport">
   </head>
 
   <body>
 
-      <%= render 'shared/navigation' %>
+    <%= render 'shared/navigation' %>
+      
+      <% if notice %>
 
-        <div class="container-fluid">
-         
-            <% if notice %>
-             <div class="show_notice">
-            <%= notice %>
-            </div>
-            <% end %>
-          </div>
-           
-            <% if alert %>
-             <div class="show_alert">
-            <%= alert %>
-            </div>
-            <% end %>
-          </div>
+        <%= notice %>
+                  
+      <% end %>
+                 
+      <% if alert %>
 
-          <%= yield %>
-        </div>
-    
-      <%= render 'shared/footer' %>
+        <%= alert %>
+                  
+      <% end %>
+
+      <%= yield %>
+        
+    <%= render 'shared/footer' %>
 
   </body>
 </html>
