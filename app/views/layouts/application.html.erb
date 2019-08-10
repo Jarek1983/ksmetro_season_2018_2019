@@ -12,18 +12,22 @@
   <body>
 
     <%= render 'shared/navigation' %>
-      
-      <% if notice %>
 
-        <%= notice %>
-                  
-      <% end %>
-                 
-      <% if alert %>
+      <div class="pt-5 text-center">
+        
+        <% if notice %>
 
-        <%= alert %>
-                  
-      <% end %>
+          <%= notice %>
+                    
+        <% end %>
+                   
+        <% if alert %>
+
+          <%= alert %>
+                    
+        <% end %>
+
+      </div>
 
       <%= yield %>
         

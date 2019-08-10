@@ -1,7 +1,6 @@
-<section class="container pt-5 text-center">
+<section class="container pb-5 text-center">
 	<div class="row">
-	  <div class="col-12 col-sm-6 col-md-4 pt-5">
-	    <div class="field pt-5" style="100%;">
+	  <div class="col-12 col-sm-6 center-block">
 
 	        <%= form_for @user do |f| %>
 
@@ -27,27 +26,23 @@
 
 		      <% end %>
 
-	            <h3 class="pt-5">Create account! </h3>
+	            <h3>Utwórz konto</h3>
 
 		          <div class="pt-3">
 
-			          <%= f.text_field :login, placeholder: 'Input a User ID', class: 'form-control'%><br>
-			          <%= f.email_field :email, placeholder: 'Input your email', class: 'form-control'%><br>
-			          <%= f.password_field :password, placeholder: 'Create a password', class: 'form-control' %><br>
-			          <%= f.password_field :password_confirmation, placeholder: 'Confirm password', class: 'form-control' %><br>
+			          <%= f.text_field :login, placeholder: 'Wpisz login', class: 'form-control form-control-lg'%><br>
+			          <%= f.email_field :email, placeholder: 'Wpisz email', class: 'form-control form-control-lg'%><br>
+			          <%= f.password_field :password, placeholder: 'Stwórz hasło', class: 'form-control form-control-lg' %><br>
+			          <%= f.password_field :password_confirmation, placeholder: 'Powtórz hasło', class: 'form-control form-control-lg' %><br>
 
-			          <p style="margin-left: 10px;">
-			          	<%= f.submit 'Create Account', class: 'btn btn-md btn-success' %>
-			          </p>
-
-			          <p style="margin-left: 10px;">
-				        <%= link_to 'Back', root_path, class: 'btn btn-md btn-info' %>
-			          </p>
+			          <div class="pb-5">
+			          	<%= f.submit 'Zapisz', class: 'btn btn-lg btn-warning' %>
+			          	<%= link_to 'Powrót', root_path, class: 'btn btn-lg btn-info' %>
+			          </div>
 
 			      </div>
 		    <% end %>
 
-	    </div>
 	  </div>
 	</div>
 </section>
