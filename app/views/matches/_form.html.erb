@@ -1,50 +1,52 @@
-<%= render 'common/errors', model: @match %>
+<section class="container flex-column d-flex justify-content-center pb-2">
 
-  <%= form_for @match, html: {multipart: true} do |f| %>
+  <%= render 'common/errors', model: @match %>
 
-    <div class="field" style="100%;">
-      <p>
-        <%= f.label :round %><br>
-        <%= f.number_field :round, class: 'form-control2' %>
-      </p>
-      <p>
-        <%= f.label :match_number %><br>
-        <%= f.number_field :match_number, class: 'form-control2' %>
-      </p>
-       <p>
-        <%= f.label :date %><br>
-        <%= f.date_field :date, class: 'form-control2' %>
-      </p>
-      <p>
-       <%= f.label :place %><br>
-       <%= f.text_field :place, class: 'form-control2' %>
-      </p>
-      <p>
-        <%= f.label :city %><br>
-        <%= f.text_field :city, class: 'form-control2' %>
-      </p>
-      <p>
-        <%= f.label :home %><br>
-        <%= f.collection_select :home_id, Team.all, :id, :name, class: 'form-control2' %>
-      </p>
-      <p>
-        <%= f.label :quest %><br>
-        <%= f.collection_select :quest_id, Team.all, :id, :name, class: 'form-control2' %>
-      </p>
-       <p>
-        <%= f.label :score_team_A_match %><br>
-        <%= f.number_field :score_team_A_match, class: 'form-control2' %>
-      </p>
-       <p>
-        <%= f.label :score_team_B_match %><br>
-        <%= f.number_field :score_team_B_match, class: 'form-control2' %>
-      </p>
-       <p>
-        <%= f.hidden_field :user_id, value: session[:user_id] %>
-      </p>
-      <p>
-        <%= f.submit class: 'btn btn-lg btn-success'%>
-      </p>
+    <%= form_for @match, html: {multipart: true} do |f| %>
 
-    </div>
-  <% end %>
+        <p>
+          <%= f.label :round %><br>
+          <%= f.number_field :round, class: 'form-control' %>
+        </p>
+        <p>
+          <%= f.label :match_number %><br>
+          <%= f.number_field :match_number, class: 'form-control' %>
+        </p>
+         <p>
+          <%= f.label :date %><br>
+          <%= f.date_field :date, class: 'form-control' %>
+        </p>
+        <p>
+         <%= f.label :place %><br>
+         <%= f.text_field :place, class: 'form-control' %>
+        </p>
+        <p>
+          <%= f.label :city %><br>
+          <%= f.text_field :city, class: 'form-control' %>
+        </p>
+        <p>
+          <%= f.label :home %><br>
+          <%= f.collection_select :home_id, Team.all, :id, :name, class: 'form-control' %>
+        </p>
+        <p>
+          <%= f.label :quest %><br>
+          <%= f.collection_select :quest_id, Team.all, :id, :name, class: 'form-control' %>
+        </p>
+         <p>
+          <%= f.label :score_team_A_match %><br>
+          <%= f.number_field :score_team_A_match, class: 'form-control' %>
+        </p>
+         <p>
+          <%= f.label :score_team_B_match %><br>
+          <%= f.number_field :score_team_B_match, class: 'form-control' %>
+        </p>
+         <p>
+          <%= f.hidden_field :user_id, value: session[:user_id] %>
+        </p>
+        <p>
+          <%= f.submit "Zapisz", class: 'btn btn-lg btn-primary'%>
+        </p>
+
+      <% end %>
+
+</section>
