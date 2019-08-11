@@ -1,11 +1,13 @@
-<section class="container pt-5">
-	<div class="row pt-5">
-	  <div class="col pt-5"></div>
-		  <div class="col-xl-6 pt-5">
+<section class="container pb-5">
+
+  <div class="row">
+
+    <div class="col-12">
+
 		  	
-			<h4 class="pt-5">List of all searched position</h4>
+			<h4 class="text-center">Wyniki wyszukiwania</h4>
 		
-			  <table class="table table-hover table-striped table-info">
+			  <table class="table table-hover table-striped table-warning text-center">
 
 	            <% if current_user && current_user&.admin? %>
 
@@ -32,20 +34,19 @@
 
 				      <td>
 
-					    <%= link_to 'Show', player_path(player), class: 'btn btn-sm btn-info' %>
+					    <%= link_to 'Pokaż', player_path(player), class: 'btn btn-sm btn-info' %>
 
 				      </td>
 
 				      <td>
 
-					    <%= link_to 'Edit', edit_player_path(player), class: 'btn btn-sm btn-warning' %>
+					    <%= link_to 'Edytuj', edit_player_path(player), class: 'btn btn-lg btn-warning' %>
 
 				      </td>
 				
 				      <td>
 	              
-	                    <%= link_to 'Delete', player_path(player), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?
-	                	"} %>
+	                    <%= link_to 'Usuń', player_path(player), class: 'btn btn-lg btn-danger', method: :delete, data: {confirm: "Czy na pewno usunąć?"} %>
 	                
 	                  </td>
 
@@ -74,7 +75,7 @@
 
 				      <td>
 					    
-					    <%= link_to 'Show', player_path(player), class: 'btn btn-sm btn-info' %>
+					    <%= link_to 'Pokaż', player_path(player), class: 'btn btn-lg btn-info' %>
 				      
 				      </td>
 
@@ -99,20 +100,19 @@
 
 				      <td>
 
-					    <%= link_to 'Show', team_path(team), class: 'btn btn-sm btn-info' %>
+					    <%= link_to 'Pokaż', team_path(team), class: 'btn btn-lg btn-info' %>
 
 				      </td>
 
 				      <td>
 
-					    <%= link_to 'Edit', edit_team_path(team), class: 'btn btn-sm btn-warning' %>
+					    <%= link_to 'Edytuj', edit_team_path(team), class: 'btn btn-lg btn-warning' %>
 
 				      </td>
 				
 				      <td>
 	              
-	                    <%= link_to 'Delete', team_path(team), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?
-	                	"} %>
+	                    <%= link_to 'Usuń', team_path(team), class: 'btn btn-lg btn-danger', method: :delete, data: {confirm: "Czy na pewno usunąć?"} %>
 	                
 	                  </td>
 
@@ -133,7 +133,7 @@
 
 				      <td>
 					    
-					    <%= link_to 'Show', team_path(team), class: 'btn btn-sm btn-info' %>
+					    <%= link_to 'Pokaż', team_path(team), class: 'btn btn-lg btn-info' %>
 				      
 				      </td>
 
@@ -145,12 +145,13 @@
 
 			</table>
 
-				<p class="pb-5">
-					<%= link_to 'Back', matches_path, class: 'btn btn-md btn-primary'  %>
-				</p>
-
 		  </div>
-		<div class="col"></div>
-	</div>
-</section>
 
+		  	<p class="pt-5 pb-2 px-2">
+				<%= link_to 'Strona Główna', root_path, class: 'btn btn-lg btn-primary'  %>
+			</p>
+   </div>
+   
+  </div>
+
+</section>
