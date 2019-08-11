@@ -1,6 +1,6 @@
-<div class="row" style="margin-left: 1rem; margin-right: 1rem; padding-bottom: 0.5rem">
-  <div class="col"> </div>
-    <div class="col-6" >
+<section class="container-fluid pt-2 pb-5 text-center">
+  <div class="row">
+      <div class="col-12">
   
         <p>
           <% if @team.image.present? %>
@@ -10,30 +10,25 @@
           <% end %> 
         </p> 
         <p>
-          <strong>Name:</strong>
+          <strong>Nazwa:</strong>
             <%= @team.name %>
         </p>
         <p>
-          <strong>City:</strong>
+          <strong>Miasto:</strong>
             <%= @team.city %>
         </p>
          <p>
-          <strong>Players</strong>
+          <strong>Zawodnicy</strong>
             <% @team.players.each do |player| %>
             <%= link_to player.surname, player_path(player) %>
             <% end %> 
         </p>
-        <p>
-          <strong>Created at:</strong>
-            <%= @team.created_at %>
-        </p>
-        <p>
-          <strong>Updated at:</strong>
-            <%= @team.updated_at %>
-        </p>      
+     
+        <div class="pb-5 float-left">
 
-          <%= link_to 'Back', teams_path, class: 'btn btn-md btn-info' %>
-        
-    </div>
-  <div class="col"> </div>
-</div>
+          <%= link_to 'Powrót', teams_path, class: 'btn btn-lg btn-primary' %>    
+        </div> 
+
+      </div>
+  </div>
+</section>

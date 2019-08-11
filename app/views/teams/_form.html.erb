@@ -24,6 +24,7 @@
         <%= f.hidden_field :user_id, value: session[:user_id] %>
       <p>
       <p>
+        <%= link_to 'Powrót', teams_path, class: 'btn btn-lg btn-warning' %>
         <%= f.submit "Zapisz", class: 'btn btn-lg btn-primary'%>
       </p>
   <% end %>
