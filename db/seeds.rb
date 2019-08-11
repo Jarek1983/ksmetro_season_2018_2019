@@ -12,51 +12,6 @@ User.new(login: "Jarek",
          password_confirmation: "EnterYourPassword",
          admin: true).save
 
-Player.new(name: "Przemysław", 
-	       surname: "Sprawka", 
-	       age: 38, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "KS Metro Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/sprawka.jpg")),
-	       user_id: 1).save
-
-Player.new(name: "Marcin", 
-	       surname: "Kamiński", 
-	       age: 37, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "KS Metro Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/kaminski.jpg")),
-	       user_id: 1).save
-
-Player.new(name: "Filipe", 
-	       surname: "Ferreira", 
-	       age: 27, 
-	       nationality: "Portugalia", 
-	       position: "Libero", 
-	       club: "KS Metro Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/ferreira.jpg")),
-	       user_id: 1).save
-
-Player.new(name: "Jakub", 
-	       surname: "Pluto", 
-	       age: 35, 
-	       nationality: "Polska", 
-	       position: "Środkowy", 
-	       club: "KS Metro Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/pluto.jpg")),
-	       user_id: 1).save
-
-Player.new(name: "Dominik", 
-	       surname: "Zalewski", 
-	       age: 27, 
-	       nationality: "Polska", 
-	       position: "Przyjmujący", 
-	       club: "KS Metro Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/zalewski.jpg")),
-	       user_id: 1).save
-
 Player.new(name: "Wojciech", 
 	       surname: "Szczucki", 
 	       age: 30, 
@@ -64,6 +19,141 @@ Player.new(name: "Wojciech",
 	       position: "Trener", 
 	       club: "KS Metro Warszawa",
 	       image: File.new(Rails.root.join("app/assets/images/szczucki.jpg")),
+	       user_id: 1).save
+
+Player.new(name: "Filipe", 
+	       surname: "Ferreira", 
+	       age: 25, 
+	       nationality: "Portugalia", 
+	       position: "Libero", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/ferreira.jpg")),
+	       user_id: 1).save
+
+Player.new(name: "Tomasz", 
+	       surname: "Głód", 
+	       age: 25, 
+	       nationality: "Polska", 
+	       position: "Libero", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/glod.jpg")),
+	       user_id: 1).save
+
+Player.new(name: "Damian", 
+	       surname: "Kraśniewski", 
+	       age: 25, 
+	       nationality: "Polska", 
+	       position: "Środkowy", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/krasniewski.jpg")),
+	       user_id: 1).save
+
+Player.new(name: "Jakub", 
+	       surname: "Pluto", 
+	       age: 25, 
+	       nationality: "Polska", 
+	       position: "Środkowy", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/pluto.jpg")),
+	       user_id: 1).save
+
+Player.new(name: "Marcin", 
+	       surname: "Kamiński", 
+	       age: 25, 
+	       nationality: "Polska", 
+	       position: "Środkowy", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/kaminski.jpg")),
+	       user_id: 1).save
+
+Player.new(name: "Przemysław", 
+	       surname: "Sprawka", 
+	       age: 25, 
+	       nationality: "Polska", 
+	       position: "Środkowy", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/sprawka.jpg")),
+	       user_id: 1).save
+
+Player.new(name: "Kamil", 
+	       surname: "Szczypkowski", 
+	       age: 25, 
+	       nationality: "Polska", 
+	       position: "Atakujący", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/szczypkowski.jpg")),
+	       user_id: 1).save
+
+Player.new(name: "Paweł", 
+	       surname: "Szczepaniak", 
+	       age: 25, 
+	       nationality: "Polska", 
+	       position: "Atakujący", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/szczepaniak.jpg")),
+	       user_id: 1).save
+
+Player.new(name: "Paweł", 
+	       surname: "Mikołajczak", 
+	       age: 25, 
+	       nationality: "Polska", 
+	       position: "Atakujący", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/mikolajczak.png")),
+	       user_id: 1).save
+
+Player.new(name: "Janek", 
+	       surname: "Kopyść", 
+	       age: 25, 
+	       nationality: "Polska", 
+	       position: "Przyjmujący", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/kopysc.jpg")),
+	       user_id: 1).save
+
+Player.new(name: "Dominik", 
+	       surname: "Zalewski", 
+	       age: 25, 
+	       nationality: "Polska", 
+	       position: "Przyjmujący", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/zalewski.jpg")),
+	       user_id: 1).save
+
+Player.new(name: "Bartosz", 
+	       surname: "Stępień", 
+	       age: 25, 
+	       nationality: "Polska", 
+	       position: "Przyjmujący", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/stepien.jpg")),
+	       user_id: 1).save
+
+Player.new(name: "Dominik", 
+	       surname: "Zalewski", 
+	       age: 25, 
+	       nationality: "Polska", 
+	       position: "Przyjmujący", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/zalewski.jpg")),
+	       user_id: 1).save
+
+Player.new(name: "Piotr", 
+	       surname: "Szostek", 
+	       age: 25, 
+	       nationality: "Polska", 
+	       position: "Rozgrywający", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/szostek.jpg")),
+	       user_id: 1).save
+
+Player.new(name: "Tomasz", 
+	       surname: "Walendzik", 
+	       age: 25, 
+	       nationality: "Polska", 
+	       position: "Rozgrywający", 
+	       club: "KS Metro Warszawa",
+	       image: File.new(Rails.root.join("app/assets/images/walendzik.jpg")),
 	       user_id: 1).save
 
 Team.new(name: "BAS Białystok",
