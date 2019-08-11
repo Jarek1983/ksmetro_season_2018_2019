@@ -3,7 +3,7 @@ class TeamsController < ApplicationController
   before_action :admin_authorize, except: [:index, :show]
 
   def index
-  	@teams = Team.all.order("created_at DESC").paginate(page: params[:page], :per_page => 6) 
+  	@teams = Team.all.order("created_at DESC").paginate(page: params[:page], :per_page => 9) 
   end
 
   def new

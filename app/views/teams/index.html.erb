@@ -1,19 +1,14 @@
-<section class="container pt-5 pb-5">
-  <div class="row pt-5">
-    <div class="col pt-5"> </div>
+<section class="container pb-5">
+  <div class="row">
 
-      <div class="col-12 pt-5"">
+          <div class="col-12">
 
-        <%= will_paginate @teams, previous_label: "<", next_label: ">" %>
-
-          <div class="col-12 pt-5">
-
-              <h2>List of teams: </h2>
+              <h2 class="text-center">Drużyny: </h2>
 
                 <% if current_user && current_user.admin? %>
 
               <p>
-                <%= link_to "Add new team", new_team_path, class: 'btn btn-lg btn-info' %>
+                <%= link_to "Dodaj drużynę", new_team_path, class: 'btn btn-lg btn-secondary' %>
               </p>
 
               <% end %>
@@ -22,13 +17,13 @@
 
                 <% @teams.each do |team| %>
 
-              <div class="col-12 col-sm-6 col-md-4 p-2">
+              <div class="col-12 col-sm-12 col-md-4 p-2">
                 <div class="card2"> 
                   <div class="card-topper2">
 
                     <% if team.image.present? %>
 
-                      <%= link_to image_tag(team.image.url, :alt => "Team", class: "teams"), team_path(team) %>
+                      <%= link_to image_tag(team.image.url, alt: "Team", class: "teams"), team_path(team) %>
                       
 
                     <% else %>
@@ -39,14 +34,14 @@
 
                   </div>
 
-                  <div class="card-block">
+                  <div class="card-block text-center">
 
-                        <%= link_to 'More', team_path(team), class: 'btn btn-sm btn-info'%>
+                        <%= link_to 'More', team_path(team), class: 'btn btn-lg btn-info'%>
 
                       <% if current_user && current_user.admin? %>
 
-                        <%= link_to 'Edit', edit_team_path(team), class: 'btn btn-sm btn-warning' %>
-                        <%= link_to 'Delete', team_path(team), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
+                        <%= link_to 'Edit', edit_team_path(team), class: 'btn btn-lg btn-warning' %>
+                        <%= link_to 'Delete', team_path(team), class: 'btn btn-lg btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
 
                       <% end %>
 
@@ -56,6 +51,5 @@
                 <% end %>
             </div>
           </div>
-      </div>
   </div>
 </section>

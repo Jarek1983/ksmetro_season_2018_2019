@@ -1,6 +1,6 @@
 class Team < ApplicationRecord
   validates :name, presence: true, length: {minimum: 2}
-  validates :city, presence: true, length: {minimum: 2}, uniqueness: true
+  validates :city, presence: true, length: {minimum: 2}
 
   # Paperclip
   # has_attached_file :photo, styles: {large: "1500x500>", medium: "500x400>", thumb: "200x150#"}
