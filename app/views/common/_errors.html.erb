@@ -1,9 +1,9 @@
-<div class="row" style="padding-top: 3rem;">
+<div class="row pt-2">
 
 <% if model.errors.any? %>
   <div>
     <h4>
-    	<%= pluralize(model.errors.count, 'error') %> prohibited this position from being save: 
+    	Znaleziono <%= pluralize(model.errors.count, 'błędy') %>, które nie pozwalają zapisać danych: 
     </h4>
     <hr/>
     <ul>

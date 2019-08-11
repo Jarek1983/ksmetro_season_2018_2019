@@ -12,17 +12,17 @@ class SessionsController < ApplicationController
   	if user && user.authenticate(params[:password])
   	  session[:user_id] = user.id
   	  redirect_to root_path, notice: 
-      "Welcome #{user.login}, you successfully Signed In!"
+      "Witaj #{user.login}, zalogowałeś się!"
   	else
   	  redirect_to new_session_path, alert:
-  	  "User ID and/or Password Invalid"
+  	  "Nieprawidłowy login lub hasło"
   	end
   end
 
   def destroy
     session[:user_id] = nil
     redirect_to root_path, notice:
-    "You successfully Logged Out!" 
+    "Wylogowałeś się!" 
   end
 
 end
