@@ -1,18 +1,17 @@
-<section class="container pt-5 pb-5">
-  <div class="row pt-5">
-    <div class="col pt-5"> </div>
-      <div class="col-12 pt-5">
+<section class="container pb-5">
+  <div class="row">
+    <div class="col-12">
 
         <%= will_paginate @matches, previous_label: "<", next_label: ">" %>
 
           <div class="col-12">
 
-              <h2>List of matches: </h2>
+              <h2 class="text-center">Terminarz: </h2>
 
                 <% if current_user && current_user.admin? %>
 
               <p>
-                <%= link_to "Add new match", new_match_path, class: 'btn btn-lg btn-info' %>
+                <%= link_to "Dodaj mecz", new_match_path, class: 'btn btn-lg btn-info' %>
               </p>
 
                 <% end %>
@@ -23,29 +22,33 @@
 
                     <div class="col-12 col-sm-6 col-md-4 p-2">
                       <div class="card"> 
-                        <div class="card-block">
+                        <div class="card-block text-center picture">
 
-                          <div class="card-title text-sm-left">
-                            <p> <%= match.home&.name %> - <%= match.quest&.name %></p>
+                          <div class="card-title">
+                            <h6> <%= match.home&.name %><h6>
+                             && <h6><%= match.quest&.name %></h6>
                             <!-- <%= match.score_team_A_match %> : <%= match.score_team_B_match %>  -->
                           </div>
 
-                              <%= link_to 'More', match_path(match), class: 'btn btn-sm btn-info'%>
+                              <%= link_to 'Więcej', match_path(match), class: 'btn btn-lg btn-info'%>
 
                             <% if current_user && current_user.admin? %>
 
-                              <%= link_to 'Edit', edit_match_path(match), class: 'btn btn-sm btn-warning' %>
-                              <%= link_to 'Delete', match_path(match), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
+                              <%= link_to 'Edytuj', edit_match_path(match), class: 'btn btn-lg btn-warning' %>
+                              <%= link_to 'Usuń', match_path(match), class: 'btn btn-lg btn-danger', method: :delete, data: {confirm: "Czy na pewno?"} %>
 
                             <% end %>
 
                         </div>
                       </div>
                     </div>
+
                   <% end %>
+
               </div>
+
           </div>
+
       </div>
-    <div class="col"> </div>
   </div>
 </section>

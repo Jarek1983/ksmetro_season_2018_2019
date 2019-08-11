@@ -201,6 +201,83 @@ Team.new(name: "Czołg AZS UW Warszawa",
          image: File.new(Rails.root.join("app/assets/images/czolg.png")),
          user_id: 1).save
 
+Match.new(round: 2, 
+	      match_number: 8, 
+	      date: "2018-10-06", 
+	      place: "SP24 w Białystoku", 
+	      city: "Białystok", 
+	      score_team_A_match: 3, 
+	      score_team_B_match: 1, 
+	      home_id: 1,
+	      quest_id: 7, 
+	      user_id: 1).save
+
+Match.new(round: 2, 
+	      match_number: 7, 
+	      date: "2018-10-06", 
+	      place: "Warszawa", 
+	      city: "Warszawa", 
+	      score_team_A_match: 0, 
+	      score_team_B_match: 3, 
+	      home_id: 9,
+	      quest_id: 2, 
+	      user_id: 1).save
+
+Match.new(round: 2, 
+	      match_number: 6, 
+	      date: "2018-10-06", 
+	      place: "Międzyrzec", 
+	      city: "Międzyrzec", 
+	      score_team_A_match: 1, 
+	      score_team_B_match: 3, 
+	      home_id: 6,
+	      quest_id: 4, 
+	      user_id: 1).save
+
+Match.new(round: 2, 
+	      match_number: 5, 
+	      date: "2018-10-06", 
+	      place: "Wołomin", 
+	      city: "Wołomin", 
+	      score_team_A_match: 1, 
+	      score_team_B_match: 3, 
+	      home_id: 8,
+	      quest_id: 5, 
+	      user_id: 1).save
+
+Match.new(round: 1, 
+	      match_number: 4, 
+	      date: "2018-09-30", 
+	      place: "Ursynów", 
+	      city: "Warszawa", 
+	      score_team_A_match: 1, 
+	      score_team_B_match: 3, 
+	      home_id: 5,
+	      quest_id: 3, 
+	      user_id: 1).save
+
+Match.new(round: 1, 
+	      match_number: 3, 
+	      date: "2018-09-29", 
+	      place: "Urania", 
+	      city: "Olsztyn", 
+	      score_team_A_match: 3, 
+	      score_team_B_match: 1, 
+	      home_id: 4,
+	      quest_id: 8, 
+	      user_id: 1).save
+
+Match.new(round: 1, 
+	      match_number: 2, 
+	      date: "2018-09-29", 
+	      place: "Warszawa", 
+	      city: "Warszawa", 
+	      score_team_A_match: 3, 
+	      score_team_B_match: 1, 
+	      home_id: 2,
+	      quest_id: 6, 
+	      user_id: 1).save
+
 Match.new(round: 1, 
 	      match_number: 1, 
 	      date: "2018-09-30", 
@@ -211,7 +288,6 @@ Match.new(round: 1,
 	      home_id: 7,
 	      quest_id: 9, 
 	      user_id: 1).save
-
 
 Table.new(team_id: 1,
 	      game: 0,
