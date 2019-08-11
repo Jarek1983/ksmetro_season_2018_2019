@@ -1,30 +1,31 @@
+<section class="container flex-column d-flex justify-content-center pb-5">
+
 <%= render 'common/errors', model: @team %>
 
   <%= form_for @team, html: {multipart: true} do |f| %>
 
-    <div class="field" style="100%;">
       <p>
-        <%= f.label :name %><br>
-        <%= f.text_field :name, class: 'form-control2' %>
+        <%= f.label :Nazwa %><br>
+        <%= f.text_field :name, class: 'form-control' %>
       </p>
       <p>
-        <%= f.label :city %><br>
-        <%= f.text_field :city, class: 'form-control2' %>
+        <%= f.label :Miasto %><br>
+        <%= f.text_field :city, class: 'form-control' %>
       </p>
        <p>
-        <%= f.label :image %><br>
-        <%= f.file_field :image, class: 'form-control2' %>
+        <%= f.label :Logo%><br>
+        <%= f.file_field :image, class: 'form-control' %>
       </p>
       <p>
-        <%= f.label :players %><br>
+        <%= f.label :Zawodnicy %><br>
         <%= f.collection_check_boxes :player_ids, Player.all, :id, :surname %>
       </p>
       </p>
         <%= f.hidden_field :user_id, value: session[:user_id] %>
       <p>
       <p>
-        <%= f.submit class: 'btn btn-lg btn-success'%>
+        <%= f.submit "Zapisz", class: 'btn btn-lg btn-primary'%>
       </p>
-
-    </div>
   <% end %>
+
+</section>

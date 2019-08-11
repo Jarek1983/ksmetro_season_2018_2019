@@ -44,3 +44,35 @@ body {
 	background-color: #F8F8FF;
   border-radius: 12px;
 }
+
+.card
+{
+  -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.30);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.30);
+  -ms-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.30);
+  -o-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.30);
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.30);
+  padding: 10%;
+}
+
+.card-block {
+    
+    font-style: italic;
+    font-size: xx-large;
+    min-height: 9rem;
+}
+
+.card-title
+{
+  padding-top: 1rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.card-topper
+{
+  background-color: #050505;
+  min-height: 10rem;
+  background-position: center;
+}
+

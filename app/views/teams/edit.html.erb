@@ -1,16 +1,9 @@
-<div class="row" style="margin-left: 1rem; margin-right: 1rem;">
-  <div class="col"> </div>
-    <div class="col-sm-7">
+<section class="container pb-5">
 
-      <h3>Edit team</h3>
+  <div class="pb-5">
 
-        <%= render "form" %>
+    <%= render 'form', team: @team %>
 
-          <div style="padding-bottom: 0.5rem;">
-            
-            <%= link_to "Back", teams_path, class: 'btn btn-md btn-info' %>
+  </div>
 
-          </div>
-    </div>
-  <div class="col"> </div>
-</div>
+</section>
