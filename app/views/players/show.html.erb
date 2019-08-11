@@ -1,51 +1,44 @@
-<section class="container pt-5 pb-5">
-  <div class="row pt-5">
-    <div class="col pt-5"> </div>
-      <div class="col-10 pt-5 pb-5">
+<section class="container-fluid pt-2 pb-5 text-center">
+  <div class="row">
+      <div class="col-12">
 
-          <p class="pt-5">
+          <p>
             <% if @player.image.present? %>
-              <%= image_tag(@player.image.url, style: "width:25%;") %>
+              <%= image_tag(@player.image.url, style: "width:50%;") %>
             <% else %>
-              <%= image_tag 'volley.jpg', style: "width:25%;" %>
+              <%= image_tag 'volley.jpg', style: "width:50%;" %>
             <% end %> 
           </p>  
           <p>
-            <strong>Name:</strong>
+            <strong>Imię:</strong>
               <%= @player.name %>
           </p>
           <p>
-            <strong>Surname:</strong>
+            <strong>Nazwisko:</strong>
               <%= @player.surname %>
           </p>
           <p>
-            <strong>Age:</strong>
+            <strong>Wiek:</strong>
               <%= @player.age %>
           </p>
           <p>
-            <strong>Nationality:</strong>
+            <strong>Narodowość:</strong>
               <%= @player.nationality %>
           </p>
           <p>
-            <strong>Position:</strong>
+            <strong>Pozycja:</strong>
               <%= @player.position %>
           </p>
            <p>
-            <strong>Club:</strong>
+            <strong>Klub:</strong>
               <%= @player.club %>
-          </p>
-          <p>
-            <strong>Created at:</strong>
-              <%= @player.created_at %>
-          </p>
-          <p>
-            <strong>Updated at:</strong>
-              <%= @player.updated_at %>
-          </p>      
+          </p>     
 
-            <%= link_to 'Back', players_path, class: 'btn btn-md btn-info' %>
-          
+        <div class="pb-5 float-left">
+
+          <%= link_to 'Powrót', players_path, class: 'btn btn-lg btn-primary' %>    
+        </div> 
+
       </div>
-    <div class="col pb-5"> </div>
   </div>
-  </section>
+</section>
