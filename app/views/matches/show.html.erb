@@ -1,46 +1,52 @@
-<div class="row" style="margin-left: 1rem; margin-right: 1rem; padding-bottom: 0.5rem">
-  <div class="col"> </div>
-    <div class="col-10">
- 
+<section class="container-fluid pt-2 pb-5 text-center">
+  <div class="row">
+      <div class="col-12">
         <p>
-          <strong>Round:</strong>
+          <strong>Kolejka:</strong>
             <%= @match.round %>
         </p>
         <p>
-          <strong>Match number:</strong>
+          <strong>Numer meczu:</strong>
             <%= @match.match_number %>
         </p>
         <p>
-          <strong>Date:</strong>
+          <strong>Data:</strong>
             <%= @match.date %>
         </p>
         <p>
-          <strong>Place:</strong>
+          <strong>Miejsce:</strong>
             <%= @match.place %>
         </p>
         <p>
-          <strong>City: </strong>
+          <strong>Miasto: </strong>
             <%= @match.city %>
         </p>
         <p>
-          <strong>Home: </strong>
+          <strong>Gospodarz: </strong>
             <%= @match.home.name %>
         </p>
         <p>
-          <strong>Quest: </strong>
+          <strong>Gość: </strong>
             <%= @match.quest.name %>
         </p>
+
+        <p>Wynik</p>
+
         <p>
           <strong><%= @match.home.name %>: </strong>
             <%= @match.score_team_A_match %>
         </p>
+        
         <p>
           <strong><%= @match.quest.name %>: </strong>
             <%= @match.score_team_B_match %>
         </p> 
 
-          <%= link_to 'Back', matches_path, class: 'btn btn-md btn-info' %>
-        
-    </div>
-  <div class="col"> </div>
-</div>
+        <div class="pb-5 float-left">
+
+          <%= link_to 'Powrót', matches_path, class: 'btn btn-lg btn-primary' %>    
+        </div> 
+
+      </div>
+  </div>
+</section>
