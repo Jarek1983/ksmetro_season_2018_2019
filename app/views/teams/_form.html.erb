@@ -1,32 +1,32 @@
 <section class="container flex-column d-flex justify-content-center pb-5">
 
-<%= render 'common/errors', model: @team %>
+  <%= render 'common/errors', model: @team %>
 
-  <%= form_for @team, html: {multipart: true} do |f| %>
+    <%= form_for @team, html: {multipart: true} do |f| %>
 
-      <p>
-        <%= f.label :Nazwa %><br>
-        <%= f.text_field :name, class: 'form-control' %>
-      </p>
-      <p>
-        <%= f.label :Miasto %><br>
-        <%= f.text_field :city, class: 'form-control' %>
-      </p>
-       <p>
-        <%= f.label :Logo%><br>
-        <%= f.file_field :image, class: 'form-control' %>
-      </p>
-      <p>
-        <%= f.label :Zawodnicy %><br>
-        <%= f.collection_check_boxes :player_ids, Player.all, :id, :surname %>
-      </p>
-      </p>
-        <%= f.hidden_field :user_id, value: session[:user_id] %>
-      <p>
-      <p>
-        <%= link_to 'Powrót', teams_path, class: 'btn btn-lg btn-warning' %>
-        <%= f.submit "Zapisz", class: 'btn btn-lg btn-primary'%>
-      </p>
-  <% end %>
+        <p>
+          <%= f.label :Nazwa %><br>
+          <%= f.text_field :name, class: 'form-control' %>
+        </p>
+        <p>
+          <%= f.label :Miasto %><br>
+          <%= f.text_field :city, class: 'form-control' %>
+        </p>
+         <p>
+          <%= f.label :Logo%><br>
+          <%= f.file_field :image, class: 'form-control' %>
+        </p>
+        <p>
+          <%= f.label :Zawodnicy %><br>
+          <%= f.collection_check_boxes :player_ids, Player.all, :id, :surname %>
+        </p>
+        </p>
+          <%= f.hidden_field :user_id, value: session[:user_id] %>
+        <p>
+        <p>
+          <%= link_to 'Powrót', teams_path, class: 'btn btn-lg btn-warning' %>
+          <%= f.submit "Zapisz", class: 'btn btn-lg btn-primary'%>
+        </p>
+    <% end %>
 
 </section>

@@ -1,42 +1,45 @@
-<%= render 'common/errors', model: @player %>
+<section class="container flex-column d-flex justify-content-center pb-2">
 
-  <%= form_for @player, html: {multipart: true} do |f| %>
+  <%= render 'common/errors', model: @player %>
 
-    <div class="field" style="100%;">
-      <p>
-        <%= f.label :name %><br>
-        <%= f.text_field :name, class: 'form-control2' %>
-      </p>
-      <p>
-        <%= f.label :surname %><br>
-        <%= f.text_field :surname, class: 'form-control2' %>
-      </p>
-       <p>
-        <%= f.label :age %><br>
-        <%= f.number_field :age, class: 'form-control2' %>
-      </p>
-      <p>
-       <%= f.label :nationality %><br>
-       <%= f.text_field :nationality, class: 'form-control2' %>
-      </p>
-      <p>
-        <%= f.label :position %><br>
-           <%= f.select :position, options_for_select(['Libero', 'Rozgrywający', 'Atakujący', 'Przyjmujący', 'Środkowy']) %>
-      </p>
-      <p>
-        <%= f.label :club %><br>
-        <%= f.text_field :club, class: 'form-control2' %>
-      </p>
-       <p>
-        <%= f.label :image %><br>
-        <%= f.file_field :image, class: 'form-control2' %>
-      </p>
-       </p>
-        <%= f.hidden_field :user_id, value: session[:user_id] %>
-      <p>
-      <p>
-        <%= f.submit class: 'btn btn-lg btn-success'%>
-      </p>
+    <%= form_for @player, html: {multipart: true} do |f| %>
 
-    </div>
-  <% end %>
+        <p>
+          <%= f.label :Imię %><br>
+          <%= f.text_field :name, class: 'form-control' %>
+        </p>
+        <p>
+          <%= f.label :Nazwisko %><br>
+          <%= f.text_field :surname, class: 'form-control' %>
+        </p>
+         <p>
+          <%= f.label :Wiek %><br>
+          <%= f.number_field :age, class: 'form-control' %>
+        </p>
+        <p>
+         <%= f.label :Narodowość %><br>
+         <%= f.text_field :nationality, class: 'form-control' %>
+        </p>
+        <p>
+          <%= f.label :POzycja %><br>
+             <%= f.select :position, options_for_select(['Libero', 'Rozgrywający', 'Atakujący', 'Przyjmujący', 'Środkowy']) %>
+        </p>
+        <p>
+          <%= f.label :Klub %><br>
+          <%= f.text_field :club, class: 'form-control' %>
+        </p>
+         <p>
+          <%= f.label :Zdjęcie %><br>
+          <%= f.file_field :image, class: 'form-control' %>
+        </p>
+         </p>
+          <%= f.hidden_field :user_id, value: session[:user_id] %>
+        <p>
+        <p class="pt-1">
+          <%= link_to 'Powrót', players_path, class: 'btn btn-lg btn-warning' %>
+          <%= f.submit "Zapisz", class: 'btn btn-lg btn-primary'%>
+        </p>
+
+    <% end %>
+
+</section>

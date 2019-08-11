@@ -1,16 +1,9 @@
-<div class="row" style="margin-left: 1rem; margin-right: 1rem;">
-  <div class="col"> </div>
-    <div class="col-6">
+<section class="container pb-5">
 
-      <h3>Edit player</h3>
+  <div class="pb-5">
 
-        <%= render "form" %>
-        
-	        <div style="padding-bottom: 0.5rem;">
+    <%= render 'form', player: @player %>
 
-	          <%= link_to "Back", players_path, class: 'btn btn-md btn-info' %>
-	        </div>
+  </div>
 
-    </div>
-  <div class="col"> </div>
-</div>
+</section>

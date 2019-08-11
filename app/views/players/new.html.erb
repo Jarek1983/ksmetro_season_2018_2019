@@ -1,17 +1,9 @@
-<div class="row"">
-  <div class="col"> </div>
-    <div class="col-6">
+<section class="container pb-5">
 
-      <h3>Add new player</h3>
+  <div class="pb-5">
 
-        <%= render 'form' %>
+    <%= render 'form', player: @player %>
 
-        <div>
+  </div>
 
-          <%= link_to "Back", players_path, class: 'btn btn-md btn-info'%>
-          
-        </div>
-
-    </div>
-  <div class="col"> </div>
-</div>
+</section>
