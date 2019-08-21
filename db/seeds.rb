@@ -129,13 +129,13 @@ Player.new(name: "Bartosz",
 	       image: File.new(Rails.root.join("app/assets/images/stepien.jpg")),
 	       user_id: 1).save
 
-Player.new(name: "Dominik", 
-	       surname: "Zalewski", 
+Player.new(name: "Marcin", 
+	       surname: "Mołs", 
 	       age: 25, 
 	       nationality: "Polska", 
 	       position: "Przyjmujący", 
 	       club: "KS Metro Warszawa",
-	       image: File.new(Rails.root.join("app/assets/images/zalewski.jpg")),
+	       image: File.new(Rails.root.join("app/assets/images/mols.jpg")),
 	       user_id: 1).save
 
 Player.new(name: "Piotr", 
